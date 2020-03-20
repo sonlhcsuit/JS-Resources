@@ -1,14 +1,6 @@
-# Beginners (aka nobbs) Excersie
-### What is the answer?
-```javascript 
-let x = 5;
-let x = 10;
-```
-```javascript 
-let x = 5;
-x = 10;
-```
-```javascript 
+# Beginners (aka noobs) Excersie
+### Which variable was correctly declared?
+```javascript
 let break;
 var Break;
 let year-of-birth;
@@ -16,19 +8,29 @@ const MYFAVORITE;
 const tech_kids;
 const 4ever;
 ```
-```javascript 
+### What is the answer of the each following code block?
+```javascript
+let x = 5;
+let x = 10;
+```
+```javascript
+let x = 5;
+x = 10;
+```
+### What is the answer of the each following code block?
+```javascript
 let myFeel = "happy";
 console.log("I feel ${myFeel}");
 ```
-```javascript 
+```javascript
 let x = "10 is greater than ";
 let y = "5";
 console.log(x+y)
 ```
-```javascript 
+```javascript
 console.log(`Result of 1+2 is ${1+2}`)
 ```
-
+### How about branching?
 ```javascript
 let age = prompt("Your age? ")
     if (age < 10) {
@@ -40,24 +42,23 @@ let age = prompt("Your age? ")
     }
 ```
 What would going on if we have 10 options?
-=> use Switch case
+- [ ] 10 if & else
+- [ ] New Approaches
 ### Calculate BMI of 1 human and print answer
-### Quadratic expression calculate
-delta > 0 :print "2 solutions"
-delta < 0 :print "no solution"
-delta = 0 :print "1 solution"
+### Quadratic expression Calculate
+Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
 ### Array
-Create an array 
+Create an array
 ```javascript
 var Pokemon=new ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
 ```
-1> print the pokemon which can fly and use fire
-2> remove the rat out of the array and add pikachu at last of array
-3> Add 1 Meow 2 to the head of the array
+- Print the pokemon which can fly and use fire
+- Remove the rat out of the array and add pikachu at last of array
+- Add 1 Meow 2 to the head of the array
 ### Object
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 ### Create an program that help the boss manage her shop
-### 
+### Object
 ```javascript
 var pokemon = {
     name: "Pikachu",
@@ -66,44 +67,42 @@ var pokemon = {
         level :50,
         attack:86,
         spattack:150,
-        speed:5000000000, 
+        speed:5000000000,
         belongTo:"Red"
     },
-} 
+}
 var pikachuSkill = ["Bite","Thunder Bolt","Volt Tackle","Thunderrrr!"]
 ```
-1> speed is wrong, fix it (reduce to 60)
-2> Pikachu has no skill, he can't handle a battle. Help him by add pikachuSkill to Pikachu as "skill" property
-3> delete belongto property
+- Speed is wrong, fix it (reduce to 60)
+- Pikachu has no skill, he can't handle a battle. Help him by add `pikachuSkill` to Pikachu as `skill` property
+- Delete `belongto` property
 ### Function
 ### Print all even number
 ### Print all prime number
 ### Print n Factorial
 ### Remove all dollar sign of a string
-```javascript 
+```javascript
 function removeDollarSign(text){
-    
 };
 removeDollarSign('$80% percent of $life is to show $up')
 ```
 hint: You can iterate through an string (character by character) by doing the same as array([])
 ### Array method
-```javascript 
+```javascript
 var Pokemon=new ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
 Pokemon.map()
 Pokemon.filter()
 Pokemon.Reduce()
 Pokemon.forEach()
 ```
-### Write your callback!!! 
-```javascript 
+### Write your callback!!!
+```javascript
 Array.prototype.myMap = function(callback){
   var newArray = [];
   // Only change code below this line
 
   // Only change code above this line
   return newArray;
-
 };
 ```
 
@@ -166,7 +165,7 @@ factorialize(5);
 ### Find the Longest Word in a StringPassed
 Return the length of the longest word in the provided sentence.
 Your response should be a number.
-```javascript 
+```javascript
 function findLongestWordLength(str) {
   return str.length;
 }
@@ -181,7 +180,7 @@ function diffArray(arr1, arr2) {
 }
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);// [4]
 ```
-### DNA PairingPassed 
+### DNA PairingPassed
 The DNA strand is missing the pairing element. Take each character, get its pair, and return the remain DNA.
 Base pairs are a pair of A-T and C-G. Match the missing element to the provided character.
 ```javascript
@@ -196,7 +195,7 @@ Given a positive integer `num`, return the sum of all odd Fibonacci numbers that
 The first two numbers in the Fibonacci sequence are `1` and `1`. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
 
 For example, `sumFibs(10)` should return 10 because all odd Fibonacci numbers less than or equal to 10 are `1`, `1`, `3`, and `5`.
-```javascript 
+```javascript
 function sumFibs(num) {
   return num;
 }
@@ -260,7 +259,7 @@ steamrollArray([1, [2], [3, [[4]]]]);
 
 
 
-#### Panlindrome checker 
+### Panlindrome checker
 Complete the function to return `true` if the given string is a palindrome. Otherwise, return `false`.
 
 A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
@@ -278,7 +277,7 @@ palindrome("eye");//true
 ```
 [//]:<> (')
 
-#### Roman Numeral Converter
+### Roman Numeral Converter
 Complete the function to convert the given number into a roman numeral.
 All roman numerals answers should be provided in upper-case.
 ```javascript
@@ -323,7 +322,7 @@ function telephoneCheck(str) {
 telephoneCheck("555-555-5555");
 ```
 (Invoke | answer
---- | --- 
+--- | ---
 telephoneCheck("555-555-5555") | a boolean.
 telephoneCheck("1 555-555-5555") | true.
 telephoneCheck("1 (555) 555-5555") | true.
@@ -348,6 +347,7 @@ telephoneCheck("(275)76227382") | false.
 telephoneCheck("2(757)6227382") | false.
 telephoneCheck("2(757)622-7382") | false.
 telephoneCheck("(555)5(55?)-5555") | false.)
+
 ### Cash Register
 Design a cash register drawer function `checkCashRegister()` that accepts purchase price as the first argument `price`, payment as the second argument `cash`, and cash-in-drawer `cid` as the third argument.
 
@@ -368,5 +368,4 @@ function checkCashRegister(price, cash, cid) {
 checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
 //{status: "OPEN", change: [["QUARTER", 0.5]]}
 ```
-[//]: <> ()
 # Async/ Await? Promise WTF ?

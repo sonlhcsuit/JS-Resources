@@ -1,188 +1,130 @@
 # How JS Works?
+- JS Engine
+- Syntax parser
 - Lexical environment
 - Execution context
 - Execution Stack
+- Global environment
 - Scope chain
-- Event queue
 - Coercion
-- JS Engine
 - Operator Precedence and Associativity
-- Reference Variable
+- Reference Variable & primitive
 - this
-- spread
-- Closures
-- Function currying\
-- Prototype
+- Closures & callback
 - Everything is an Object (Or a primitive)
-- Reflection and Extend
+- argument & spread operator
+- Event queue
+- Functional programming
+- Object-oriented programming
 
-# New Features!
+**JS Engine**
+
+**Syntax parser** - a program that reads your code and determines what it does and if its grammar/syntax is valid.
+
+**Lexical environment** - where something sits physically in the code you write and what surrounds it. In JavaScript where you write something is important.
+
+**Execution context** - a wrapper to help manage the code that is running. There are lots of lexical environments, areas of the code that you look at physically, but which one is currently running is managed via execution contexts. Execution context contains your running code, but it can also contain things beyond what you've written in your code. Because remember that your code is being translated by a syntax parser. That mean whenever you invoke a function. It create a new execution context and then put it in to call Stack (aka **Execution Stack**)- **where latter code will be executed then the sooner**
+
+**Global environment** - Remember Execution Stack above? When you write your code, you may invoke function many times. When an function was invoked, it automatically create new Execution Context (or environment) called **inner environment** and refer to the outer function called **outer environment**. The most outer environment is **Global environment** (aka **Global execution context**)
+
+**Scope chain** - If JavaScript engine doesn't find variable in it's own environment it looks in the outer environment. That whole process of searching of variable in outer lexical environments down the chain is called the scope chain.
 ```javascript
-var a = 1
+function a() {
+    function b() {
+        console.log(myVar);
+    }
+
+	b();
+}
+
+var myVar = 1;
+a();
 ```
-  - Import a HTur Dropbox account be linked)
+Global -> a -> b so scope chain is b -> a -> Global
+```javascript
+function a() {
+    var myVar = 10
+    function b() {
+        console.log(myVar);
+    }
+	b();
+}
 
-
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-### Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
-* [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
+var myVar = 1;
+a();
 ```
+Global -> a -> b so scope chain is b -> a
 
-For production environments...
+**Coercion** When you compare 2 or more values by operators following (==,>=,<=,>,<,!), JS engine always do coercion, which mean convert 2 or more operand to 1 data type and then compare it (not with === )
 
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
+**Operator Precedence & Associativity** - Associativity means the order of which side should be done first (left or right) when operator share the same Precedence. Precedence means which kind operator should be done first. Check the table
+
+**Reference Variable & primitive** are 2 kind of variable existing in JS. Primitive create Reference type. Typically, Pokemon was create Number & String & Another Object
+```javascript
+var pokemon = {
+    name: "Pikachu",
+    stats:{
+        hp: 100,
+        level :50,
+        attack:86,
+        spattack:150,
+        speed:5000000000,
+        belongTo:"Red"
+    },
+}
 ```
+When a property of an object was create, actually create a variable and then link it to that object's properties. Base on this way, as long as you have enough memory, you can add property into objects.
+The only thing make confusion here is comparison.
 
-### Plugins
-
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
+```javascript
+var myObj = {
+  name:"Ash",// create a anonymous string variable and then link it to "name" property
+  pokemon:"Pikachu",//also do that
+  badges:{//create object variable
+    rock:1,//in the created obj, then create a new variable and link it to created object (badges)
+    water:1,//so on
+    psychic:0//move on
+  }
+}
 ```
-
-Second Tab:
-```sh
-$ gulp watch
+When you do a comparison between an object. === show you 2 or more values refer to the same anonymous source or not. If not,is false whatever the values
+```javascript
+var yourObj = {
+  name:"Ash",
+  pokemon:"Pikachu",
+  badges:{
+    rock:1,
+    water:1,
+    psychic:0
+  }
+}
+// urObj exactly look likes myObj but actually no(at least with === operator)
+console.log(myObj === yourObj)// false
+var ourObj = myObj;// refer to myObj
+console.log(ourObj = myObj)//true
 ```
+By the way, any changes you applying to ourObj also make the same affect with myObj(which was refer to)
 
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
+**this** - Know enough about Execution context right?
+**this** is special object **always** refer to **present** execution context or object  
 
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
 
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
+**Closures**
+When a function runs and completes it is removed from execution stack, but variables created and saved in that execution phase are still stored in memory and can be accessed from down the scope.
+```javascript
+function greet(whattosay) {
+   return function(name) {
+	   console.log(whattosay + " " + name;
+   }
+}
+var sayHi = greet('Hi');
+sayHi('Jason');
 ```
 
-Verify the deployment by navigating to your server address in your preferred browser.
+Inside the variable `sayHi` we run greet function which returns another function and passes string 'Hi'. After that functions is finished and it is popped from the execution stack. But `whattosay` variable still sits saved in the memory with a value Hi. So when we call function `sayHi` it will go in the outer environment and look for `whattosay` variable and will find it and log `"Hi Jason"`. We describe this proccess as execution context has closed in outer variables.
 
-```sh
-127.0.0.1:8000
-```
+Pay attention when functions are executed to understand where it will look for variables down the scope chain.
 
-#### Kubernetes + Google Cloud
+**Callback** function - a function you give to another function to be run when the other function is finished(or Event queue).
 
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+**Everything is an Object (Or a primitive)**
