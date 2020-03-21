@@ -44,6 +44,7 @@ let age = prompt("Your age? ")
 What would going on if we have 10 options?
 - [ ] 10 if & else
 - [ ] New Approaches
+
 ### Calculate BMI of 1 human and print answer
 ### Quadratic expression Calculate
 Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
@@ -55,9 +56,12 @@ var Pokemon=new ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Cha
 - Print the pokemon which can fly and use fire
 - Remove the rat out of the array and add pikachu at last of array
 - Add 1 Meow 2 to the head of the array
+
 ### Object
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
+
 ### Create an program that help the boss manage her shop
+
 ### Object
 ```javascript
 var pokemon = {
@@ -76,6 +80,7 @@ var pikachuSkill = ["Bite","Thunder Bolt","Volt Tackle","Thunderrrr!"]
 - Speed is wrong, fix it (reduce to 60)
 - Pikachu has no skill, he can't handle a battle. Help him by add `pikachuSkill` to Pikachu as `skill` property
 - Delete `belongto` property
+
 ### Function
 ### Print all even number
 ### Print all prime number
@@ -95,6 +100,7 @@ Pokemon.filter()
 Pokemon.Reduce()
 Pokemon.forEach()
 ```
+
 ### Write your callback!!!
 ```javascript
 Array.prototype.myMap = function(callback){
@@ -107,6 +113,7 @@ Array.prototype.myMap = function(callback){
 ```
 
 # Data Structure & Algorithms
+
 ### Profile Lookup
 We have an array of objects representing different people in our contacts lists.
 A `lookUpProfile` function that takes `name` and a property (`prop`) as arguments has been pre-written for you.
@@ -150,18 +157,21 @@ function lookUpProfile(name, prop){
 
 lookUpProfile("Akira", "likes");
 ```
+
 ### Factorialize a NumberPassed
 Return the factorial of the provided integer.
 If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 Factorials are often represented with the shorthand notation n!
 For example: `5! = 1 * 2 * 3 * 4 * 5 = 120`
 Only integers greater than or equal to zero will be supplied to the function.
+
 ```javascript
 function factorialize(num) {
   return num;
 }
 factorialize(5);
 ```
+
 ### Find the Longest Word in a StringPassed
 Return the length of the longest word in the provided sentence.
 Your response should be a number.
@@ -220,44 +230,16 @@ function steamrollArray(arr) {
 steamrollArray([1, [2], [3, [[4]]]]);
 ```
 
+### unique element
+Write a JavaScript function to find the unique elements from two arrays
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```javascript
+function difference(arr) {
+  return arr;
+}
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+//["1", "2", "3", "10", "100"]
+```
 
 ### Panlindrome checker
 Complete the function to return `true` if the given string is a palindrome. Otherwise, return `false`.
