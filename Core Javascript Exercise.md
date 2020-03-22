@@ -96,10 +96,10 @@ removeDollarSign('$80% percent of $life is to show $up')
 hint: You can iterate through an string (character by character) by doing the same as array([])
 ### Array method
 ```javascript
-var Pokemon=new ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
+var Pokemon =["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
 Pokemon.map()
 Pokemon.filter()
-Pokemon.Reduce()
+Pokemon.reduce()
 Pokemon.forEach()
 ```
 
@@ -113,7 +113,13 @@ Array.prototype.myMap = function(callback){
   return newArray;
 };
 ```
-
+### Triangular Number Sequence
+This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: `1, 3, 6, 10, 15`. Write a function that converts n number of places with its corresponding number.
+```javascript 
+function triangle(n) {
+	
+}
+```
 # Data Structure & Algorithms
 
 ### Profile Lookup
