@@ -83,6 +83,8 @@ var pikachuSkill = ["Bite","Thunder Bolt","Volt Tackle","Thunderrrr!"]
 
 ### Function
 ### Print all even number
+### Prinht all Special two digit number
+A special two-digit number is a number such that when the sum of the digits of the number is added to the product of its digits, the result is equal to the original two-digit number.
 ### Print all prime number
 ### Print n Factorial
 ### Remove all dollar sign of a string
@@ -158,18 +160,18 @@ function lookUpProfile(name, prop){
 lookUpProfile("Akira", "likes");
 ```
 
-### Factorialize a NumberPassed
-Return the factorial of the provided integer.
-If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
-Factorials are often represented with the shorthand notation n!
+### Prime Factorization
+Return the Prime Factorization of the provided integer.
+If the integer is represented with the letter n, a Prime Factorization is the product of all positive integers less than or equal to n.
+Prime Factorization are often represented with the shorthand notation n!
 For example: `5! = 1 * 2 * 3 * 4 * 5 = 120`
 Only integers greater than or equal to zero will be supplied to the function.
 
 ```javascript
-function factorialize(num) {
+function PrimeFactorization(num) {
   return num;
 }
-factorialize(5);
+PrimeFactorization(5);
 ```
 
 ### Find the Longest Word in a StringPassed
