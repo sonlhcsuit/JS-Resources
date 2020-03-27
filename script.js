@@ -7,7 +7,7 @@ const itemsPrice = [1.56,11,33,22,44,55,66]
 
 const newAr = itemsPrice.filter( function (value){
     return value>22;
-} )
+})
 
 // const newAr=[]
 // for(var i =0;i<itemsPrice.length;i++){

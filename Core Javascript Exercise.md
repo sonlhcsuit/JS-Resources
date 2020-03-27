@@ -48,6 +48,27 @@ What would going on if we have 10 options?
 ### Calculate BMI of 1 human and print answer
 ### Quadratic expression Calculate
 Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
+### Loops
+### Print all even number
+### Print all Special two digit number
+A special two-digit number is a number such that when the sum of the digits of the number is added to the product of its digits, the result is equal to the original two-digit number.
+### Print all prime number
+### Perfect Number
+A perfect number is a positive integer that is equal to the sum of it divisors. Number because the sum of the proper divisors in each case is equal to the number; the proper divisors of 6 are 1, 2, and 3, and their sum is 6. (496)
+### Amicable Numbers
+Amicable numbers are a pair of numbers with the following property: the sum of all of the proper divisors of the first number (not including itself) exactly equals the **second number** while the sum of all of the proper divisors of the second number (not including itself) likewise equals the **first number**.
+
+For example let's show that 220 & 284 are amicable numbers:
+First we find the proper divisors of 220:
+
+1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110
+
+Now find the proper divisors of 284:
+
+1, 2, 4, 71, 142
+### Narcissistic numbers
+By definition, a narcissistic number is full of itself. A narcissistic number is the sum of its own digits each raised to the power of the number of digits.
+153 = 1^3 + 5^3 + 3^3 = 153
 ### Array
 Create an array
 ```javascript
@@ -82,10 +103,6 @@ var pikachuSkill = ["Bite","Thunder Bolt","Volt Tackle","Thunderrrr!"]
 - Delete `belongto` property
 
 ### Function
-### Print all even number
-### Prinht all Special two digit number
-A special two-digit number is a number such that when the sum of the digits of the number is added to the product of its digits, the result is equal to the original two-digit number.
-### Print all prime number
 ### Print n Factorial
 ### Remove all dollar sign of a string
 ```javascript
@@ -115,9 +132,9 @@ Array.prototype.myMap = function(callback){
 ```
 ### Triangular Number Sequence
 This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: `1, 3, 6, 10, 15`. Write a function that converts n number of places with its corresponding number.
-```javascript 
+```javascript
 function triangle(n) {
-	
+
 }
 ```
 # Data Structure & Algorithms
