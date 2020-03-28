@@ -72,16 +72,26 @@ By definition, a narcissistic number is full of itself. A narcissistic number is
 ### Array
 Create an array
 ```javascript
-var Pokemon=new ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
+var Pokemon= ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata"]
 ```
 - Print the pokemon which can fly and use fire
 - Remove the rat out of the array and add pikachu at last of array
 - Add 1 Meow 2 to the head of the array
 
-### Object
+### Create an program that help the boss manage her shop
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 
-### Create an program that help the boss manage her shop
+#strand
+
+![abc](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/object/object_ex.png?raw=true)
+
+- Add `pocket` - an array `"seashell", "strange berry", và "lint".`
+
+- delete `dagger` in `backpack`.
+
+- add 50 gold
+
+- delete all infomation about pouch.
 
 ### Object
 ```javascript
