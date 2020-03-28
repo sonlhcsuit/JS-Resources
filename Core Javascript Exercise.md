@@ -81,18 +81,6 @@ var Pokemon= ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Chariz
 ### Create an program that help the boss manage her shop
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 
-#strand
-
-![abc](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/object/object_ex.png?raw=true)
-
-- Add `pocket` - an array `"seashell", "strange berry", và "lint".`
-
-- delete `dagger` in `backpack`.
-
-- add 50 gold
-
-- delete all infomation about pouch.
-
 ### Object
 ```javascript
 var pokemon = {
@@ -111,6 +99,21 @@ var pikachuSkill = ["Bite","Thunder Bolt","Volt Tackle","Thunderrrr!"]
 - Speed is wrong, fix it (reduce to 60)
 - Pikachu has no skill, he can't handle a battle. Help him by add `pikachuSkill` to Pikachu as `skill` property
 - Delete `belongto` property
+
+
+### Follow instructions
+
+![abc](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/object/object_ex.png?raw=true)
+
+- Add `pocket` - an array `"seashell", "strange berry", và "lint".`
+
+- delete `dagger` in `backpack`.
+
+- add 50 gold
+
+- delete all infomation about pouch.
+
+
 
 ### Function
 ### Print n Factorial
