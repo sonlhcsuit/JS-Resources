@@ -121,6 +121,29 @@ var Pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "
 
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 
+
+### Array method
+
+``` javascript
+var Pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata"]
+Pokemon.map()
+Pokemon.filter()
+Pokemon.reduce()
+Pokemon.forEach()
+```
+
+### Write your callback!!!
+
+``` javascript
+Array.prototype.myMap = function(callback) {
+    var newArray = [];
+    // Only change code below this line
+
+    // Only change code above this line
+    return newArray;
+};
+```
+
 ### Object
 
 ``` javascript
@@ -167,27 +190,88 @@ removeDollarSign('$80% percent of $life is to show $up')
 
 hint: You can iterate through an string (character by character) by doing the same as array([])
 
-### Array method
+
+### Binary Agents
+
+Return an English translated sentence of the passed binary string.
+
+The binary string will be space separated.
 
 ``` javascript
-var Pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata"]
-Pokemon.map()
-Pokemon.filter()
-Pokemon.reduce()
-Pokemon.forEach()
+function binaryAgent(str) {
+    return str;
+}
+binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
 ```
 
-### Write your callback!!!
+### Steamroll Array 
+
+Flatten a nested array. You must account for varying levels of nesting.
 
 ``` javascript
-Array.prototype.myMap = function(callback) {
-    var newArray = [];
-    // Only change code below this line
-
-    // Only change code above this line
-    return newArray;
-};
+function steamrollArray(arr) {
+    return arr;
+}
+steamrollArray([1, [2],
+    [3, [
+        [4]
+    ]]
+]);
 ```
+
+### Unique element
+
+Write a JavaScript function to find the unique elements from two arrays
+
+``` javascript
+function difference(arr) {
+    return arr;
+}
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+//["1", "2", "3", "10", "100"]
+```
+
+### Diff Two Arrays
+
+Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
+
+``` javascript
+function diffArray(arr1, arr2) {
+    var newArr = [];
+    return newArr;
+}
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); // [4]
+```
+
+### DNA Pairing
+
+The DNA strand is missing the pairing element. Take each character, get its pair, and return the remain DNA.
+Base pairs are a pair of A-T and C-G. Match the missing element to the provided character.
+
+``` javascript
+function pairElement(str) {
+    return str;
+}
+pairElement("GCG"); //CGC
+```
+
+### Sum All Odd Fibonacci Numbers
+
+Given a positive integer `num` , return the sum of all odd Fibonacci numbers that are less than or equal to `num` .
+
+The first two numbers in the Fibonacci sequence are `1` and `1` . Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+
+For example, `sumFibs(10)` should return 10 because all odd Fibonacci numbers less than or equal to 10 are `1` , `1` , `3` , and `5` .
+
+``` javascript
+function sumFibs(num) {
+    return num;
+}
+sumFibs(4000000); //4613732
+```
+
+# Data Structure & Algorithms
+
 
 ### The Recamán Sequence
 
@@ -233,7 +317,6 @@ recamanIndex(3)➞ 2
 recamanIndex(7)➞ 5
 ```
 
-# Data Structure & Algorithms
 
 ### Profile Lookup
 
@@ -354,6 +437,12 @@ For males take the day of birth adding one zero at the start if is less than 10 
 For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
 Examples
 ```javascript
+const months = { 1: "A", 2: "B", 3: "C", 4: "D", 5: "E", 6: "H",
+7: "L", 8: "M", 9: "P", 10: "R", 11: "S", 12: "T" }
+```
+
+
+```javascript
 fiscalCode({
   name: "Matt",
   surname: "Edabit",
@@ -374,45 +463,6 @@ fiscalCode({
   gender: "M",
   dob: "16/1/1928"
 }) ➞ "MSOMKY28A16"
-```
-
-### Diff Two Arrays
-
-Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
-
-``` javascript
-function diffArray(arr1, arr2) {
-    var newArr = [];
-    return newArr;
-}
-diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); // [4]
-```
-
-### DNA Pairing
-
-The DNA strand is missing the pairing element. Take each character, get its pair, and return the remain DNA.
-Base pairs are a pair of A-T and C-G. Match the missing element to the provided character.
-
-``` javascript
-function pairElement(str) {
-    return str;
-}
-pairElement("GCG"); //CGC
-```
-
-### Sum All Odd Fibonacci Numbers
-
-Given a positive integer `num` , return the sum of all odd Fibonacci numbers that are less than or equal to `num` .
-
-The first two numbers in the Fibonacci sequence are `1` and `1` . Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
-
-For example, `sumFibs(10)` should return 10 because all odd Fibonacci numbers less than or equal to 10 are `1` , `1` , `3` , and `5` .
-
-``` javascript
-function sumFibs(num) {
-    return num;
-}
-sumFibs(4000000); //4613732
 ```
 
 ### Sexagenary Cycle (Chinese Zodiac)
@@ -457,46 +507,6 @@ sexagenary(1927)➞
 
 sexagenary(1974)➞
 "Wood Tiger"
-```
-
-### Binary Agents
-
-Return an English translated sentence of the passed binary string.
-
-The binary string will be space separated.
-
-``` javascript
-function binaryAgent(str) {
-    return str;
-}
-binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
-```
-
-### Binary AgentsPassed
-
-Flatten a nested array. You must account for varying levels of nesting.
-
-``` javascript
-function steamrollArray(arr) {
-    return arr;
-}
-steamrollArray([1, [2],
-    [3, [
-        [4]
-    ]]
-]);
-```
-
-### Unique element
-
-Write a JavaScript function to find the unique elements from two arrays
-
-``` javascript
-function difference(arr) {
-    return arr;
-}
-console.log(difference([1, 2, 3], [100, 2, 1, 10]));
-//["1", "2", "3", "10", "100"]
 ```
 
 ### Panlindrome checker
