@@ -281,6 +281,7 @@ function lookUpProfile(name, prop) {
 lookUpProfile("Akira", "likes");
 ```
 
+
 ### Prime Factorization
 
 Return the Prime Factorization of the provided integer.
@@ -317,7 +318,7 @@ semiprime(97)➞
 "Neither"
 ```
 
-### Find the Longest Word in a StringPassed
+### Find the Longest Word in a String
 
 Return the length of the longest word in the provided sentence.
 Your response should be a number.
@@ -329,7 +330,53 @@ function findLongestWordLength(str) {
 findLongestWordLength("The quick brown fox jumped over the lazy dog"); //6 - jumped
 ```
 
-### Diff Two ArraysPassed
+### The Fiscal Code
+Each person in Italy has an unique identifying ID code issued by the national tax office after the birth registration: the Fiscal Code (Codice Fiscale). Check the Resources tab for more info on this.
+
+Given an object containing the personal data of a person (name, surname, gender and date of birth) return the 11 code characters as a string following these steps:
+
+Generate 3 capital letters from the surname, if it has:
+
+At least 3 consonants then the first three consonants are used. (Newman -> NWM).
+Less than 3 consonants then vowels will replace missing characters in the same order they appear (Fox -> FXO | Hope -> HPO).
+Less than three letters then "X" will take the third slot after the consonant and the vowel (Yu -> YUX).
+Generate 3 capital letters from the name, if it has:
+
+Exactly 3 consonants then consonants are used in the order they appear (Matt -> MTT).
+More than 3 consonants then first, third and fourth consonant are used (Samantha -> SNT | Thomas -> TMS).
+Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).
+Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
+Generate 2 numbers, 1 letter and 2 numbers from date of birth and gender:
+
+Take the last two digits of the year of birth (1985 -> 85).
+Generate a letter corresponding to the month of birth (January -> A | December -> T) using the table for conversion included in the code.
+For males take the day of birth adding one zero at the start if is less than 10 (any 9th day -> 09 | any 20th day -> 20).
+For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
+Examples
+```javascript
+fiscalCode({
+  name: "Matt",
+  surname: "Edabit",
+  gender: "M",
+  dob: "1/1/1900"
+}) ➞ "DBTMTT00A01"
+
+fiscalCode({
+  name: "Helen",
+  surname: "Yu",
+  gender: "F",
+  dob: "1/12/1950"
+}) ➞ "YUXHLN50T41"
+
+fiscalCode({
+  name: "Mickey",
+  surname: "Mouse",
+  gender: "M",
+  dob: "16/1/1928"
+}) ➞ "MSOMKY28A16"
+```
+
+### Diff Two Arrays
 
 Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 
@@ -341,7 +388,7 @@ function diffArray(arr1, arr2) {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); // [4]
 ```
 
-### DNA PairingPassed
+### DNA Pairing
 
 The DNA strand is missing the pairing element. Take each character, get its pair, and return the remain DNA.
 Base pairs are a pair of A-T and C-G. Match the missing element to the provided character.
@@ -353,7 +400,7 @@ function pairElement(str) {
 pairElement("GCG"); //CGC
 ```
 
-### Sum All Odd Fibonacci NumbersPassed
+### Sum All Odd Fibonacci Numbers
 
 Given a positive integer `num` , return the sum of all odd Fibonacci numbers that are less than or equal to `num` .
 
@@ -412,7 +459,7 @@ sexagenary(1974)➞
 "Wood Tiger"
 ```
 
-### Binary AgentsPassed
+### Binary Agents
 
 Return an English translated sentence of the passed binary string.
 
@@ -440,7 +487,7 @@ steamrollArray([1, [2],
 ]);
 ```
 
-### unique element
+### Unique element
 
 Write a JavaScript function to find the unique elements from two arrays
 
