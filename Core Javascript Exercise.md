@@ -69,6 +69,16 @@ Now find the proper divisors of 284:
 ### Narcissistic numbers
 By definition, a narcissistic number is full of itself. A narcissistic number is the sum of its own digits each raised to the power of the number of digits.
 153 = 1^3 + 5^3 + 3^3 = 153
+
+### Triangular Number Sequence
+This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: `1, 3, 6, 10, 15`. Write a function that converts n number of places with its corresponding number.
+```javascript
+function triangle(n) {
+
+}
+```
+
+
 ### Array
 Create an array
 ```javascript
@@ -142,13 +152,6 @@ Array.prototype.myMap = function(callback){
   // Only change code above this line
   return newArray;
 };
-```
-### Triangular Number Sequence
-This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: `1, 3, 6, 10, 15`. Write a function that converts n number of places with its corresponding number.
-```javascript
-function triangle(n) {
-
-}
 ```
 
 ### The Recamán Sequence
@@ -249,6 +252,22 @@ function PrimeFactorization(num) {
   return num;
 }
 PrimeFactorization(5);
+```
+
+### Semiprimes
+A semiprime is a composite number that is the product of two primes. Apart from these two primes, its only other proper (non-self) divisor is 1.
+
+The two prime factors of a semiprime can be the same number (e.g. the semiprime 49 is the product of 7x7). A semiprime that has two distinct prime factors is called a squarefree semiprime.
+
+Create a function that takes a number and returns "Squarefree Semiprime", "Semiprime", or "Neither".
+
+Examples
+```javascript
+semiprime(49) ➞ "Semiprime"
+
+semiprime(15) ➞ "Squarefree Semiprime"
+
+semiprime(97) ➞ "Neither"
 ```
 
 ### Find the Longest Word in a StringPassed
