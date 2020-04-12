@@ -363,8 +363,7 @@ lookUpProfile("Akira", "likes");
 ### Prime Factorization
 
 Return the Prime Factorization of the provided integer.
-If the integer is represented with the letter n, a Prime Factorization is the product of all positive integers less than or equal to n.
-Prime Factorization are often represented with the shorthand notation n!
+If the integer is represented with the letter n, can be represented as the product of positive prime integers less than n.Print it.
 For example: `15=5*3` , `20 = 5*2*2` , `126 =7*3*3*2 ` 
 Only integers greater than or equal to zero will be supplied to the function.
 
