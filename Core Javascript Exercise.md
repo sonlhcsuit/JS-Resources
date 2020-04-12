@@ -121,7 +121,6 @@ var Pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "
 
 ![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 
-
 ### Array method
 
 ``` javascript
@@ -189,7 +188,6 @@ removeDollarSign('$80% percent of $life is to show $up')
 ```
 
 hint: You can iterate through an string (character by character) by doing the same as array([])
-
 
 ### Binary Agents
 
@@ -272,7 +270,6 @@ sumFibs(4000000); //4613732
 
 # Data Structure & Algorithms
 
-
 ### The Recamán Sequence
 
 The Recamán Sequence is a numeric sequence that starts always with 0. The position of a positive integer in the sequence, or Recamán Index, can be established with the following algorithm:
@@ -316,7 +313,6 @@ recamanIndex(3)➞ 2
 
 recamanIndex(7)➞ 5
 ```
-
 
 ### Profile Lookup
 
@@ -364,13 +360,12 @@ function lookUpProfile(name, prop) {
 lookUpProfile("Akira", "likes");
 ```
 
-
 ### Prime Factorization
 
 Return the Prime Factorization of the provided integer.
 If the integer is represented with the letter n, a Prime Factorization is the product of all positive integers less than or equal to n.
 Prime Factorization are often represented with the shorthand notation n!
-For example: `5! = 1 * 2 * 3 * 4 * 5 = 120` 
+For example: `15=5*3` , `20 = 5*2*2` , `126 =7*3*3*2 ` 
 Only integers greater than or equal to zero will be supplied to the function.
 
 ``` javascript
@@ -414,13 +409,14 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog"); //6 - jum
 ```
 
 ### The Fiscal Code
+
 Each person in Italy has an unique identifying ID code issued by the national tax office after the birth registration: the Fiscal Code (Codice Fiscale). Check the Resources tab for more info on this.
 
 Given an object containing the personal data of a person (name, surname, gender and date of birth) return the 11 code characters as a string following these steps:
 
 Generate 3 capital letters from the surname, if it has:
 
-At least 3 consonants then the first three consonants are used. (Newman -> NWM).
+At least 3 consonants then the first three consonants are used.(Newman -> NWM).
 Less than 3 consonants then vowels will replace missing characters in the same order they appear (Fox -> FXO | Hope -> HPO).
 Less than three letters then "X" will take the third slot after the consonant and the vowel (Yu -> YUX).
 Generate 3 capital letters from the name, if it has:
@@ -436,33 +432,48 @@ Generate a letter corresponding to the month of birth (January -> A | December -
 For males take the day of birth adding one zero at the start if is less than 10 (any 9th day -> 09 | any 20th day -> 20).
 For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
 Examples
-```javascript
-const months = { 1: "A", 2: "B", 3: "C", 4: "D", 5: "E", 6: "H",
-7: "L", 8: "M", 9: "P", 10: "R", 11: "S", 12: "T" }
+
+``` javascript
+const months = {
+    1: "A",
+    2: "B",
+    3: "C",
+    4: "D",
+    5: "E",
+    6: "H",
+    7: "L",
+    8: "M",
+    9: "P",
+    10: "R",
+    11: "S",
+    12: "T"
+}
 ```
 
-
-```javascript
+``` javascript
 fiscalCode({
-  name: "Matt",
-  surname: "Edabit",
-  gender: "M",
-  dob: "1/1/1900"
-}) ➞ "DBTMTT00A01"
-
-fiscalCode({
-  name: "Helen",
-  surname: "Yu",
-  gender: "F",
-  dob: "1/12/1950"
-}) ➞ "YUXHLN50T41"
+    name: "Matt",
+    surname: "Edabit",
+    gender: "M",
+    dob: "1/1/1900"
+})➞
+"DBTMTT00A01"
 
 fiscalCode({
-  name: "Mickey",
-  surname: "Mouse",
-  gender: "M",
-  dob: "16/1/1928"
-}) ➞ "MSOMKY28A16"
+    name: "Helen",
+    surname: "Yu",
+    gender: "F",
+    dob: "1/12/1950"
+})➞
+"YUXHLN50T41"
+
+fiscalCode({
+    name: "Mickey",
+    surname: "Mouse",
+    gender: "M",
+    dob: "16/1/1928"
+})➞
+"MSOMKY28A16"
 ```
 
 ### Sexagenary Cycle (Chinese Zodiac)
@@ -585,30 +596,30 @@ telephoneCheck("555-555-5555");
 
 | Invoke                              | answer     |
 |-------------------------------------|------------|
-| telephoneCheck("555-555-5555")      | a boolean.|
-| telephoneCheck("1 555-555-5555")    | true.|
-| telephoneCheck("1 (555) 555-5555")  | true.|
-| telephoneCheck("5555555555")        | true.|
-| telephoneCheck("555-555-5555")      | true.|
-| telephoneCheck("(555)555-5555")     | true.|
-| telephoneCheck("1(555)555-5555")    | true.|
-| telephoneCheck("555-5555")          | false.|
-| telephoneCheck("5555555")           | false.|
-| telephoneCheck("1 555 555 5555")    | true.|
-| telephoneCheck("1 456 789 4444")    | true.|
-| telephoneCheck("123**&!!asdf#")     | false.|
-| telephoneCheck("55555555")          | false.|
-| telephoneCheck("(6054756961)")      | false |
-| telephoneCheck("2 (757) 622-7382")  | false.|
-| telephoneCheck("0 (757) 622-7382")  | false.|
-| telephoneCheck("-1 (757) 622-7382") | false |
-| telephoneCheck("2 757 622-7382")    | false.|
-| telephoneCheck("10 (757) 622-7382") | false.|
-| telephoneCheck("27576227382")       | false.|
-| telephoneCheck("(275)76227382")     | false.|
-| telephoneCheck("2(757)6227382")     | false.|
-| telephoneCheck("2(757)622-7382")    | false.|
-| telephoneCheck("(555)5(55?)-5555")  | false.|
+| telephoneCheck("555-555-5555")      | a boolean. |
+| telephoneCheck("1 555-555-5555")    | true.      |
+| telephoneCheck("1 (555) 555-5555")  | true.      |
+| telephoneCheck("5555555555")        | true.      |
+| telephoneCheck("555-555-5555")      | true.      |
+| telephoneCheck("(555)555-5555")     | true.      |
+| telephoneCheck("1(555)555-5555")    | true.      |
+| telephoneCheck("555-5555")          | false.     |
+| telephoneCheck("5555555")           | false.     |
+| telephoneCheck("1 555 555 5555")    | true.      |
+| telephoneCheck("1 456 789 4444")    | true.      |
+| telephoneCheck("123**&!!asdf#")     | false.     |
+| telephoneCheck("55555555")          | false.     |
+| telephoneCheck("(6054756961)")      | false      |
+| telephoneCheck("2 (757) 622-7382")  | false.     |
+| telephoneCheck("0 (757) 622-7382")  | false.     |
+| telephoneCheck("-1 (757) 622-7382") | false      |
+| telephoneCheck("2 757 622-7382")    | false.     |
+| telephoneCheck("10 (757) 622-7382") | false.     |
+| telephoneCheck("27576227382")       | false.     |
+| telephoneCheck("(275)76227382")     | false.     |
+| telephoneCheck("2(757)6227382")     | false.     |
+| telephoneCheck("2(757)622-7382")    | false.     |
+| telephoneCheck("(555)5(55?)-5555")  | false.     |
 
 ### Cash Register
 
