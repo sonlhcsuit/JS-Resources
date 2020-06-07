@@ -17,7 +17,6 @@ A weather application to get the temperature, weather condition and whether it i
 
 - [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [openweather](https://openweathermap.org/api)
-- [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [accuweather](https://developer.accuweather.com/)
 - [axios](https://github.com/axios/axios)
 - [bootstrap](https://getbootstrap.com/)
