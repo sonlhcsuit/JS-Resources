@@ -1,66 +1,6 @@
-# Beginners Excersie
+# Beginners
 
 ----------------
-
-### Which variable was correctly declared?
-
-``` javascript
-let
-break;
-var Break;
-let year - of -birth;
-const MYFAVORITE;
-const tech_kids;
-const 4 ever;
-```
-
-### What is the answer of the each following code block?
-
-``` javascript
-let x = 5;
-let x = 10;
-```
-
-``` javascript
-let x = 5;
-x = 10;
-```
-
-### What is the answer of the each following code block?
-
-``` javascript
-let myFeel = "happy";
-console.log("I feel ${myFeel}");
-```
-
-``` javascript
-let x = "10 is greater than ";
-let y = "5";
-console.log(x + y)
-```
-
-``` javascript
-console.log( `Result of 1+2 is ${1+2}` )
-```
-
-### How about branching?
-
-``` javascript
-let age = prompt("Your age? ")
-if (age < 10) {
-    console.log("You are Baby!");
-} else if (age < 18) {
-    console.log("You are Teenager");
-} else {
-    console.log("You are Adult");
-}
-```
-
-What would going on if we have 10 options?
-
-* [ ] 10 if & else
-* [ ] New Approaches
-
 ### Calculate BMI of 1 human and print answer
 
 ### Quadratic expression Calculate
@@ -358,6 +298,25 @@ function lookUpProfile(name, prop) {
 }
 
 lookUpProfile("Akira", "likes");
+```
+
+### Hailstone Sequence 
+Write the function that can generate hail stone from an number  
+Hailstone Sequences follow these rules:  
+If a number is even, next number is divided by 2  
+If a number is odd, next number multiplied it by 3 and add 1.  
+
+For example, for a starting number of 7, the sequence is 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1, 4, 2, 1, ....   
+Such sequences are called hailstone sequences because the values typically rise and fall, somewhat analogously to a hailstone inside a cloud.  
+
+Remember that hailstone sequence always end at 1!
+you can use arrayname.push(value) to add an value to the end of the arrayname (arrayname is an array)
+```javascript 
+function Hailstone(number){
+    let sequence = []
+    return sequence
+}
+
 ```
 
 ### Prime Factorization
