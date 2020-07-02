@@ -379,7 +379,7 @@ Less than 3 consonants then vowels will replace missing characters in the same o
 Less than three letters then "X" will take the third slot after the consonant and the vowel (Yu -> YUX).
 
     
-Generate 3 capital letters from the name, if it has:
+Generate 3 capital letters from the name, if it has:          
 Exactly 3 consonants then consonants are used in the order they appear (Matt -> MTT).    
 More than 3 consonants then first, third and fourth consonant are used (Samantha -> SNT | Thomas -> TMS).      
 Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).     
