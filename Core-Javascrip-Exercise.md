@@ -208,7 +208,7 @@ function sumFibs(num) {
 sumFibs(4000000); //4613732
 ```
 
-# Data Structure & Algorithms
+# Problems Solving
 
 ### The Recamán Sequence
 
@@ -613,6 +613,3 @@ checkCashRegister(19.5, 20, [
 ]);
 //{status: "OPEN", change: [["QUARTER", 0.5]]}
 ```
-
-# Async/ Await? Promise WTF ?
-
