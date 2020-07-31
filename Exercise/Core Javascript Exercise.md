@@ -17,51 +17,39 @@ Write a program that uses console.log to print all the numbers from 1 to 100, wi
 
 > ### Chessboard
 Write a program that creates a string that represents an n×n grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.This is an example of 8x8 chessboard:   
-\# \# \# \#  
- \# \# \# \#  
-\# \# \# \#  
- \# \# \# \#  
-\# \# \# \#  
- \# \# \# \#  
-\# \# \# \#  
- \# \# \# \#  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Calculate BMI of 1 human and print answer
-
-### Quadratic expression Calculate
-Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
-
-### Loops
-
-### Print all even number
-
-### Print all Special two digit number
+\#\*\#\*\#\*\#\*  
+\*\#\*\#\*\#\*\#  
+\#\*\#\*\#\*\#\*  
+\*\#\*\#\*\#\*\#  
+\#\*\#\*\#\*\#\*  
+\*\#\*\#\*\#\*\#  
+\#\*\#\*\#\*\#\*  
+\*\#\*\#\*\#\*\#   
+> ### Special two digit number
 
 A special two-digit number is a number such that when the sum of the digits of the number is added to the product of its digits, the result is equal to the original two-digit number.
 
-### Print all prime number
+> ### Prime number
 
-### Perfect Number
+Print all prime number to 100
+
+## ***Functions***
+
+> ### Beans counting
+Write a function *countBs* that takes a string as its only argument and returns a number that indicates how many uppercase “**B**” characters there are in the string.
+Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “**B**” characters). Rewrite countBs to make use of this new function.
+
+
+> ### BMI Calculator
+Calculate BMI of 1 human and print answer
+
+> ### Quadratic expression Calculate
+Take a b c as arguments then solve Quadratic Expression, print delta's status & solution(s)
+
+> ### Perfect Number
 A perfect number is a positive integer that is equal to the sum of it divisors. Number because the sum of the proper divisors in each case is equal to the number; the proper divisors of 6 are 1, 2, and 3, and their sum is 6.(496)
 
-### Amicable Numbers
+> ### Amicable Numbers
 
 Amicable numbers are a pair of numbers with the following property: the sum of all of the proper divisors of the first number (not including itself) exactly equals the **second number** while the sum of all of the proper divisors of the second number (not including itself) likewise equals the **first number**.
 
@@ -74,12 +62,12 @@ Now find the proper divisors of 284:
 
 1, 2, 4, 71, 142
 
-### Narcissistic numbers
+> ### Narcissistic numbers
 
 By definition, a narcissistic number is full of itself. A narcissistic number is the sum of its own digits each raised to the power of the number of digits.
 153 = 1^3 + 5^3 + 3^3 = 153
 
-### Triangular Number Sequence
+> ### Triangular Number Sequence
 
 This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: `1, 3, 6, 10, 15` . Write a function that converts n number of places with its corresponding number.
 
