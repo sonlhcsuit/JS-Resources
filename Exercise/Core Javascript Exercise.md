@@ -1,5 +1,4 @@
 # Beginners
-
 ----------------
 ## ***Loops*** 
 > ### Right-angled triangle
