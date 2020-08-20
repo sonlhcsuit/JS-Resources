@@ -1,5 +1,3 @@
-# Beginners
-----------------
 ## ***Loops*** 
 > ### Right-angled triangle
 Write a loop that makes seven calls to *console.log* to output the following triangle:
@@ -24,6 +22,7 @@ Write a program that creates a string that represents an n×n grid, using newlin
 \*\#\*\#\*\#\*\#  
 \#\*\#\*\#\*\#\*  
 \*\#\*\#\*\#\*\#   
+
 > ### Special two digit number
 
 A special two-digit number is a number such that when the sum of the digits of the number is added to the product of its digits, the result is equal to the original two-digit number.
@@ -33,10 +32,45 @@ A special two-digit number is a number such that when the sum of the digits of t
 Print all prime number to 100
 
 ## ***Functions***
+### Remove all dollar sign of a string
+
+``` javascript
+function removeDollarSign(text) {};
+removeDollarSign('$80% percent of $life is to show $up')
+```
+
+hint: You can iterate through an string (character by character) by doing the same as array([])
+
+### Binary Agents
+
+Return an English translated sentence of the passed binary string.
+
+The binary string will be space separated.
+
+``` javascript
+function binaryAgent(str) {
+    return str;
+}
+binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
+```
+
 
 > ### Beans counting
-Write a function *countBs* that takes a string as its only argument and returns a number that indicates how many uppercase “**B**” characters there are in the string.
-Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “**B**” characters). Rewrite countBs to make use of this new function.
+Write a function `countBs` that takes a string as its only argument and returns a number that indicates how many uppercase “**B**” characters there are in the string.
+Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “**B**” characters). Rewrite `countBs` to make use of this new function.
+```js
+
+function countBs(input_as_string){
+    return 0
+}
+countBs("aaaaaaaaaaaaaaa")
+
+
+function countChar(input_as_string,char){
+    return 0
+}
+countChar("aaaaaaaaaaaaaaa","a")
+```
 
 
 > ### BMI Calculator
@@ -141,46 +175,6 @@ var pikachuSkill = ["Bite", "Thunder Bolt", "Volt Tackle", "Thunderrrr!"]
 
 * delete all infomation about pouch.
 
-### Function
-
-### Print n Factorial
-
-### Remove all dollar sign of a string
-
-``` javascript
-function removeDollarSign(text) {};
-removeDollarSign('$80% percent of $life is to show $up')
-```
-
-hint: You can iterate through an string (character by character) by doing the same as array([])
-
-### Binary Agents
-
-Return an English translated sentence of the passed binary string.
-
-The binary string will be space separated.
-
-``` javascript
-function binaryAgent(str) {
-    return str;
-}
-binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
-```
-
-### Steamroll Array 
-
-Flatten a nested array. You must account for varying levels of nesting.
-
-``` javascript
-function steamrollArray(arr) {
-    return arr;
-}
-steamrollArray([1, [2],
-    [3, [
-        [4]
-    ]]
-]);
-```
 
 ### Unique element
 
@@ -197,6 +191,21 @@ console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 ---------
 
 # Intermedia
+
+### Steamroll Array 
+
+Flatten a nested array. You must account for varying levels of nesting.
+
+``` javascript
+function steamrollArray(arr) {
+    return arr;
+}
+steamrollArray([1, [2],
+    [3, [
+        [4]
+    ]]
+]);
+```
 
 ### Diff Two Arrays
 
