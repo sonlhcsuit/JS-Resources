@@ -43,7 +43,7 @@ Complete the **sockMerchant** function in the editor. It must return an integer 
 
 The first line contains an integer ***n***, the number of socks represented in ***arr***.
 
-The second line contains ***n*** space-separated integers describing the colors ***arr[i]***
+The second line contains ***n*** space-separated integers describing the colors ***arr[i]*** of the socks in the pile.
 
 **Sample Input**
 
