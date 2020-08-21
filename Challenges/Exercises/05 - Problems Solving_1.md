@@ -1,3 +1,5 @@
+# Problems Solving
+__________________________
 > ### Distance to Nearest Vowel
 Write a function that takes in a string and for each character, returns the distance to the nearest vowel. If the character is a vowel itself, return 0.
 
@@ -87,7 +89,7 @@ recamanIndex(3)➞ 2
 recamanIndex(7)➞ 5
 ```
 
-### Profile Lookup
+> ### Profile Lookup
 
 We have an array of objects representing different people in our contacts lists.
 A `lookUpProfile` function that takes `name` and a property ( `prop` ) as arguments has been pre-written for you.
@@ -133,7 +135,7 @@ function lookUpProfile(name, prop) {
 lookUpProfile("Akira", "likes");
 ```
 
-### Hailstone Sequence 
+> ### Hailstone Sequence 
 Write the function that can generate hail stone from an number  
 Hailstone Sequences follow these rules:  
 If a number is even, next number is divided by 2  
@@ -152,7 +154,7 @@ function Hailstone(number){
 
 ```
 
-### Prime Factorization
+> ### Prime Factorization
 
 Return the Prime Factorization of the provided integer.
 If the integer is represented with the letter n, can be represented as the product of positive prime integers less than n.Print it.
@@ -166,7 +168,7 @@ function PrimeFactorization(num) {
 PrimeFactorization(5);
 ```
 
-### Semiprimes
+> ### Semiprimes
 
 A semiprime is a composite number that is the product of two primes. Apart from these two primes, its only other proper (non-self) divisor is 1.
 
@@ -187,7 +189,7 @@ semiprime(97)➞
 "Neither"
 ```
 
-### Find the Longest Word in a String
+> ### Find the Longest Word in a String
 
 Return the length of the longest word in the provided sentence.
 Your response should be a number.
@@ -199,7 +201,7 @@ function findLongestWordLength(str) {
 findLongestWordLength("The quick brown fox jumped over the lazy dog"); //6 - jumped
 ```
 
-### The Fiscal Code
+> ### The Fiscal Code
 
 Each person in Italy has an unique identifying ID code issued by the national tax office after the birth registration: the Fiscal Code (Codice Fiscale). Check the Resources tab for more info on this.
 
@@ -269,180 +271,3 @@ fiscalCode({
 "MSOMKY28A16"
 ```
 
-### Sexagenary Cycle (Chinese Zodiac)
-
-In early recorded Chinese history, time was reckoned using the sexagenary (60-year) cycle, generated from two subcycles:
-
-Five heavenly stems (elements) in this order: wood, fire, earth, metal, water. The stems change every two years.
-Twelve earthly branches (animals) in this order: rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig. The branches change yearly.
-The combinations between these two sub-cycles result in a 60-year cycle where no two years are the same — for example, the 5 years of the Rat have 5 different elements: 1924 Wood Rat, 1936 Fire Rat, 1948 Earth Rat, 1960 Metal Rat, 1972 Water Rat.
-
-The first 14 years of the current cycle are shown in the table below:
-
-| Gregorian Year | Stem  | Branch  |
-|----------------|-------|---------|
-| 1984           | Wood  | Rat     |
-| 1985           | Wood  | Ox      |
-| 1986           | Fire  | Tiger   |
-| 1987           | Fire  | Rabbit  |
-| 1988           | Earth | Dragon  |
-| 1989           | Earth | Snake   |
-| 1990           | Metal | Horse   |
-| 1991           | Metal | Sheep   |
-| 1992           | Water | Monkey  |
-| 1993           | Water | Rooster |
-| 1994           | Wood  | Dog     |
-| 1995           | Wood  | Pig     |
-| 1996           | Fire  | Rat     |
-| 1997           | Fire  | Ox      |
-
-These days, the sexagenary cycle is used mainly for historical celebrations and events, and in Chinese astrology. The Gregorian calendar is now the standard means of reckoning time.
-
-Create a function that takes a number representing a year in the Gregorian calendar, and returns a string consisting of the corresponding stem-and-branch combination in the sexagenary cycle.
-
-Examples
-
-``` javascript
-sexagenary(1971)➞
-"Metal Pig"
-
-sexagenary(1927)➞
-"Fire Rabbit"
-
-sexagenary(1974)➞
-"Wood Tiger"
-```
-
-### Panlindrome checker
-
-Complete the function to return `true` if the given string is a palindrome. Otherwise, return `false` .
-
-A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
-
-You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
-
-I'll pass strings with varying formats, such as `"racecar"` , `"RaceCar"` , and `"race CAR"` among others.
-
-We'll also pass strings with special symbols, such as `"2A3*3a2"` , `"2A3 3a2"` , and `"2_A3*3#A2"` .
-
-``` javascript
-function palindrome(str) {
-    return true;
-}
-palindrome("eye"); //true
-```
-
-[//]:<> (')
-
-### Roman Numeral Converter
-
-Complete the function to convert the given number into a roman numeral.
-All roman numerals answers should be provided in upper-case.
-
-``` javascript
-function convertToRoman(num) {
-    return num;
-}
-convertToRoman(97); //XCVII
-```
-
-### Caesars Cipher
-
-One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.
-
-A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.
-
-Write a function which takes a ROT13 encoded string as input and returns a decoded string.
-
-All letters will be uppercase. Do not transform any non-alphabetic character (i.e.spaces, punctuation), but do pass them on.
-
-``` javascript
-function rot13(str) {
-    return str;
-}
-rot13("PUNEVMNEQ"); //
-```
-
-### Telephone Number Validator
-
-Complete the function to return `true` if the passed string looks like a valid US phone number.
-
-The user may fill out the form field any way they choose as long as it has the format of a valid US number. The following are examples of valid formats for US numbers (refer to the tests below for other variants):
-
-``` 
-555-555-5555
-(555)555-5555
-(555) 555-5555
-555 555 5555
-5555555555
-1 555 555 5555
-```
-
-For this challenge you will be presented with a string such as `800-692-7753` or `8oo-six427676;laskdjf` . Your job is to validate or reject the US phone number based on any combination of the formats provided above. The area code is required. If the country code is provided, you must confirm that the country code is 1. Return `true` if the string is a valid US phone number; otherwise return `false` .
-
-``` javascript
-function telephoneCheck(str) {
-    return true;
-}
-telephoneCheck("555-555-5555");
-```
-
-| Invoke                              | answer     |
-|-------------------------------------|------------|
-| telephoneCheck("555-555-5555")      | a boolean. |
-| telephoneCheck("1 555-555-5555")    | true.      |
-| telephoneCheck("1 (555) 555-5555")  | true.      |
-| telephoneCheck("5555555555")        | true.      |
-| telephoneCheck("555-555-5555")      | true.      |
-| telephoneCheck("(555)555-5555")     | true.      |
-| telephoneCheck("1(555)555-5555")    | true.      |
-| telephoneCheck("555-5555")          | false.     |
-| telephoneCheck("5555555")           | false.     |
-| telephoneCheck("1 555 555 5555")    | true.      |
-| telephoneCheck("1 456 789 4444")    | true.      |
-| telephoneCheck("123**&!!asdf#")     | false.     |
-| telephoneCheck("55555555")          | false.     |
-| telephoneCheck("(6054756961)")      | false      |
-| telephoneCheck("2 (757) 622-7382")  | false.     |
-| telephoneCheck("0 (757) 622-7382")  | false.     |
-| telephoneCheck("-1 (757) 622-7382") | false      |
-| telephoneCheck("2 757 622-7382")    | false.     |
-| telephoneCheck("10 (757) 622-7382") | false.     |
-| telephoneCheck("27576227382")       | false.     |
-| telephoneCheck("(275)76227382")     | false.     |
-| telephoneCheck("2(757)6227382")     | false.     |
-| telephoneCheck("2(757)622-7382")    | false.     |
-| telephoneCheck("(555)5(55?)-5555")  | false.     |
-
-### Cash Register
-
-Design a cash register drawer function `checkCashRegister()` that accepts purchase price as the first argument `price` , payment as the second argument `cash` , and cash-in-drawer `cid` as the third argument.
-
-`cid` is a 2D array listing available currency.
-
-The checkCashRegister() function should always return an object with a status key and a change key.
-
-Return `{status: "INSUFFICIENT_FUNDS", change: []}` if cash-in-drawer is less than the change due, or if you cannot return the exact change.
-
-Return `{status: "CLOSED", change: [...]}` with cash-in-drawer as the value for the key change if it is equal to the change due.
-
-Otherwise, return {status: "OPEN", change: [... ]}, with the change due in coins and bills, sorted in highest to lowest order, as the value of the change key.
-
-``` javascript
-function checkCashRegister(price, cash, cid) {
-    var change;
-    return change;
-}
-checkCashRegister(19.5, 20, [
-    ["PENNY", 1.01],
-    ["NICKEL", 2.05],
-    ["DIME", 3.1],
-    ["QUARTER", 4.25],
-    ["ONE", 90],
-    ["FIVE", 55],
-    ["TEN", 20],
-    ["TWENTY", 60],
-    ["ONE HUNDRED", 100]
-]);
-//{status: "OPEN", change: [["QUARTER", 0.5]]}
-```

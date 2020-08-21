@@ -19,6 +19,7 @@ function removeLeadingTrailing(number) {
 	
 }
 ```
+
 > ### Prefixes vs. Suffixes
 Create two functions: `isPrefix(word, prefix)` and `isSuffix(word, -suffix)`.
 
@@ -44,6 +45,7 @@ function isSuffix(word, suffix) {
 	
 }
 ```
+
 > ### Strip URL Query Parameters
 
 Create a function that takes a URL (string), removes duplicate query parameters and parameters specified within.
@@ -54,6 +56,7 @@ function stripUrlParams(url, paramsToStrip) {
 	
 }
 ```
+
 > ### KixCodes
 KixCodes, it's a fast way to deliver letters and packages that can be scanned during the process.
 
@@ -73,6 +76,7 @@ kixCode(`Dijk, Antwoordnummer 80430, 2130 VA Hoofddorp`) ➞ `2130VA80430`
 ```
 ```js
 ```
+
 > ### Unravel all the Possibilities
 
 Unravel all the Possibilities
@@ -98,7 +102,7 @@ function unravel(mystring){
     return ""
 }
 ```
-> ### Rhyme Time
+
 Create a function that returns true if two lines rhyme and false otherwise. For the purposes of this exercise, two lines rhyme if the last word from each sentence contains the same vowels.
 
 ```js
