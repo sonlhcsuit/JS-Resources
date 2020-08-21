@@ -25,6 +25,74 @@ Pokemon.reduce()
 Pokemon.forEach()
 ```
 
+> ### Sock Merchant
+
+John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
+
+For example, there are ***n = 7*** socks with colors ***arr = [1, 2, 1, 2, 1, 3, 2]*** . There is one pair of color ***1*** and one of color ***2***. There are three odd socks left, one of each color. The number of pairs is ***2***.
+
+**Function Description**
+
+Complete the **sockMerchant** function in the editor. It must return an integer representing the number of matching pairs of socks that are available. 
+
+**sockMerchant** has the following parameter(s):
+* ***n***: the number of socks in the pile
+* ***arr***: the colors of each sock
+
+**Input Format**
+
+The first line contains an integer ***n***, the number of socks represented in ***arr***.
+
+The second line contains ***n*** space-separated integers describing the colors ***arr[i]*** of the socks in the pile.
+
+**Sample Input**
+
+``` javascript
+    let n = 9;
+    let arr = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+    function sockMerchant(n, arr) {
+        result = // Do something
+        return result;
+    }
+```
+**Sample Output**
+
+```
+    3
+```
+
+**Explanation**
+
+![sock.png](https://s3.amazonaws.com/hr-challenge-images/25168/1474122392-c7b9097430-sock.png)
+
+John can match three pairs of socks.
+
+
+>### Chunk An Array
+
+> Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
+
+**chunk()** has the following parameter(s):
+* ***arr***: An array containing as many elements as you want
+* ***size***: Is the length of each sub-array that you want to chunk
+
+**Sample Input**
+
+``` javascript
+    let size = 3;
+    let arr = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+    function chunk(arr, size) {
+        result = // Do something
+        return result;
+    }
+```
+
+**Sample Output**
+
+```
+   result = [[10, 20, 20], [10, 10, 30], [50, 10, 20]]
+```
+
 > ### Your onw HOFs 
 
 ``` javascript
@@ -36,6 +104,7 @@ Array.prototype.myMap = function(callback) {
     return newArray;
 };
 ```
+
 
 > ### Pocket Monster Lover 2 
 
