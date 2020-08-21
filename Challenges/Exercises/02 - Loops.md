@@ -184,7 +184,7 @@ You can expect always valid non-negative integers as input.
 > ### Check Magic Square
 A "magic square" is a square divided into smaller squares each containing a number, such that the numbers in each vertical, horizontal, and diagonal row add up to the same value.
 
-3x3 Magic Square
+3x3 Magic Square   
 <img src="https://edabit-challenges.s3.amazonaws.com/3x3magicsquare.png">
 
 Write a function that takes a 2D array, checks if it's a magic square and returns either true or false depending on the result.

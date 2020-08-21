@@ -11,7 +11,8 @@ function removeDollarSign(text) {
 removeDollarSign('$80% percent of $life is to show $up')
 ```
 
-hint: You can iterate through an string (character by character) by doing the same as array([])
+Hint:   
+You can iterate through an string (character by character) by doing the same as array([])
 
 > ### Binary Agents
 
@@ -55,7 +56,7 @@ When the conditions of the above statement are not met, will be added always the
 Repeat until the number of interest is found.
 Look at example below for the steps to do for to establish the Recamán Index of number 2:
 
-``` javascript
+``` js
 Sequence = [0]
 
 Last - Length = 0 - 1 = -1(lower than zero)
@@ -76,10 +77,12 @@ Sequence = [0, 1, 3, 6]
 Last - Length = 6 - 4 = 2(greater than 0 and not already in sequence)
 
 Sequence = [0, 1, 3, 6, 2]
-```
 
 // The Recaman Index of 2 is: 4
-Given a positive integer n, implement a function that returns its Recamán Index.
+// Given a positive integer n, implement a function that returns its Recamán Index.
+```
+
+
 
 ``` javascript
 recamanIndex(2)➞ 4
@@ -176,7 +179,6 @@ The two prime factors of a semiprime can be the same number (e.g.the semiprime 4
 
 Create a function that takes a number and returns "Squarefree Semiprime", "Semiprime", or "Neither".
 
-Examples
 
 ``` javascript
 semiprime(49)➞

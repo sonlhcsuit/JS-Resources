@@ -108,7 +108,7 @@ rolls([6, 1, 1]) ➞ 8
 // second roll was still 1 so the third roll doesn't count.
 ```
 
-Notes
+Notes   
 Even if a 6 is rolled after a 1, 6 isn't summed but the 6's "effect" still takes place.
 
 > ### Digitaldrome

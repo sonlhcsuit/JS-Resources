@@ -228,7 +228,8 @@ checkFlush(["10_S", "7_S", "9_H", "4_S", "3_S"], ["K_S", "Q_S"]) ➞ true // spa
 checkFlush(["3_S", "10_H", "10_D", "10_C", "10_S"], ["3_S", "4_D"]) ➞ false
 ```
 
-Hint: If there aren't at least 3 cards of the same suit on the table, there is zero chance of there being a flush.
+Hint:   
+If there aren't at least 3 cards of the same suit on the table, there is zero chance of there being a flush.
 
 
 > ### Water Jug Puzzle
