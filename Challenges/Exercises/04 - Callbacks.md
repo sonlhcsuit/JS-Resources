@@ -68,6 +68,31 @@ The second line contains ***n*** space-separated integers describing the colors 
 John can match three pairs of socks.
 
 
+>### Chunk An Array
+
+> Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
+
+**chunk()** has the following parameter(s):
+* ***arr***: An array containing as many elements as you want
+* ***size***: Is the length of each sub-array that you want to chunk
+
+**Sample Input**
+
+``` javascript
+    let size = 3;
+    let arr = [10, 20, 20, 10, 10, 30, 50, 10, 20];
+    function chunk(arr, size) {
+        result = // Do something
+        return result;
+    }
+```
+
+**Sample Output**
+
+```
+   result = [[10, 20, 20], [10, 10, 30], [50, 10, 20]]
+```
+
 > ### Your onw HOFs 
 
 ``` javascript
@@ -79,6 +104,7 @@ Array.prototype.myMap = function(callback) {
     return newArray;
 };
 ```
+
 
 > ### Pocket Monster Lover 2 
 
