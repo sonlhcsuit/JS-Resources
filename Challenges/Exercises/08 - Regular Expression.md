@@ -62,7 +62,7 @@ function stripUrlParams(url, paramsToStrip) {
 > ### KixCodes
 KixCodes, it's a fast way to deliver letters and packages that can be scanned during the process.
 
-Kix Code
+Kix Code  
 
 The code is a combination of: Postal code, House/box/call number and House appendage / suffix
 
