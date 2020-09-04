@@ -173,7 +173,53 @@ set([3, 3, 3, 2, 1]) ➞ [1, 2, 3]
 
 # ***Object***
 
-> ### Pocket Monster Lover 2 
+> ### 1. Profile Lookup
+
+We have an array of objects representing different people in our contacts lists.
+A `lookUpProfile` function that takes `name` and a property ( `prop` ) as arguments has been pre-written for you.
+The function should check if `name` is an actual contact's `firstName` and the given property ( `prop` ) is a property of that contact.
+If both are true, then return the `value` of that property.
+If `name` does not correspond to any contacts then return `"No such contact"` .
+If prop does not correspond to any valid properties of a contact found to match name then return `No such property` .
+
+``` js
+// Setup
+var contacts = [{
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+function lookUpProfile(name, prop) {
+    // Only change code below this line
+
+    // Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");
+```
+
+> ### 2. Pocket Monster Lover 2 
 
 ``` javascript
 var pokemon = {
@@ -195,7 +241,7 @@ var pikachuSkill = ["Bite", "Thunder Bolt", "Volt Tackle", "Thunderrrr!"]
 * Delete `belongto` property
 
 
-> ### Gaming
+> ### 3. Gaming
 
 ![abc](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/object/object_ex.png?raw=true)
 
@@ -207,10 +253,10 @@ var pikachuSkill = ["Bite", "Thunder Bolt", "Volt Tackle", "Thunderrrr!"]
 
 * delete all infomation about pouch.
 
-> ### Get Sum of People's Budget
+> ### 4. Get Sum of People's Budget
 Create the function that takes an array with objects and returns the sum of people's budgets.
 
-Examples
+```js
 getBudgets([
   { name: "John", age: 21, budget: 23000 },
   { name: "Steve",  age: 32, budget: 40000 },
@@ -222,8 +268,10 @@ getBudgets([
   { name: "Steve",  age: 32, budget: 32000 },
   { name: "Martin",  age: 16, budget: 1600 }
 ]) ➞ 62600
+```
 
-> ### Distance Between Two Points
+
+> ### 5. Distance Between Two Points
 In this challenge, you have to find the distance between two points placed on a Cartesian plane. Knowing the coordinates of both the points, you have to apply the Pythagorean theorem to find the distance between them.
 
 <img src="../../sources/coordinateplane26.png">
@@ -239,10 +287,10 @@ getDistance({x: 10, y: -5}, {x: 8, y: 16}) ➞ 21.095
 
 ```
 
-Notes   
+Notes      
 The "distance" is the shortest distance between the two points, or the straight line generated from a to b.
 
-> ### Printer Levels
+> ### 6. Printer Levels
 Given an object of how many more pages each ink color can print, output the maximum number of pages the printer can print before any of the colors run out.
 
 ```js
@@ -265,11 +313,11 @@ inkLevels({
 }) ➞ 0
 ```
 
-Notes  
+Notes   
 
 A single printed page requires each color once, so printing is not possible if any of the slots lack ink (see example #3).
 
-> ### International Greetings
+> ### 7. International Greetings
 Suppose you have a guest list of students and the country they are from, stored as key-value pairs in an object.
 ```js
 const GUEST_LIST = {
@@ -294,11 +342,7 @@ greeting("Sam") ➞ "Hi! I'm Sam, and I'm from Argentina."
 
 greeting("Monti") ➞ "Hi! I'm a guest."
 ```
-> ###
 
-> ###
-> ###
-> ###
 
 # ***Callback***
 > ### Your onw HOFs 
