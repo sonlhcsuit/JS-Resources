@@ -1,6 +1,6 @@
 # Problems Solving
 __________________________
-> ### Distance to Nearest Vowel
+> ### 1. Distance to Nearest Vowel
 Write a function that takes in a string and for each character, returns the distance to the nearest vowel. If the character is a vowel itself, return 0.
 
 ```js
@@ -18,7 +18,7 @@ function distanceToNearestVowel(strg){
 }
 ```
 
-> ### Polybius Square (Basic)
+> ### 2. Polybius Square (Basic)
 The Polybius Square cipher is a simple substitution cipher that makes use of a 5x5 square grid. The letters A-Z are written into the grid, with "I" and "J" typically sharing a slot (as there are 26 letters and only 25 slots).
 
 |s  |1  |2  |3  |4	|5  |  
@@ -46,7 +46,7 @@ Hint:
 As "I" and "J" share a slot, both are enciphered into 24, but deciphered only into "I" (see third and fourth test).
 
 
-> ### Junction or Self?
+> ### 3. Junction or Self?
 In this challenge, you have to separate integers into two families, establishing if they are Junction Numbers or Self Numbers. Given a positive number `n`:
 
 If exists at least a single number which added to the sum of its digits is equal to `n`, then `n` is a Junction Number.
@@ -83,7 +83,7 @@ As in example #3, the sum of the digits of a positive integer lower than 10 is e
 
 By the formal definition, a Junction number must have at least two other numbers that generate it, so that the Instructions are to be considered valid only for this specific challenge.
 
-> ### Morse Code Decoded
+> ### 4. Morse Code Decoded
 Create a function that takes a string (morse code) as an argument and returns an unencrypted string.
 
 ```js
@@ -105,7 +105,7 @@ morseToDots = {
 }
 ```
 
-> ### Creating a Picture Frame
+> ### 5. Creating a Picture Frame
 Create a function that takes the width, height and character and returns a picture frame as a matrix.
 
 ```js
@@ -129,7 +129,7 @@ getFrame(2, 5, "0") ➞ "invalid"
 // Frame"s width is not more than 2.
 ```
 
-> ### Magic Sigil Generator
+> ### 6. Magic Sigil Generator
 A magic sigil is a glyph which represents a desire one wishes to manifest in their lives. There are many ways to create a sigil, but the most common is to write out a specific desire (e.g. "I HAVE WONDERFUL FRIENDS WHO LOVE ME"), remove all vowels, remove any duplicate letters and then design a glyph from what remains.
 
 Using the sentence above as an example, we would remove duplicate letters:
@@ -148,7 +148,7 @@ sigilize("I FOUND MY SOULMATE") ➞ "FNDYSLMT"
 sigilize("I have a job I enjoy and it pays well") ➞ "HVBJNDTPYSWL"
 ```
 
-> ### Digital Egomania: the Self-Describing Numbers
+> ### 7. Digital Egomania: the Self-Describing Numbers
 In this challenge, you have to establish if a given number is self-describing. To be self-describing, a positive number must have an even quantity of digits, because it has to be split into separated pairs of adjacent digits x and y, and each pair can be interpreted as a declaration: among the digits of the number, there are x instances of the digit equal to y.
 
 If we take as an example the self-describing number 10123331, we can see how it has an even quantity of digits and it can be split into four pairs:
@@ -184,7 +184,7 @@ Pairs can be repeated (see example #2), but they have to be true in any case.
 Remember to consider the totality of the digits of the number, when checking if a pair represents a true declaration (see example #3).
 You can expect always valid non-negative integers as input.
 
-> ### Check Magic Square
+> ### 8. Check Magic Square
 A "magic square" is a square divided into smaller squares each containing a number, such that the numbers in each vertical, horizontal, and diagonal row add up to the same value.
 
 3x3 Magic Square   
@@ -221,7 +221,7 @@ Check the Resources tab for additional info on magic squares.
 
 
 
-> ### The Fiscal Code
+> ### 9. The Fiscal Code
 
 Each person in Italy has an unique identifying ID code issued by the national tax office after the birth registration: the Fiscal Code (Codice Fiscale). Check the Resources tab for more info on this.
 

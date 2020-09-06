@@ -343,8 +343,54 @@ greeting("Sam") ➞ "Hi! I'm Sam, and I'm from Argentina."
 greeting("Monti") ➞ "Hi! I'm a guest."
 ```
 
+> ### 8. Return the Objects Keys and Values
+Create a function that takes an object and returns the keys and values as separate arrays.
+
+```js
+keysAndValues({ a: 1, b: 2, c: 3 })
+➞ [["a", "b", "c"], [1, 2, 3]]
+
+keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+➞ [["a", "b", "c"], ["Apple", "Microsoft", "Google"]]
+
+keysAndValues({ key1: true, key2: false, key3: undefined })
+➞ [["key1", "key2", "key3"], [true, false, undefined]]
+
+```
+
+> ### 9. Online Shopping
+Create a function that determines whether a shopping order is eligible for free shipping. An order is eligible for free shipping if the total cost of items purchased exceeds $50.00.
+
+```js
+freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }) ➞ false
+
+freeShipping({ "Flatscreen TV": 399.99 }) ➞ true
+
+freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }) ➞ true
+
+```
+
+> ### 10. Paint the Walls
+Given a predetermined rate from an object, write the function that will return the time it takes for a certain amount of people to paint a certain amount of walls. Return the minutes as an integer. No rounding is necessary.
+
+
+
+```js
+// It takes 63 minutes for 4 people to paint 9 walls. -> 4 people take 7 mins for a wall
+// one wall take 28 person minutes to complete( one by one) -> 28*4/7 
+// How many minutes does it take 14 people to paint 14 walls?
+const rate = {
+	people: 4,
+	 walls: 9,
+	 minutes: 63 
+}
+
+// time(rate,people,walls) ➞ 22
+time(rate,7,4) ➞ 22
+```
 
 # ***Callback***
+
 > ### Your onw HOFs 
 
 ``` javascript
@@ -368,3 +414,5 @@ Pokemon.filter()
 Pokemon.reduce()
 Pokemon.forEach()
 ```
+- using `forEach` to log "Hello + [Pokemon_name]!"
+- using `map` to turn array into ["01_Bulbasaur", "02_Ivysaur", ...]

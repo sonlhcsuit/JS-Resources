@@ -1,6 +1,6 @@
 # ***Problems Solving***
 _____________________________
-> ### Poker Hand Ranking
+> ### 1. Poker Hand Ranking
 In this challenge, you have to establish which kind of Poker combination is present in a deck of five cards. Every card is a string containing the card value (with the upper-case initial for face-cards) and the lower-case initial for suits, as in the examples below:
 
 "Ah" ➞ Ace of hearts  
@@ -36,7 +36,7 @@ pokerHandRanking(["3h", "5h", "Qs", "9h", "Ad"]) ➞ "High Card"
 pokerHandRanking(["10s", "10c", "8d", "10d", "10h"]) ➞ "Four of a Kind"
 ```
 
-> ### Who's That Polygon?
+> ### 2. Who's That Polygon?
 Every polygon has an official name. Individual polygons are named according to the number of sides, combining a Greek-derived numerical prefix with the suffix -gon, e.g. pentagon, dodecagon.
 
 Write a function that takes an integer n as argument and returns the official name of a n-sided polygon.
@@ -103,7 +103,7 @@ polygonName(12345) ➞ "myriadichiliatriahectatetracontapentagon"
 Hint:  
 The triangle, quadrilateral and nonagon are exceptions, although the regular forms trigon, tetragon, and enneagon are sometimes encountered as well.
 
-> ### Happy Numbers & More
+> ### 3. Happy Numbers & More
 A happy number is a number defined by the following process:   
 
 Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
@@ -137,7 +137,7 @@ happy(8128) ➞
 8128 is a triangular number."
 ```
 
-> ### Affine Cipher Encrypt
+> ### 4. Affine Cipher Encrypt
 Create a function that takes a string of plain text (English alphabet) all in lowercase, encryption function, and converts the plain text into ciphertext using the affine encryption function.
 
 Encryption Function  
@@ -163,7 +163,7 @@ Hint:
 For the problem 1 =< a <= 11 , 1 =< b <= 9 , m = 26
 Create your own gcd function.
 
-> ### Vigenere Cipher
+> ### 5. Vigenere Cipher
 The Vigenere Cipher is a poly-alphabetic substitution cipher that uses a set of shift ciphers and a keyword.
 
 One of the simplest ciphers is the Caesar/shift cipher, where each letter in the plaintext message is replaced by the letter a particular number of positions up, or downstream in the alphabet. Shift 1 Caesar cipher:
@@ -229,7 +229,7 @@ vigenere("Darth Vader is Luke's father.", "spoiler") ➞ "VPFBSZRVTFQDPLCTGNLXYW
 vigenere("HMRSSAIEKLSAXQILCCAC", "python") ➞ "SOYLENTGREENISPEOPLE"
 ```
 
-> ### Columnar Cipher
+> ### 6. Columnar Cipher
 The columnar cipher is a transposition cipher that works like this.
 
 Start with a secret message:
@@ -278,7 +278,7 @@ cipher("Mission Delta Kilo Sierra has been compromised. Kill Steve. Evacuate", "
 ➞ "ioliiabcrsiteuxmieksrsnpiksecesdaoraemmdlvatxsntleheooelevax"
 ```
 
-> ### Sentence Primeness
+> ### 7. Sentence Primeness
 A word value can be established summing up all the numeric values of every single character (excluding spaces and punctuation): a value from 1 ("a") to 26 ("z") is given to letters, while numbers have their literal values, from 0 to 9. The sentence value is the sum of the values of the words.
 
 sentence = "ABC ! abc ... @ 123"

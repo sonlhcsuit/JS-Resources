@@ -148,3 +148,27 @@ function hailstone(number){
 hailstone(7) ➞ [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1, 4, 2, 1]
 ```
 
+> ### 8. Spinal Tap Case
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+```js
+spinalCase('This Is Spinal Tap') ➞ "this-is-spinal-tap"
+spinalCase('thisIsSpinalTap') ➞ "this-is-spinal-tap"
+spinalCase('The_Andy_Griffith_Show') ➞ "the-andy-griffith-show"
+```
+
+> ### 9. Pig LatinPassed
+Pig Latin is a way of altering English Words. The rules are as follows:
+
+- If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add "ay" to it.
+
+- If a word begins with a vowel, just add "way" at the end.
+
+Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
+```js
+
+translatePigLatin("california")➞"aliforniacay"
+translatePigLatin("paragraphs")➞"aragraphspay"
+translatePigLatin("algorithm")➞"algorithmway"
+translatePigLatin("schwartz")➞"artzschway"
+
+```
