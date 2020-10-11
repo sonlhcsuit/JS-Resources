@@ -172,3 +172,31 @@ translatePigLatin("algorithm")➞"algorithmway"
 translatePigLatin("schwartz")➞"artzschway"
 
 ```
+
+# ***Callback***
+
+> ### Your onw HOFs 
+
+``` javascript
+Array.prototype.myMap = function(callback) {
+    var newArray = [];
+    // Only change code below this line
+
+    // Only change code above this line
+    return newArray;
+};
+```
+
+
+
+> ### Higher Order Functions and Callback 
+
+``` javascript
+var Pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna", "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata"]
+Pokemon.map()
+Pokemon.filter()
+Pokemon.reduce()
+Pokemon.forEach()
+```
+- using `forEach` to log "Hello + [Pokemon_name]!"
+- using `map` to turn array into ["01_Bulbasaur", "02_Ivysaur", ...]
