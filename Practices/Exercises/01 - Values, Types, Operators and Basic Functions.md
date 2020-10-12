@@ -63,7 +63,7 @@ sumOfCubes(1, 5, 9) ➞ 855
 
 sumOfCubes(3, 4, 5) ➞ 216
 
-sumOfCubes(2,2,2) ➞ 8
+sumOfCubes(2,2,2) ➞ 24
 
 ```
 
