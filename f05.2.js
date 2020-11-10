@@ -59,7 +59,7 @@ function padovan(start,end){
     return base_seqs;
 }
 
-console.log(padovan(-50,1));
+// console.log(padovan(-50,1));
 
 
 function telephoneValid(telephone){
@@ -67,14 +67,88 @@ function telephoneValid(telephone){
     return telephone.toString().match(rg);
 }
 
-function cashRegister(){
+function cashRegister(price,cash,cid){
+    let cost =  {
+        'PENNY':0.01,
+        'NICKEL':0.05,
+        'DIME':0.1,
+        'QUARTER':0.25,
+        'ONE':1,
+        'FIVE':5,
+        'TEN':10,
+        'TWENTY':20,
+        'FIFTY':50,
+        'ONE HUNDRED':100
+    };
+    let drawer = JSON.parse(JSON.stringify(cid));
+    let change = {};
+    let status = 'OPEN';
+    let change_money=cash-price;
 
+    if(change_money ==Object.keys(drawer).reduce((acc,key)=>drawer[key]+acc,0)) {
+        status = 'CLOSED';
+        return {status,change:cid};
+    }
+    try {
+        let values = Object.keys(cost).reverse();
+        for(let value of values){
+            // number of coins
+            let coin = parseInt(change_money/cost[value]);
+            // console.log(parseInt(change_money/cost[value]))
+            // console.log(parseInt(drawer[value]/cost[value]))
+            if (coin*cost[value] > drawer[value]){
+                coin = parseInt(drawer[value]/cost[value]);
+            }
+            if(coin!=0) {
+
+                change[value]=coin*cost[value]
+                change_money = change_money - coin*cost[value];
+            }
+        }
+        if(change_money != 0){
+            throw new Error('Canot change')
+        }
+
+        
+    }catch(e){
+        console.log(e.message)
+        status = 'INSUFFICIENT_FUNDS';
+        change = {}
+        return {status,change};
+    }
+    return {status,change};
 }
+console.log(cashRegister(19.5, 200, {
+    'PENNY':1.01,
+    'NICKEL':2.05,
+    'DIME':3.1,
+    'QUARTER':4.25,
+    'ONE':90,
+    'FIVE':55,
+    'TEN':20,
+    'TWENTY':60,
+    'FIFTY':100,
+    'ONE HUNDRED':100
+}));
 
 function phoneLetter(str){
-
-
-
+    let mul = 1;
+    for(let i =0;i<str.length;i++){
+        switch(str[i]){
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '8':
+                mul=mul*3;
+                break;
+            case'7':
+            case '9':
+                mul = mul*4;
+        }
+    }
+    return mul;
 }
 
 function digitalDrome(number){
@@ -187,9 +261,16 @@ function diceGambling(roll_result){
 // console.log(diceGambling([1,2,3]));
 
 function jug(){
-
+// 
 }
-function cycle(){
+function cycle(year){
+    const elements = ['Wood', 'Fire', 'Earth', 'Metal', 'Water'];
+    const animals = [ 'Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Sheep', 'Monkey', 'Rooster', 'Dog', 'Pig' ];
+  const remainder = (year % 60) + 56;
+  const element = elements[Math.floor(remainder / 2) % elements.length];
+  const animal = animals[remainder % animals.length];
+
+  return `${element} ${animal}`;
 
 
 }

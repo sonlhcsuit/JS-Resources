@@ -156,7 +156,7 @@ spinalCase('thisIsSpinalTap') ➞ "this-is-spinal-tap"
 spinalCase('The_Andy_Griffith_Show') ➞ "the-andy-griffith-show"
 ```
 
-> ### 9. Pig LatinPassed
+> ### 9. Pig Latin
 Pig Latin is a way of altering English Words. The rules are as follows:
 
 - If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add "ay" to it.
