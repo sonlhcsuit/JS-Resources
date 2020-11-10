@@ -1,13 +1,70 @@
 function decimal2roman(number){
+    const BASE = {
+        1:'I',
+        5:'V',
+        10:'X',
+        50:'L',
+        100:'C',
+        500:'D',
+        1000:'M'
+    };
+    let n = number ;
+    let roman = '';
+    const baseValue = Object.keys(BASE).reverse();
+    for(let i =0;i<baseValue.length;i++){
+        // console.log(n);
+        let decimal = baseValue[i];
+        let quotient = parseInt(n/decimal);
+        // console.log(quotient);
+        switch(quotient){
+            case 4:
+                roman = roman + BASE[decimal] + BASE[baseValue[i-1]];
+                // console.log('well sub');
+                break;
+            case 3:
+                roman = roman + BASE[decimal];
+            case 2:
+                roman = roman + BASE[decimal];
+            case 1:
+                roman = roman + BASE[decimal];
+                break;
+            // default:
+                // return -1
+        }
+        n = n - decimal*quotient;
 
+    }
+    return roman;
+    
+    // console.log(Object.keys(BASE));
 }
 
-function padovan(number){
+// console.log(decimal2roman(1234));
 
+function padovan(start,end){
+    let end_pos = end;
+    let end_neg = -start;
+    let base_seqs = [1,1,1];
+    let positive_seg = new Array(...base_seqs);
+    let negative_seq = new Array(...base_seqs);
+    for(let i = 3;i<=end_pos;i++){
+        positive_seg.push(positive_seg[i-2]+positive_seg[i-3]);
+    }
+    for(let i = 3;i<=end_neg+2;i++){
+        negative_seq.push(negative_seq[i-3]-negative_seq[i-1]);
+    }
+    negative_seq.unshift();negative_seq.unshift();negative_seq.unshift();
+    base_seqs = [...negative_seq.reverse(),...positive_seg];
+    while(base_seqs.length != end -start + 1) base_seqs.pop();
+    return base_seqs;
 }
+
+console.log(padovan(-50,1));
+
 
 function telephoneValid(telephone){
-
+    let rg = /^(1\s)?((\d{3})|(\(\d{3}\)))[-\s]?\d{3}[\-\s]?\d{4}$/gm;
+    return telephone.toString().match(rg);
 }
 
 function cashRegister(){
