@@ -43,7 +43,6 @@ function sum_sub_matrix(row,col,size,matrix){
 	return s;
 }
 
-
 // let a  = oddSquarePatch([
 //   [1, 2, 4, 9],
 //   [4, 5, 5, 7],
@@ -246,12 +245,12 @@ function fiscalCode({name,surname,gender,dob}){
 }
 
 
-console.log(fiscalCode({
-    name: "Helen",
-    surname: "Yu",
-    gender: "M",
-    dob: "1/1/1900"
-}));
+// console.log(fiscalCode({
+//     name: "Helen",
+//     surname: "Yu",
+//     gender: "M",
+//     dob: "1/1/1900"
+// }));
 
 function boomerang(arr){
 	let ct = 0;

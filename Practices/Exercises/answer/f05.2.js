@@ -118,18 +118,18 @@ function cashRegister(price,cash,cid){
     }
     return {status,change};
 }
-console.log(cashRegister(19.5, 200, {
-    'PENNY':1.01,
-    'NICKEL':2.05,
-    'DIME':3.1,
-    'QUARTER':4.25,
-    'ONE':90,
-    'FIVE':55,
-    'TEN':20,
-    'TWENTY':60,
-    'FIFTY':100,
-    'ONE HUNDRED':100
-}));
+// console.log(cashRegister(19.5, 200, {
+//     'PENNY':1.01,
+//     'NICKEL':2.05,
+//     'DIME':3.1,
+//     'QUARTER':4.25,
+//     'ONE':90,
+//     'FIVE':55,
+//     'TEN':20,
+//     'TWENTY':60,
+//     'FIFTY':100,
+//     'ONE HUNDRED':100
+// }));
 
 function phoneLetter(str){
     let mul = 1;
@@ -260,9 +260,6 @@ function diceGambling(roll_result){
 }
 // console.log(diceGambling([1,2,3]));
 
-function jug(){
-// 
-}
 function cycle(year){
     const elements = ['Wood', 'Fire', 'Earth', 'Metal', 'Water'];
     const animals = [ 'Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Sheep', 'Monkey', 'Rooster', 'Dog', 'Pig' ];
@@ -271,6 +268,25 @@ function cycle(year){
   const animal = animals[remainder % animals.length];
 
   return `${element} ${animal}`;
-
-
 }
+function luckyTicket(n){
+    let sum = 0;
+       let arr = [];
+       let chislo = 0;
+       let check = 0;
+       for (let i = 0; i <= (9 * n) / 2; i++) {
+         arr.push(0);
+       }
+       for (let j = 0; j < 10 ** (n / 2); j++) {
+         chislo = String(j);
+         for (let k = 0; k < chislo.length; k++) {
+           check += Number(chislo[k]);
+         }
+         arr[check] += 1;
+         check = 0;
+       }
+       for (let g = 0; g < arr.length; g++) {
+         sum += arr[g] ** 2;
+       }
+       return sum;
+     }
