@@ -1,4 +1,4 @@
-## [Binary to Decimal ](./BeginnerTask/Bin2Dec-App.md)
+## [Binary to Decimal ](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 ## [Dollars To Cents](./IntermediaTask/Dollars-To-Cents-App.md)
 ## [CSV to JSON ](./BeginnerTask/CSV2JSON-App.md)
 ## [Roman Number Converter](./BeginnerTask/Roman-to-Decimal-Converter.md)

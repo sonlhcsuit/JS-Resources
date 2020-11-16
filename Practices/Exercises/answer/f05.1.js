@@ -99,8 +99,7 @@ function getFrame(col,row,char){
 }
 
 function magicSigil(input_str){
-
-	let vowels = 'ueoai';
+	let vowels = 'aiueo';
 	let chars = input_str.split(' ').join('').toLowerCase().split('').reverse();
 	chars = new Array(...new Set(chars));
 	return chars.filter((val)=>'ueoai'.indexOf(val)==-1).reverse().join('');
