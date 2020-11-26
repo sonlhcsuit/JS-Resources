@@ -1,0 +1,74 @@
+[
+    {
+        "id": "0ywjjgXXm9mzWGd8UikZ",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
+        "name": "Nidoran-F",
+        "password": "123456",
+        "email": "nidoranf@pokemon.com",
+        "username": "nidoranf"
+    },
+    {
+        "id": "7Izv5f8xcCKqRh9oXWUx",
+        "email": "hoangson1@email.com",
+        "username": "hoangson1",
+        "password": "123456",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
+        "name": "Luu Hoang Son"
+    },
+    {
+        "id": "7vGeqG1Hj4V7RtpVHrrm",
+        "name": "Bulbasaur",
+        "email": "bulbasaur@pokemon.com",
+        "username": "bulbasaur",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "password": "123456"
+    },
+    {
+        "id": "UEZ6cjGJD79G3IpT2gU1",
+        "email": "sonlh@email.com",
+        "name": "Hoang Son",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
+        "username": "hoangson",
+        "password": "123456"
+    },
+    {
+        "id": "jo1oxuWGjKYqFQ8pfFR5",
+        "name": "Squirtle",
+        "username": "squirtle",
+        "email": "squirtle@pokemon.com",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        "password": "123456"
+    },
+    {
+        "id": "leePiT7gk9NDTAcv5vnF",
+        "password": "123456",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
+        "email": "nidoranm@pokemon.com",
+        "name": "Nidoran-M",
+        "username": "nidoram"
+    },
+    {
+        "id": "mFH2f3zdNq5p4ZWDH93H",
+        "email": "pikachu@pokemon.com",
+        "password": "123456",
+        "name": "Pikachu",
+        "username": "pikachu",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+        "id": "wKkEHhjYadPgzlCYPlha",
+        "name": "Sandshrew",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
+        "email": "sandshrew@pokemon.com",
+        "password": "123456",
+        "username": "sandshrew"
+    },
+    {
+        "id": "yzuk47YLaz7caOvMJK0z",
+        "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+        "username": "charmander",
+        "email": "charmander@pokemon.com",
+        "name": "Charmander",
+        "password": "123456"
+    }
+]
