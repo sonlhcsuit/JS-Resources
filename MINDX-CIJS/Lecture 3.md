@@ -1,6 +1,6 @@
 ## Props
 - Props là viết tắt của từ properties nghĩa thuộc tính (số nhiều). Props này mang ý nghĩa là tham số (parameter) được truyền vào một hàm
-```js
+```jsx
 // Khi khai báo một function thì ta cần khai báo rằng function thì phải định nghĩa rằng có bao nhiêu dữ liệu
 // chúng ta nhận được 
 function add(a,b){ // a,b => được gọi là parameter. 
@@ -57,7 +57,42 @@ class Clock extends React.Component{
 - Là nơi mà đoạn code đó đang chạy. Scope của variable khác nhau, được phân định bằng cặp dấu { } thì khi chạy. Các function sẽ tự động tạo ra một execution context mới. Execution context sẽ chứ thông về các biến, các function available trong context đó.
 - Scope Chain 
 
-- ``this`` là một từ khoá gọi tới execution context thực thi đoạn function đó, tuy nhiên có một chút khác biệt.
+- ``this`` là một từ khoá gọi tới execution context thực thi một function, tuy nhiên có một chút khác biệt nhỏ. Bình thường thì khi khai báo function sẽ được được đi cùng context của chính nó (nơi nó được gọi). Tuy nhiên this thì chỉ trỏ với vài context đặc biệt.
+
+- Đối với this thì chỉ có 3 loại context, khi sử dụng this thì chúng ta cần phải biết rằng 'this' đang chỉ tới context nào
+    * Default Bindings - Global Context
+    * Direct Bindings - Option Context
+    * Implicit Bindings - Object Context
+    * Explicit Bindings - Object Context
+```js
+// Default
+// 'this' refers to global its call no matter where it invoked 
+function Yep(){
+    console.log(this)
+}
+Yep()
+
+// Direct
+// we can specific which context (or object) we wanna 'this' refer to {a:100}
+Yep.call({a:100})
+
+// Implicit
+// 'this' refers to the objects itself
+let cat = {
+    name:'kitty',
+    meow:function (){
+        console.log(this)
+        console.log(this.name)
+    }
+}
+cat.meow() 
+// we assign the meow function of cat to 'meow' variable
+// when we do that, 'this' refers to global object (default binding)
+let meow = cat.meow
+meow()
+
+
+```
 https://stackoverflow.com/questions/9384758/what-is-the-execution-context-in-javascript-exactly
 
 https://www.freecodecamp.org/news/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb/

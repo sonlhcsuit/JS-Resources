@@ -71,6 +71,7 @@ HOMEWORK : Drag-And-Drop-Game (drag event) - Filter Dota 2 Heros
     - ComponentDidMount
     - ComponentDidUpdate
     - render
+- Lists and Keys 
 - FLUX and MVC 
 - Thinking Way 
 
@@ -82,7 +83,7 @@ HOMEWORK : Charity Finder App
     - Property
     - Abstraction
     - Inheritance
-- Lists and Keys 
+
 
 CLASSWORK: Weather App
 HOMEWORK : Snapshot Finder
