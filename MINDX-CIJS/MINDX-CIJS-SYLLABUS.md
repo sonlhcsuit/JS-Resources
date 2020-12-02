@@ -8,9 +8,10 @@
     - localStorage
     - callback
     - Promise
-    - fetch - fetch options
     - HTTP Verb - GET POST DELETE
+    - Request - Response
     - Headers
+    - fetch - fetch options
 - Set up Git Project
     - Git branchs
     - .gitignore
@@ -40,11 +41,12 @@ HOMEWORK : problems solving ( 5 problems )
     - HTML Element in JSX
     - HTML attributes
     - Javascript binding 
+    - Event bindings
     - style
     - external css
     - React Components
     - Stateful/Stateless Components
-    - Event bindings
+    
 
 CLASSWORK: LightBulb   
 HOMEWORK : Card-Memory-Game  
