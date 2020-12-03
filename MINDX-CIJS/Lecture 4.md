@@ -42,7 +42,7 @@ https://reactjs.org/docs/state-and-lifecycle.html
 https://facebook.github.io/flux/docs/in-depth-overview
 
 ## Thinking Way In React
-- Bởi vì sử dụng vDOM nên cách tư duy sẽ hơi khác biệt một chút, việc của chúng ta sẽ là định nghĩa view trông như thế nào và dữ liệu được đưa vào như thế nào mà thôi. Việc update đã có vDOM lo!
+- Bởi vì sử dụng vDOM nên cách tư duy sẽ hơi khác biệt một chút, việc của chúng ta sẽ là định nghĩa view trông như thế nào và dữ liệu được đưa vào như thế nào mà thôi. Việc update đã có vDOM lo! Khi làm việc với react thì thứ cần phải quan tâm nhiều chính là state được cập nhật như thế nào 
 
 ## List and Keys
 - Khi sử dụng mảng để render ra nhiều phần tử cần thiết thì chú ý dùng thêm props 'key' để giúp vDOM của react kiểm tra và update dễ dàng hơn!

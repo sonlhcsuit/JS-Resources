@@ -63,7 +63,7 @@ HOMEWORK : Card-Memory-Game
 - Form 
     - handle Change 
 CLASSWORK: Emoji Search App   
-HOMEWORK : Drag-And-Drop-Game (drag event) - Filter Dota 2 Heros 
+HOMEWORK : Drag-And-Drop-Game (drag event) - Filter Pokemons 
 
 ## Lecture 4:
 - Virtual DOM 
