@@ -46,10 +46,9 @@ HOMEWORK : problems solving ( 5 problems )
     - external css
     - React Components
     - Stateful/Stateless Components
-    
 
-CLASSWORK: LightBulb   
-HOMEWORK : Card-Memory-Game  
+CLASSWORK: [LightBulb](https://github.com/sonlhcsuit/mindx-cijs/tree/bulbswitch)   
+HOMEWORK : [Card-Memory-Game](https://github.com/sonlhcsuit/mindx-cijs/tree/cardMemoryGame)  
 
 ## Lecture 3:
 - State & Props in details
@@ -62,8 +61,8 @@ HOMEWORK : Card-Memory-Game
 - context and why using bind ? 
 - Form 
     - handle Change 
-CLASSWORK: Emoji Search App   
-HOMEWORK : Drag-And-Drop-Game (drag event) - Filter Pokemons 
+CLASSWORK: [Emoji Search App](https://github.com/sonlhcsuit/mindx-cijs/tree/emoji)   
+HOMEWORK : [Drag-And-Drop-Game](https://github.com/sonlhcsuit/mindx-cijs/tree/filterPokemonGame) (drag event) - Filter Pokemons 
 
 ## Lecture 4:
 - Virtual DOM 
@@ -75,8 +74,8 @@ HOMEWORK : Drag-And-Drop-Game (drag event) - Filter Pokemons
 - FLUX and MVC 
 - Thinking Way 
 
-CLASSWORK: Book Finder    
-HOMEWORK : Charity Finder App   
+CLASSWORK: [Book Finder](https://github.com/sonlhcsuit/mindx-cijs/tree/bookFinderApp)    
+HOMEWORK : [Charity Finder App](https://github.com/sonlhcsuit/mindx-cijs/tree/charityFinder)   
 
 ## Lecture 5:
 - Object Oriented Programing
@@ -84,9 +83,8 @@ HOMEWORK : Charity Finder App
     - Abstraction
     - Inheritance
 
-
-CLASSWORK: Weather App
-HOMEWORK : Snapshot Finder
+CLASSWORK: [Weather App](https://github.com/sonlhcsuit/mindx-cijs/tree/weatherApp)
+HOMEWORK : [Snapshot Finder](https://github.com/Yog9/SnapShot)
 
 ## Lecture 6:
 - Firebase API
@@ -95,12 +93,12 @@ HOMEWORK : Snapshot Finder
     - Update
     - Delete
 - Realtime Event
-CLASSWORK: Setting up View + User Controllers for Music App
-HOMEWORK : Setting up View + Playing track + Favorite Music 
+CLASSWORK: [Chat-App](https://github.com/sonlhcsuit/mindx-cijs/tree/chatApp) View 
+HOMEWORK : [Todo-App](https://github.com/sonlhcsuit/mindx-cijs/tree/todoApp) View    
 
 ## Lecture 7:
-CLASSWORK: Chat-App View 
-HOMEWORK : Todo-App View 
+CLASSWORK: [Chat-App](https://github.com/sonlhcsuit/mindx-cijs/tree/chatApp) View 
+HOMEWORK : [Todo-App](https://github.com/sonlhcsuit/mindx-cijs/tree/todoApp) View 
 
 ## Lecture 8:
 CLASSWORK: Chat-App Controllers
@@ -108,7 +106,7 @@ HOMEWORK : Todo-App Controllers
 
 
 ## Lecture 9:
-external Feature: Add Image/Video/ Or WebRTC
+external Feature: Add Image/ Video/Or WebRTC
 CLASSWORK: Chat-App Realtime Upgrade
 HOMEWORK : Todo-App Realtime Upgrade
 
