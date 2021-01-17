@@ -157,7 +157,35 @@ factorialDivisible(n); // return false
 // explain: L = 3! + 1 = 6 + 1 = 7 divisible by 4.
 ```
 
-> ### 10. BMI Calculator
+> ### 10 getArea
+>
+> Calculate and return the area of a rectangle having sides `height` and `width`.
+
+- length: The length of the rectangle.
+- width: The width of the rectangle.
+- Return a number denoting the rectangle's area.
+
+```js
+getArea(2,5) -> 10
+getArea(1,2) -> 2
+getArea(100,200) -> 2000
+```
+
+> ### 11 getArea
+>
+> Calculate and return the perimeter of a rectangle having sides `height` and `width`.
+
+- length: The length of the rectangle.
+- width: The width of the rectangle.
+- Return a number denoting the perimeter of a rectangle.
+
+```js
+getPerimeter(2,5) -> 14
+getPerimeter(1,2) -> 6
+getPerimeter(100,200) -> 600
+```
+
+> ### 12. BMI Calculator
 >
 > Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
 
