@@ -1,7 +1,10 @@
-# ***Values, Types, Operators*** 
-_____________________________________________________________
+# **_Values, Types, Operators_**
+
+---
+
 > ### 1. Radians to Degrees
-Create a function that takes a `n` angle in radians and returns the corresponding angle in degrees.
+>
+> Create a function that takes a `n` angle in radians and returns the corresponding angle in degrees.
 
 ```js
 radiansToDegrees(1) ➞ 57.29577951308232
@@ -12,7 +15,8 @@ radiansToDegrees(50) ➞ 2864.7889756541163
 ```
 
 > ### 2. Celsius to Fahrenheit
-Create a function that takes a `n` temperature in celsius and returns the corresponding temperature in Fahrenheit.
+>
+> Create a function that takes a `n` temperature in celsius and returns the corresponding temperature in Fahrenheit.
 
 ```js
 celsiusToFahrenheit(10) ➞ 50
@@ -35,7 +39,8 @@ PoundToKilogram(80) ➞ 36.2873896
 ```
 
 > ### 4. Matchstick Houses
-This challenge will help you interpret mathematical relationships both algebraically and geometrically.
+>
+> This challenge will help you interpret mathematical relationships both algebraically and geometrically.
 
 <img src="../../sources/matchstick_houses.png" >
 Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
@@ -49,13 +54,14 @@ matchHouses(87) ➞ 436
 
 ```
 
-Notes:   
+Notes:  
 Step 0 returns 0 matchsticks.  
 The input (step) will always be a non-negative integer.  
-Think of the input (step) as the total number of houses that have been connected together.  
+Think of the input (step) as the total number of houses that have been connected together.
 
 > ### 5. Sum of Cubes
-Create a function that takes in 3 numbers and returns the sum of its cubes.
+>
+> Create a function that takes in 3 numbers and returns the sum of its cubes.
 
 ```js
 sumOfCubes(1, 5, 9) ➞ 855
@@ -68,7 +74,8 @@ sumOfCubes(2,2,2) ➞ 24
 ```
 
 > ### 6. Pythagorean Triplet
-Create a function that validates whether three given integers form a Pythagorean triplet. The sum of the squares of the two smallest integers must equal the square of the largest number to be validated.
+>
+> Create a function that validates whether three given integers form a Pythagorean triplet. The sum of the squares of the two smallest integers must equal the square of the largest number to be validated.
 
 ```js
 isTriplet(3, 4, 5) ➞ true
@@ -83,11 +90,13 @@ isTriplet(1, 2, 3) ➞ false
 // 1² + 2² = 5
 // 3² = 9
 ```
+
 Notes:  
-Numbers may not be given in a ***sorted*** order.
+Numbers may not be given in a **_sorted_** order.
 
 > ### 7. Last Digit Ultimate
-Your job is to create a function, that takes 3 numbers: a, b, c and returns true if (the last digit of a * the last digit of b) = the last digit of c. Check the examples below for an explanation.
+>
+> Your job is to create a function, that takes 3 numbers: a, b, c and returns true if (the last digit of a \* the last digit of b) = the last digit of c. Check the examples below for an explanation.
 
 ```js
 lastDig(25, 21, 125) ➞ true
@@ -111,13 +120,13 @@ Notes:
 If you still don't understand:  
 The last digit of a = `x`, the last digit of `b` = `y`, and the last digit of `c` = `z`.
 Return true if `x*y = z`, and false otherwise.  
-Numbers can be negative.  
+Numbers can be negative.
 
 > ### 8. Automorphic Numbers
 
 A number n is automorphic if n^2 ends in n.
 
-For example: n=*5*, n^2=2*5*
+For example: n=_5_, n^2=2*5*
 
 Create a function that takes a number and returns true if the number is automorphic, false if it isn't.
 
@@ -130,8 +139,27 @@ isAutomorphic(8) ➞ false
 isAutomorphic(76) ➞ true
 ```
 
-> ### 9. BMI Calculator
-Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
+> ### 9. factorialDivisible
+
+Create a function that takes a number **n** and the expression **L = (n - 1)! + 1 = 1 _ 2 _ 3 ... \* (n-1) + 1** please determine if **L** is divisible by **n**
+
+```js
+// with n is 3
+factorialDivisible(n); // return true
+// explain: L = 2! + 1 = 1*2 + 1 = 3 divisible by 3.
+
+// with n is 5
+factorialDivisible(n); // return true
+// explain: L = 4! + 1 = 1*2*3*4 + 1 = 25 divisible by 5.
+
+// with n is 4
+factorialDivisible(n); // return false
+// explain: L = 3! + 1 = 6 + 1 = 7 divisible by 4.
+```
+
+> ### 10. BMI Calculator
+>
+> Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
 
 ```js
 BMI(170,60 ) ➞ "normal"
