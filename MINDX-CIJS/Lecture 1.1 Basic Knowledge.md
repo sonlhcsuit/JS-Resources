@@ -1,13 +1,36 @@
-## Basic Knowledge 
-- JSON vs XML : XML và JSON là kiểu định dạng dữ liệu thường được sử dụng để trao đổi thông tin trên web. Về XML thì khá giống HTML (cùng họ Markup Language). JSON thì khá giống Object và cả Array (javascript). Tuy nhiên key-value pair thì bắt buộc phải nằm trong dấu cặp dấu "
+# Basic Knowledge 
+## JSON vs XML
+- XML và JSON là kiểu định dạng dữ liệu thường được sử dụng để trao đổi thông tin trên web. Về XML thì khá giống HTML (cùng họ Markup Language). JSON thì khá giống Object và cả Array (javascript). Tuy nhiên key-value pair thì bắt buộc phải nằm trong dấu cặp dấu ". JSON là một **chuỗi** (string)
 
-![image](https://www.1337pwn.com/wp-content/uploads/2017/09/json-vs-xml-which-format-to-use-for-your-api.png)
+<img src="https://www.1337pwn.com/wp-content/uploads/2017/09/json-vs-xml-which-format-to-use-for-your-api.png" alt="JSON vs HTML">
 
-- localStorage: Đây là một cơ chế (mechanism) của trình duyệt cho phép một trang wev lưu trữ một số thông tin cơ bản (ví du: Thông tin người dùng đã đăng nhập,... ). Để sử dụng nó rất đơn giản, trong file *\*.js* , các bạn đã có sẵn một biến tên là *localStorage* chỉ việc sử dụng. Tuy nhiên sẽ có một vài chút rắc rối khi lưu dữ liệu trực tiếp trình duyệt.Các bạn có thể sử dụng các lệnh sau.  
+- Hiện nay JSON là định dạng dữ liệu để được sử dụng rộng rãi khi truyền tải dữ liệu qua mạng (ít nhất là trong lĩnh vực lập trình web). Các lập trình viên nhận, xử lý, truyền tải dữ liệu dạng JSON nhanh, thuận tay, dễ dàng hơn là XML. Một built-in object của Javascript có thể giúp ta xử lý dữ liệu dạng JSON là *JSON*
+```js
+let person = {
+    name:'Hoang Son',
+    class:'CIJS-DXX',
+}
+// JSON.stringify : Hàm encode một Object của Javascript thành dữ liệu dạng JSON (tức là string)
+let person_as_JSON = JSON.stringify(person)
+console.log(person_as_JSON) 
+//`{"name":"Hoang Son","class":"CIJS-DXX"}` 
+// Lưu ý là dấu ` ` đại diện cho một chuỗi.
+
+// JSON.stringify : Hàm decode  dữ liệu dạng JSON thành một Object của Javascript 
+
+let person_as_Object = JSON.parse(person_as_JSON)
+console.log(person_as_Object) 
+// Bây giờ thì nó là Object - Dễ dàng xử lý chỉ bằng việc "chấm"
+```
+---
+## localStorage
+- Đây là một cơ chế (mechanism) của trình duyệt cho phép một trang wev lưu trữ một số thông tin cơ bản (ví du: Thông tin người dùng đã đăng nhập,... ). Để sử dụng nó rất đơn giản, trong file *\*.js* , các bạn đã có sẵn một biến tên là *localStorage* chỉ việc sử dụng. Tuy nhiên sẽ có một vài chút rắc rối khi lưu dữ liệu trực tiếp trình duyệt.Các bạn có thể sử dụng các lệnh sau.  
 ```js
 // Cú pháp này dùng để gán giá trị cho thuộc tính có key là "mykey"
 // Không khuyến khích việc gán giá trị trực tiếp như thế này
-// localStorage.mykey = 12 hoặc là localStorage["mykey"] = 12
+// localStorage.mykey = 12 
+// hoặc là 
+// localStorage["mykey"] = 12
 localStorage.setItem('mykey',12)
 localStorage.setItem('mykey',19)
 localStorage.setItem('mykey','?????')
@@ -23,16 +46,23 @@ let data = JSON.parse(localStorage.getItem('mykey'))
 // Nếu các bạn không dùng JSON.parse thì chỉ nhận lại được một chuỗi như thế này "[1, 2, 3, 4]"
 ```
 
-Các bạn cũng có thể truy cập, kiểm tra, xoá, thêm trực tiếp localStorage thông qua trình duyệt.
+<img src="../sources/CIJS-Lecture 1.1.png" alt="localStorage">
 
+---
+## callback
 
-Các bạn cũng có thể truy cập, kiểm tra xem 
-Một object global, mỗi trang web (origin) mà các bạn truy cập đều có riêng có object này.
- Object có thể truy cập trực tiếp thông qua localStorage ở trong file .js. 
-- callback - một hàm được truyền vào như là một tham số cho hàm khác. Thường mang ý nghĩa là action (hành động) sẽ được diễn ra ngay sau khi một sự kiện, thứ gì đó hoàn thành. (asynchronous)
+- một hàm được truyền vào như là một tham số cho hàm khác. Thường mang ý nghĩa là action (hành động) sẽ được diễn ra ngay sau khi một sự kiện, thứ gì đó hoàn thành. (asynchronous)
 
 - Khi có nhiều hành động diễn ra nối tiếp nhau thì việc lồng nhiều callback sẽ dẫn tới trường hợp callback hell (indentation càng ngày càng sâu), và khó đọc. Cần có một cơ chế khác giúp xử lý việc này. Promise bước vào cuộc chơi, Promise giúp giải quyết vấn đề callback hell(vẫn dùng callback nhưng indetation đẹp hơn bằng cách dùng method chaining ). Cặp từ khoá async await
 
+--- 
+
+## Promise 
+
+
+---
+
+## HTTP Message
 - HTTP Verb: Những thao tác yêu cầu xử lý dữ liệu từ server. GET, POST, PUT, PATCH, DELETE 
 
 - Request & Response: Cả 2 đều là những giao thức mạng http gồm các phần cơ bản sau: body, headers. Headers chứa các metadata về giao thức, body còn có thể hiểu là data mà giao thức đem theo (payload). Vài headers hay dùng như :
@@ -42,6 +72,35 @@ Một object global, mỗi trang web (origin) mà các bạn truy cập đều c
     - Authorization
 
 - fetch: Cách đơn giản nhất để gửi một request tới cho người dùng từ client JS. Sử dụng tư tưởng promise hơn là tư tưởng callback-nest như XMLHttpRequest. Có thể dùng fetchOptions để tuỳ chỉnh headers, body, thao tác xử lý dữ liệu 
+
+
+
+---
+## fetch & fetch options
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Git 
 - Git là công cụ quản lý version (version control) của code để giúp ta kiểm tra được các phiên bản, ai đã sửa gì, chỗ nào, thành cái gì. Git giúp chúng ta có thể khôi phục lại code cũ lỡ chẳng may có gì xảy ra 
@@ -80,3 +139,4 @@ $ npm install --save firebase
 
 Reference:  
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+* https://stackoverflow.com/questions/22424705/i-dont-understand-json-and-when-im-supposed-to-use-it-care-to-explain

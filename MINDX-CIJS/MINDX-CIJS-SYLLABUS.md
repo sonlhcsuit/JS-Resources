@@ -2,14 +2,11 @@
 
 ## Lecture 1:
 - Basic Knowledge
-    - JSON
-    - XML
+    - JSON & XML
     - localStorage
-    - HTTP Verb - GET POST DELETE
-    - Request - Response
-    - Headers
     - callback
     - Promise
+    - HTTP Request
     - fetch - fetch options
 - Set up Git Project
     - Git branchs
