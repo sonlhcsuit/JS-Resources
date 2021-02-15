@@ -1,24 +1,34 @@
-## CORS 
-- CORS là viết tắt của từ (Cross Origin Resources Sharing). Là một cơ chế sử dụng header server (back-end) xác định một request tới server thuộc origin (domain, scheme, port) nào ? Điều này dẫn tới việc có chấp nhận request từ một origin khác hay không? 
-
-- Mỗi khi chúng ta (dev) gửi một request tới cho một server nào đó mà khác origin (domain, scheme,port ) hiện tại. Trình duyệt trước tiên sẽ gửi một ``pre-flight`` request tới cho origin để confirm. Nếu được thì sẽ gửi request của chúng ta, nếu không thì sẽ bị chặn!!! (chặn ở client). Nếu sử dụng ``opaque`` request (mode:'no-cors') thì cái bạn nhận được chỉ là response rỗng không có giá trị. 
-
-- CORS là một cơ chế của trình duyệt web để bảo vệ người dùng tránh việc XSS (Cross Site Scripting). Giả sử bạn đang online facebook. Bạn cũng đồng thời vào vài trang web-mà-ai-cũng-biết-là-web-gì-đấy có chứa đoạn script có khả năng gửi request lên facebook để lấy thông tin. Vậy thì làm sao facebook biết được đoạn script đó do họ viết hay người khác viết? Và liệu rằng code từ một domain khác có ý đồ gì không? Người dùng có thực sự đang lấy dữ liệu không? Tất nhiên là không thể xác định được. Cần phải căn cứ vào origin (nguồn của request để xác định liệu rằng đây có phải là request hợp lệ)
-
-- Tuy nhiên thì đối với Front-end Developer thì đây là cái lỗi đẫm máu nhất luôn. Gặp nó thì chỉ có cứng họng khóc huhu chứ chả thể làm được gì. 
-
-- Một vài cách (có thể, có khả năng) fix được lỗi
-    - Sử dụng proxy 
-    - Sử dụng extension Moesif 
-    - Chắc cú nhất sửa server backend 
-    - Dùng server gọi trung gian ( nếu bên thứ 3 không hỗ trợ )
-
-
 ## Basic Knowledge 
 - JSON vs XML : XML và JSON là kiểu định dạng dữ liệu thường được sử dụng để trao đổi thông tin trên web. Về XML thì khá giống HTML (cùng họ Markup Language). JSON thì khá giống Object và cả Array (javascript). Tuy nhiên key-value pair thì bắt buộc phải nằm trong dấu cặp dấu "
 
-- localStorage: Một object global, mỗi trang web (origin), đều có object này, có thể truy cập trực tiếp thông qua localStorage ở trong file .js. Đây là một cơ chế (mechanism) của trình duyệt cho phép lưu trữ một số thông tin cơ bản.
+![image](https://www.1337pwn.com/wp-content/uploads/2017/09/json-vs-xml-which-format-to-use-for-your-api.png)
 
+- localStorage: Đây là một cơ chế (mechanism) của trình duyệt cho phép một trang wev lưu trữ một số thông tin cơ bản (ví du: Thông tin người dùng đã đăng nhập,... ). Để sử dụng nó rất đơn giản, trong file *\*.js* , các bạn đã có sẵn một biến tên là *localStorage* chỉ việc sử dụng. Tuy nhiên sẽ có một vài chút rắc rối khi lưu dữ liệu trực tiếp trình duyệt.Các bạn có thể sử dụng các lệnh sau.  
+```js
+// Cú pháp này dùng để gán giá trị cho thuộc tính có key là "mykey"
+// Không khuyến khích việc gán giá trị trực tiếp như thế này
+// localStorage.mykey = 12 hoặc là localStorage["mykey"] = 12
+localStorage.setItem('mykey',12)
+localStorage.setItem('mykey',19)
+localStorage.setItem('mykey','?????')
+// Cú pháp này dùng để lấy giá trị của thuộc tính có key là "mykey"
+localStorage.getItem('mykey')
+
+// Lưu ý: Các bạn không thể gán giá trị là mảng hay object được!!! 
+localStorage.setItem('mykey',[1, 2, 3, 4]) // Wrong 
+// Các bạn phải mã hoá (encode) thành dạng chuỗi bằng cách sử dụng đối tượng JSON như thế này
+localStorage.setItem('mykey',JSON.stringfy([1, 2, 3, 4]))
+// Khi sử dụng các mã hoá này thì tương tự khi các bạn lấy data ra (mà đã mã hoá) thì phải làm như thế này 
+let data = JSON.parse(localStorage.getItem('mykey')) 
+// Nếu các bạn không dùng JSON.parse thì chỉ nhận lại được một chuỗi như thế này "[1, 2, 3, 4]"
+```
+
+Các bạn cũng có thể truy cập, kiểm tra, xoá, thêm trực tiếp localStorage thông qua trình duyệt.
+
+
+Các bạn cũng có thể truy cập, kiểm tra xem 
+Một object global, mỗi trang web (origin) mà các bạn truy cập đều có riêng có object này.
+ Object có thể truy cập trực tiếp thông qua localStorage ở trong file .js. 
 - callback - một hàm được truyền vào như là một tham số cho hàm khác. Thường mang ý nghĩa là action (hành động) sẽ được diễn ra ngay sau khi một sự kiện, thứ gì đó hoàn thành. (asynchronous)
 
 - Khi có nhiều hành động diễn ra nối tiếp nhau thì việc lồng nhiều callback sẽ dẫn tới trường hợp callback hell (indentation càng ngày càng sâu), và khó đọc. Cần có một cơ chế khác giúp xử lý việc này. Promise bước vào cuộc chơi, Promise giúp giải quyết vấn đề callback hell(vẫn dùng callback nhưng indetation đẹp hơn bằng cách dùng method chaining ). Cặp từ khoá async await

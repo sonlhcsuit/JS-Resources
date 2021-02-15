@@ -1,4 +1,4 @@
-## <script></script>
+## \<script\> tag
 - Thực ra đối với html thì chỉ tồn tại 1 tag script duy nhất. Việc chúng ta sử dụng nhiều tag script, thực chất chỉ là gom nhiều file js vào lại làm 1 (có thứ tự). Điều này làm cho code ở những tag script ở phía dưới có thể truy cập tới các biến đã khai báo ở tag script ở trên 
 
 - Đối với những dự án cỡ nhỏ thì khối lượng code rất ít, nên chúng ta có thể dùng 1 hoặc nhiều tag script để viết code thì đơn giản có thể quản lý được các global variable

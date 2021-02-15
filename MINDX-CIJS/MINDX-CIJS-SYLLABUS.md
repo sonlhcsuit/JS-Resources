@@ -1,16 +1,15 @@
 # React Project
 
 ## Lecture 1:
-- What is CORS? How to fix it ? How to by pass it? (prelight + opaque)
 - Basic Knowledge
     - JSON
     - XML
     - localStorage
-    - callback
-    - Promise
     - HTTP Verb - GET POST DELETE
     - Request - Response
     - Headers
+    - callback
+    - Promise
     - fetch - fetch options
 - Set up Git Project
     - Git branchs
@@ -24,7 +23,7 @@
 - Set up React project
     - create-react-app
     - add firebase using npm
-
+- What is CORS? How to fix it ? How to by pass it? (prelight + opaque)
 CLASSWORK: todo-app using html + css + js  
 HOMEWORK : problems solving ( 5 problems )
 
