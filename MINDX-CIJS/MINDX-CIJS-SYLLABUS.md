@@ -6,8 +6,7 @@
     - localStorage
     - callback
     - Promise
-    - HTTP Request
-    - fetch - fetch options
+    - HTTP Request & fetch
 - Set up Git Project
     - Git branchs
     - .gitignore
