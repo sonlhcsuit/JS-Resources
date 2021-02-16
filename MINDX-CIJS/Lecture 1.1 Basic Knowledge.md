@@ -50,15 +50,139 @@ let data = JSON.parse(localStorage.getItem('mykey'))
 
 ---
 ## callback
+- Để có thể hiểu được callback, đầu tiên các bạn phải nắm một số khái niệm về hàm. Một số tài liệu có thể tham khảo: 
+    - https://developer.mozilla.org/vi/docs/Web/JavaScript/Guide/Functions
+    - https://www.w3schools.com/js/js_functions.asp
 
-- một hàm được truyền vào như là một tham số cho hàm khác. Thường mang ý nghĩa là action (hành động) sẽ được diễn ra ngay sau khi một sự kiện, thứ gì đó hoàn thành. (asynchronous)
+- Một function sẽ một tên hàm độc nhất, nhằm để gọi hàm - thực hiện đoạn code mà chúng ta đã khai báo. Đặc điểm của tên hàm là nó cũng là một identity - một định danh. Khi một hàm được truyền vào hàm khác bằng định danh của nó thì được gọi là callback.
 
-- Khi có nhiều hành động diễn ra nối tiếp nhau thì việc lồng nhiều callback sẽ dẫn tới trường hợp callback hell (indentation càng ngày càng sâu), và khó đọc. Cần có một cơ chế khác giúp xử lý việc này. Promise bước vào cuộc chơi, Promise giúp giải quyết vấn đề callback hell(vẫn dùng callback nhưng indetation đẹp hơn bằng cách dùng method chaining ). Cặp từ khoá async await
+- Cụ thể hơn, trong javascript thì hàm được xem là đối tượng (object - có thể truy cập thông qua tên hàm, tương tự như tên biến). Do đó, các hàm có thể lấy các hàm khác làm đối số (tất nhiên chúng ta cũng có thể return một hàm). Thì những hàm được dùng làm đối số này được gọi là callback
+
+```js
+// Khai báo function có tên là sayHi
+function sayHi(){
+    console.log('Hi, you clicked me!')
+}
+// addEventListener là một hàm, và nó nhận vào một hàm khác thông qua định danh - cụ thể ở đây là sayHi
+// như vậy thì sayHi là một callback
+let btn = document.getElementById('btn').addEventListener('click',sayHi)
+
+// Đôi khi, chúng ta không cần thiết phải dặt tên cho các hàm callback, vì dài dòng nên chúng ta sẽ
+// khai báo trực tiếp luôn như thế này!
+
+let btn = document.getElementById('btn').addEventListener('click',function (){
+    console.log('you clicked me')
+})
+// Lúc này thì hàm vô danh này được gọi là callback 
+
+// Những hàm nhận vào một callback, thì sẽ được gọi với tên là Higher Order Function - HOF
+// addEventListener là một HOF , ngoài ra .map , .forEach, .filter cũng là một HOF 
+// callback được gọi như thế nào, sẽ tuỳ thuộc vào HOF, thông thường thì sẽ được gọi cuối hàm HOF
+// chúng ta cũng khai báo được parameter cho hàm callback, tuy nhiên việc truyền các đối số
+// vào như thế nào thì vẫn phải dựa vào HOF
+
+```
+
+- callback là thành phần rất quan trọng của JS, gần như rất khó để thay thế, tác vụ đơn giản nhất của callback là sẽ thực hiện một chức năng nào đó (cập nhật giao diện chẳng hạn) khi người dùng thực hiện một event nào đó.
+
+- Một callback có thể nhận vào một callback được không? YES. Và sẽ trông như thế này 
+
+```js
+function doSomeStuff(callback){
+    let stuff = Math.random()*100
+    callback(stuff)
+}
+
+doSomeStuff(function(number){
+    console.log(number)
+
+    doSomeStuff(function(a){
+        console.log(a)
+        console.log(`Area of circle with Diameter ${a} is:`,a*3.14)
+    })
+})
+// Và tưởng tượng xem, sau khi tính xong diện tích hình tròn, ta cần tính vài thứ nữa thì sao =>
+// lồng nhau, more tabs, và việc này gọi là callback hell 
+```
+
+<img src="https://miro.medium.com/max/1200/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg" alt="cb hell">
+
+- Tại sao lại có callback hell? Chúng ta thường xuyên phải xử lý những dữ liệu đến ngẫu nhiên, không phải tuần tự (chạy 1 lần là xong), thông thường chúng ta chẳng biết dữ liệu đến khi nào (ít nhất thì biết dữ liệu sẽ đến dưới dạng gì - tức là biết các property). Chúng ta phải "tính trước" cách xử lý dữ liệu => sử dụng callback. Thực tế thì việc xử lý yêu cầu nhiều về phần logic , không chỉ đơn giản như log vài thứ ra console dẫn đến viết nhiều code, hiển nhiên không thể viết mọi thứ vào 1 callback được (dài và lan man,khó đọc, khó hiểu, khó debug,..). Vậy nên sẽ chia ra từng công đoạn, mỗi công đoạn sẽ dùng kết quả của công đoạn trước để xử lý, và thế là callback hell xuất hiện
+
+- Vậy chúng ta làm sao để khắc phục callback hell? Tự [google](https://www.freecodecamp.org/news/how-to-deal-with-nested-callbacks-and-avoid-callback-hell-1bc8dc4a2012/) nhé!
+
 
 --- 
-
+---
 ## Promise 
+- Được xây dựng nhằm giải quyết vấn đề callback-hell. Nếu có một cách nào đó có thể dễ dàng quản lí việc các callback được gọi theo thứ tự nhất định thì tốt quá. callback hell khó đọc (indentation càng ngày càng sâu dựa theo độ sâu) nhưng với Promise thì khác, sẽ dễ hơn (hoặc ít nhất là một chút)
 
+```js
+// Một Promise sẽ có 3 trạng thái:pending - đang chờ, fulfilled - đã xong, rejected - có lỗi
+// Khai báo Promise, executor là một hàm callback có 2 giá trị tham số đầu vào (resolve,reject)
+// resolve dùng để trả về kết quả thành công
+// reject  dùng để báo lỗi
+let myPromise = new Promise(executor)
+
+// Hãy bắt đầu với thực tế nào
+
+let yourPromise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        if (Math.random()*100 > 40){
+            let message = 'You have waited for me 5 seconds, lets go!' 
+            resolve(message)
+            // 50% thành công và 50% thất bại 
+        }else{
+            let message = 'You have waited for me 5 seconds, but I cant be with you!'
+            reject(new Error(message))
+
+        }
+    },0)
+    // chờ 5 giây , sau đó trả về lời nhắn 
+})
+.then((message)=>{
+    console.log(message)
+    return new Date().toTimeString()
+    // Giá trị return ở đây, mặc định sẽ là arguments cho .then kế tiếp 
+})
+.then((time)=>{
+    // .then phía trên, ta return thời gian khi mọi thứ hoàn thành, nên ta sẽ truy cập được giá trị đó thông qua biến time 
+    console.log(`Finish at ${time}`)
+})
+.catch(error=>{
+    console.log(error.message)
+})
+.finally(()=>{
+    console.log('Everything is done!')
+})
+
+```
+
+- Tham khảo thêm ở [google](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Promise) nhé!
+
+- Như vậy thì callback hell ở phía trên sẽ được "viết lại" như thế này dễ xử lý hơn
+```js
+let a = new Promise ((resolve,reject )=>{
+    let resultFromA = '???'
+    resolve(resultFromA)
+})
+
+a.then(resultFromA=>{
+    // process
+    return resultFromB
+})
+.then(resultFromB=>{
+    // process resultFromC
+})
+...
+.then(resultFromF=>{
+    console.log(resultFromF)
+})
+```
+---
+## async - await   
+
+callback, promise là những cách xử lý bất đồng bộ của javascript. Ngoài ra còn cách xử lý bằng cách dùng cặp từ khoá: async - await nữa(tra [google](https://viblo.asia/p/giai-thich-ve-asyncawait-javascript-trong-10-phut-1VgZvBn7ZAw) để biết thêm chi tiết)
 
 ---
 
