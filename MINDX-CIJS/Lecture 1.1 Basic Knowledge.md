@@ -196,7 +196,7 @@ callback, promise là những cách xử lý bất đồng bộ của javascript
     - Authorization
 
 - Chi tiết hơn về HTTP hoạt động như thế nào thì cũng tra [google](https://vi.wikipedia.org/wiki/Hypertext_Transfer_Protocol) luôn nhé!
-- **fetch** là lách đơn giản nhất để gửi một http request ở phía client, promised-base (nền tảng là promise => phải biết xài promise ). Có thể dùng fetchOptions (tra [google](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) ) để tuỳ chỉnh headers, body, verb (GET, POST)
+- **fetch** là cách đơn giản nhất để gửi một http request từ phía client, promised-base (nền tảng là promise => phải biết xài promise ). Có thể dùng fetchOptions (tra [google](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) ) để tuỳ chỉnh headers, body, verb (GET, POST)
 
 
 

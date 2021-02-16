@@ -7,7 +7,7 @@
     - callback
     - Promise
     - HTTP Request & fetch
-- Set up Git Project
+- Set up Git for a project
     - Git branchs
     - .gitignore
     - Using github
