@@ -1,3 +1,4 @@
+# Optional
 ## CORS 
 - CORS là viết tắt của từ (Cross Origin Resources Sharing). Là một cơ chế sử dụng header server (back-end) xác định một request tới server thuộc origin (domain, scheme, port) nào ? Điều này dẫn tới việc có chấp nhận request từ một origin khác hay không? 
 
@@ -12,3 +13,9 @@
     - Sử dụng extension Moesif 
     - Chắc cú nhất sửa server backend 
     - Dùng server gọi trung gian ( nếu bên thứ 3 không hỗ trợ )
+
+---
+
+## Reference:
+
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS

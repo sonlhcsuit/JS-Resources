@@ -30,33 +30,86 @@ Một vài file đáng chú ý khi setup một git repository cho một project
 --- 
 
 ## Github là gì 
+- Git giúp chúng ta quản lý code tốt hơn và mượt mà hơn, tránh khỏi những vấn đề rắc rối khi phát triển dự án. Tuy nhiên, bất hạnh là git chỉ hoạt động local - tức là chỉ hoạt động trên 1 máy tính duy nhất, tại một thời điểm. Vậy thì 2 3 lập trình viên sẽ code trên cùng máy tính sao? Không, có một chức năng của git sẽ giúp các lập trình viên code cùng một dự án trên cùng một git repository nhưng mà ở máy tính khác nhau.
 
+- Đó là sử dụng online repository. Sơ bộ ý tưởng là: có một online git repository ở một máy chủ, một tính năng nào đó đã hoàn thành thì lập trình viên sẽ cập nhật online git repository từ local git repository của anh ta nhằm mục đích lưu trữ. Một lập trình viên mới tham gia dự án, sẽ có thể tải từ git online repository, bắt đầu phát triển thêm các tính năng.
+
+- Có nhiều dịch vụ cung cấp repository hiện nay: GitHub, BitBucket, GitLab,... Chúng ta sẽ sử dụng GitHub để thao tác, lưu trữ code.
+
+- Cách sử dụng github 
+<img src="https://www.coderomeos.org/storage/uploads/images/posts/how-to-use-github-simple-github-tutorial-for-beginners-5d75f561e98d4.png">
+---
 
 ## Một vài lệnh git cơ bản 
-## NodeJS
-- Node.js là một hệ thống phần mềm được thiết kế để viết các ứng dụng internet có khả năng mở rộng, đặc biệt là máy chủ web. Đơn giản hơn, JS chạy ở server thì cần có nodejs (runtime engine)
 
-- NPM là chương trình quản lý thư viện (package manager) ngầm định trong môi trường Javascript Node.js. Bao gồm một trình gọi dòng lệnh (Command Line) từ máy khách Client với tên gọi là npm, và cơ sở dữ liệu trực tuyến chứa các gói public và private còn được gọi là npm registry. Npm registry được gọi từ npm client và trên web browser. Tất cả được quản lý trực tiếp từ NPM, inc.
+- Okay, ở đây chúng ta sẽ chỉ thực hiện một vài tương tác git cơ bản. Lưu ý, online repository sẽ được gọi là remote repository từ bây nhớ nhé. 
 
-- node_modules : chứa các file thư viện (rất nặng)
+- Lưu ý là phải **Ở ĐÚNG THƯ MỤC LÀM VIỆC CỦA CÁC BẠN** nếu không thì đừng hỏi tại sao nó không chạy 
 
-- package.json : metadata về node project
+- Những thứ viết trong ngoặc vuông ( [] ) sẽ là những thứ các bạn phải điền vào! 
 
-## setup 
+- Tất cả các lệnh ở dưới đều là CLI, chúng ta có thể dùng github desktop(GUI), nhưng dùng GUI thì các bạn tự tìm hiểu ở [google](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) nhé 
+
+
+- Điều đầu tiên phải biết là các bạn cần phải mở CLI ở **ĐÚNG CHỖ ĐÃ**, đối với windowns thì dùng file explore lên , di chuyển tới thư mục của dự án (hoặc là chỗ lưu, sau đó bấm vào address bar) **cmd** và hit ENTER 
+<img src="../sources/CIJS-Lecture 1.2.jpg" alt="hit">
+
+<!-- còn bổ sung thêm windows -->
+- Xong như này thì đã hoàn tất việc mở project bằng CLI, kiểm tra project path (nơi chứa dự án)
+
+
+
+
+- Clone git repository from github (tải xuống một remote repository)
 ```sh
-$ npm install -g creat-react-app
-$ create-react-app mindx-cijs
-# npx create-react-app mindx-cijs
+$ git clone [link]
+
 ```
+- Tuỳ thuộc vào bạn ở đâu (current path) mà sẽ có một thư mục mới được tạo ra ngay tại đó - nó chính là dự án của các bạn 
+
+- Bây giờ thì di chuyển vào thư mục project vừa tạo ra, và từ bây giờ, tất cả các lệnh **đều ở trong thư mục dự án này**
+```sh
+$ git status .
+```
+- Dùng để kiểm tra trạng thái của project! Nếu có chữ **nothing to commit, working tree clean** tức là project đang *sạch* (vừa commit xong, chưa có thay đổi gì mới!). Còn nếu không có, thì tức là project đã có sự thay đổi về code, chúng ta sẽ **làm sạch** project bằng cách commit (wrap code lại và lưu)
 
 ```sh
-$ npm install -g firebase-tools
-$ cd mindx-cijs
-$ npm install --save firebase
+$ git add .
+$ git commit -m "[message]"
 ```
+- Lệnh đầu tiên để theo dõi toàn bộ sự thay đổi của project (dấu . mang ý nghĩa là toàn bộ)
+- Lệnh thứ 2 để thực hiện commit với **message** là những thứ các bạn làm !
 
-- Lưu repository lên github 
+```sh
+$ git push 
+```
+- Đẩy code lên remote repository
 
-Reference:  
-* https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-* https://stackoverflow.com/questions/22424705/i-dont-understand-json-and-when-im-supposed-to-use-it-care-to-explain
+```sh
+$ git pull
+```
+- Kéo code mới ở trên repository về
+
+- Đôi khi, các bạn pull/push code thì sẽ xảy ra hiện tượng conflict => cần phải qiải quyết tình trạng conflict. Để làm sao giải quyết thì các bạn tra [google](https://youtu.be/1JuYQgpbrW0?t=737)
+
+```sh
+$ git checkout -b [newbranchName]
+```
+- Tạo ra branch mới từ nhánh hiện tại, nhánh bạn đang ở 
+
+```sh
+$ git branch --list 
+```
+- Coi tất cả các nhánh hiện có của project, nhánh nào có dấu \* là nhánh bạn đang ở 
+
+```sh
+$ git checkout [branchName]
+```
+- Checkout (nhảy sang nhánh khác), trước khi nhảy phải **commit sạch sẽ**
+
+và một đống lệnh khác nữa có mặt ở [google](https://git-scm.com/doc) và trong lúc các bạn cần 
+
+---
+
+## Reference:  
+* https://git-scm.com/doc

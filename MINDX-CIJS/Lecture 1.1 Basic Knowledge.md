@@ -198,11 +198,13 @@ callback, promise là những cách xử lý bất đồng bộ của javascript
 - Chi tiết hơn về HTTP hoạt động như thế nào thì cũng tra [google](https://vi.wikipedia.org/wiki/Hypertext_Transfer_Protocol) luôn nhé!
 - **fetch** là cách đơn giản nhất để gửi một http request từ phía client, promised-base (nền tảng là promise => phải biết xài promise ). Có thể dùng fetchOptions (tra [google](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) ) để tuỳ chỉnh headers, body, verb (GET, POST)
 
+---
 
-
-
-
-
-
-
-
+## Reference:  
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+* https://stackoverflow.com/questions/22424705/i-dont-understand-json-and-when-im-supposed-to-use-it-care-to-explain
+* https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
+* https://developer.mozilla.org/en-US/docs/Web/HTTP

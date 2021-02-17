@@ -8,18 +8,16 @@
     - Promise
     - HTTP Request & fetch
 - Set up Git for a project
-    - Git branchs
-    - .gitignore
-    - Using github
-    - Jump between branch
+    - Git
+    - GitHub
+    - Basic git command
 - NodeJS
+    - node
     - npm
-    - node_modules
-    - package.json
 - Set up React project
     - create-react-app
-    - add firebase using npm
-- What is CORS? How to fix it ? How to by pass it? (prelight + opaque)
+- Optional
+    -What is CORS? How to fix it ? How to by pass it? (prelight + opaque)
 CLASSWORK: todo-app using html + css + js  
 HOMEWORK : problems solving ( 5 problems )
 
