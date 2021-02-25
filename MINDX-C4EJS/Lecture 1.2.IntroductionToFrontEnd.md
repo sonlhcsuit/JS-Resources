@@ -15,7 +15,7 @@
 
 ---
 
-## Chức năng, vai trò của HTML, CSS, JS (web-trio )
+## Chức năng, vai trò của HTML, CSS, JS
 <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/103480911/original/f5aa8f3579b2c7c5756a038e922e9f12765616b8/fix-your-html-css-javascript-or-jquery-bugs.jpg">
 
 <img src="../sources/C4EJS-Lecture 1.2.gif">
