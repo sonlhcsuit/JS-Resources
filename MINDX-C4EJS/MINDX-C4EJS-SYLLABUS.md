@@ -5,7 +5,8 @@
 ## Lecture 1
 - Overview about Internet, and World Wide Web
 - Introduction to Front-End
-- Introduction to HTML/CSS/JS
+- Introduction to HTML
+- HTML tags
 
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works
 ## Lecture 2

@@ -51,11 +51,6 @@ lines  -->
 - b,i,u,
 và các tag cơ bản khác 
 
-
----
-## Bài tập:
-- https://c4e-d17.netlify.app/index.html
-- Làm lại tương tự như brown bears, nhưng mà với mèo (Norwegian Forest Cat - Mèo rừng Nauy ).
 ---
 
 
