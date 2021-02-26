@@ -1,3 +1,19 @@
-h1{
-    color: red;
+/* Table CSS */
+table,
+td,
+th {
+  border: 2px solid gray;
+  border-collapse: collapse;
+  border: 1px solid #dd6b4d;
+}
+table {
+  margin-top: 15px;
+  width: 75%;
+}
+td {
+  padding-left: 10px;
+}
+th {
+  background-color: #dd6b4d;
+  color: white;
 }
