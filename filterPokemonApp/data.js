@@ -1,4 +1,4 @@
-export let pokemon = [
+export let pokemons = [
     {
       avatar: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png',
       type: ['grass']
