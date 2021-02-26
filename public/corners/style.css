@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+}
+
+.container {
+    width: 30vw;
+    height: 30vh;
+    background-color: #62374e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.square {
+    margin: 0 12.5%;
+    width: 3vw;
+    height: 3vw;
+    background-color: #fdc57b;
+}

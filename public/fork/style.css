@@ -1,16 +1,72 @@
-body{
-    background-color: #000;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-.center{
-    position: absolute;
-    margin: auto;
-    top: 0;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6592CF;
+    overflow: hidden;
+}
+
+.fork {
+    width: calc(0.4*30vh);
+    height: calc(0.40*30vh);
+    border-radius: 50%;
+    background-color: #060F55;
+    position: relative;
+    top: 10%;
+    left: 0;
     right: 0;
     bottom: 0;
+}
+
+.fork__teeth {
+    position: absolute;
+    top: -20;
     left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 25px 10px 0px 0px #fff; 
+    right: 0;
+    bottom: 0;
+    width: calc(0.4*30vh);
+    height: calc(0.40*30vh);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fork__tooth {
+    width: 100%;
+    height: 70%;
+    background-color: #060F55;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.fork__tooth--chroma {
+    background-color: #6592CF;
+}
+
+.fork__handle {
+    position: absolute;
+    top: 80%;
+    left: 42.5%;
+    width: 15%;
+    height: 100%;
+    background-color: #060F55;
+}
+
+
+.border {
+    border: 1px solid red;
 }
