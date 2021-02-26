@@ -1,2 +1,2 @@
 # mini-app-sample-data
-This repository is used to store sample data for some mini project 
+- This repository stored sample data for some mini project 
