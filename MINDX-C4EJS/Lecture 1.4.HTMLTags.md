@@ -1,6 +1,6 @@
 # Web là gì?
 ## Resources
-
+- Các resource 
 ---
 
 ## Format
