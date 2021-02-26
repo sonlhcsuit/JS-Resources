@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+}
+.container {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.moon{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 50;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* background-color: transparent; */
+    border-radius: 50%;
+    box-shadow: 15px 10px 0px 0px #fff; 
+    /* border: 1px solid red; */
+}
