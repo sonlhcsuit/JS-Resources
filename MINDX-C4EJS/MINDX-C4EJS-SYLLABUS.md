@@ -7,12 +7,38 @@
 - Introduction to Front-End
 - Introduction to HTML
 - HTML tags
-
-https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works
+<!-- 
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works -->
 ## Lecture 2
-- HTML & CSS
+- HTML tags part 2 
+    - Forms
+    - DOM
+    - Block and non Block
+    - file path
+    - entity
+- Introduction to CSS
+    - declarations
+    - selectors
+    - specificity
+    - measure unit
+    - some css property
+- CSS 
+    - Naming with Bem Standard
+    - display
+    - Box Model
+- CSS part 2
+    - flex box
+
+
 ## Lecture 3
-- HTML & CSS
+- CSS part 3
+    - position
+    - font icon
+    - CSS function: var, calc,...
+    - some property: z-index, transform
+    - Using font
+- Do project
+
 ## Lecture 4
 - HTML & CSS
 ## Lecture 5
