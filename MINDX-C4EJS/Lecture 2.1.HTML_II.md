@@ -83,6 +83,8 @@
 ```
 - Ngoài entity thì HTML còn hỗ trợ symbol, emoji,...
 ---
+## Exercise
+- Thực hiện bài tập survey
 
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
