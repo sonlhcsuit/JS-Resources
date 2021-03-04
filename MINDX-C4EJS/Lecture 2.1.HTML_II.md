@@ -64,7 +64,9 @@
 ---
 
 ## File path
-
+- HTML sẽ sử dụng filepath (đường dẫn) để tải các file tài nguyên liên quan.
+- Đây là một kỹ năng cần có khi cần vận dụng nhiều loại tài nguyên vào trang web
+- Xem thêm ở [google](https://www.w3schools.com/html/html_filepaths.asp)
 ---
 
 ## HTML entity
@@ -79,7 +81,12 @@
 
 <p> &forall; x &isin; (-10;10] x &le; 10</>
 ```
+- Ngoài entity thì HTML còn hỗ trợ symbol, emoji,...
 ---
 
 ## Reference 
-* 
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+* https://www.w3schools.com/html/html_forms.asp
+* https://www.w3schools.com/whatis/whatis_htmldom.asp
+* https://www.w3schools.com/html/html_entities.asp
+* https://www.w3schools.com/html/html_filepaths.asp

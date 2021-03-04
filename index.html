@@ -8,13 +8,30 @@
 </head>
 
 <body>
- 
-<p> 100 > 2 </p>
-<!-- Chạy đối với 1 vài trình duyệt mới, tuy nhiên không đảm bảo an toàn -->
-<p> 100 &gt 2 </p>
-<!-- Chạy tốt và chạy đúng -->
+    <style>
+        #pink {
+            color: pink;
+        }
 
-<p> &forall; x &isin; (-10;10] x &le; 10</>
+        p {
+            color: yellow;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+    <p>What is my color?</p>
+    <p class="blue">What is my color?</p>
+    <p class="red">What is my color?</p>
+    <p class="blue red">What is my color?</p>
+    <p id="pink" class="blue">What is my color?</p>
+    <p id="pink" class="blue red">What is my color?</p>
+    <p id="pink" class="blue red" style="color:black">What is my color?</p>
 </body>
 
 </html>
