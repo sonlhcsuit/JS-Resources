@@ -84,7 +84,7 @@
 - Ngoài entity thì HTML còn hỗ trợ symbol, emoji,...
 ---
 
-## Reference 
+## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 * https://www.w3schools.com/html/html_forms.asp
 * https://www.w3schools.com/whatis/whatis_htmldom.asp

@@ -24,8 +24,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_
     - some css property
 - CSS 
     - Naming with Bem Standard
-    - display
     - Box Model
+    - display
 - CSS part 2
     - flex box
 

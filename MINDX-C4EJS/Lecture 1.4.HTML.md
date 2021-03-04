@@ -149,7 +149,7 @@ x<sup>2</sup> - Superscript text
 - Về nhà thực hiện lại tương tự với đối tượng là Norwegian Forest cat và một món ăn nào đó các bạn thích
 - Các bạn có thể tra cứu chi tiết hơn về các tag, các attribute và cách sử dụng chi tiết ở link thứ 4
 ---
-## Reference: 
+## Reference & More Resources: 
 * https://vi.wikipedia.org/wiki/Internet
 * https://nodejs.org/api/url.html
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/

@@ -100,7 +100,7 @@ p {
 
 ## Measure unit
 - Có 2 loại unit để đo độ dài chính trong CSS 
-- absolute: Độ dài cụ thể, tường minh. Ví dụ: px, cm, mm, in (inches),...
+- absolute: Độ dài cụ thể, tường minh. Ví dụ: px, cm, mm, in (inches),...add
 - relative: không tường minh, phụ thuộc vào thứ khác. Ví dụ: %, vw, vh,...
 
 ---
@@ -109,7 +109,7 @@ p {
 - Giới thiệu về các CSS property hay được sử dụng 
 ---
 
-## Reference & More Resources 
+## Reference & More Resources: 
 * https://www.w3schools.com/css/css_syntax.asp
 * https://www.w3schools.com/css/css_selectors.asp
 * https://www.w3schools.com/html/html_id.asp
