@@ -145,7 +145,7 @@ x<sup>2</sup> - Superscript text
 ---
 
 ## Exercise
-- Các bạn thực hiện code Brown Bear  & Healthy Food ở trên lớp 
+- Các bạn thực hiện code Brown Bear & Healthy Food ở trên lớp 
 - Về nhà thực hiện lại tương tự với đối tượng là Norwegian Forest cat và một món ăn nào đó các bạn thích
 - Các bạn có thể tra cứu chi tiết hơn về các tag, các attribute và cách sử dụng chi tiết ở link thứ 4
 ---

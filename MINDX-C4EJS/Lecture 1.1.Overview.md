@@ -28,6 +28,7 @@
 - Dựa vào từng thành phần mà sẽ có 2 vị trí quan trọng khi phát triển một ứng dụng web FE Developer & BE Developer. Fullstack Developer cũng hay được nói tới, tuy nhiên nó chỉ là từ được sử dụng ngầm chỉ developer có rất nhiều khả năng ( ở phần FE & BE và một số kỹ năng khác: hosting, testing, ...)
 
 - Ở trong khoá học này sẽ tập trung kỹ năng phát triển phần Front-End
+- Đọc thêm : https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works 
 
 ---
 

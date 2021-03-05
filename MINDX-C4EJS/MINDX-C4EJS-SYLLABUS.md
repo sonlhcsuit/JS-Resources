@@ -7,8 +7,10 @@
 - Introduction to Front-End
 - Introduction to HTML
 - HTML tags
-<!-- 
-https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works -->
+- Exercise:
+    * Brown Bear & Healthy Food ở trên lớp
+    * Về nhà làm bài Norwegian Forest Cat (tương tự như Brown Bear nhưng thay vì gấu thì sẽ là mèo, và các thông tin thì các bạn tự tìm hiểu ở wiki)
+    * Đọc thêm thông tin về các tag ở link 4 
 ## Lecture 2
 - HTML tags part 2 
     - Forms
@@ -28,7 +30,12 @@ https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_
     - display
 - CSS part 2
     - flex box
-
+- Exercise:
+    * Thực hiện Survey form
+    * Thực hiện Portfolio
+    * Về nhà làm riêng cho mình một porfolio
+    * Đọc thêm thông tin về các tag HTML & CSS ở w3school.
+    * Làm tribute Page
 
 ## Lecture 3
 - CSS part 3
@@ -37,10 +44,18 @@ https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_
     - CSS function: var, calc,...
     - some property: z-index, transform
     - Using font
-- Do project
+- Exercise:
+    * Thực hiện Survey form 2 (50%)
+    * Làm Just a Square & Crescent Moon
+    * Về nhà hoàn thiện Survey form 2
+    * 4 Corner & Button
 
 ## Lecture 4
-- HTML & CSS
+- Exercise:
+    * Thực hiện Fork, Fuji Mountain
+    * Làm Product Landing Page (40%)
+    * Về nhà hoàn thiện Product Landing Page (Navigation Bar, Products,...), 
+    * Xem trước về Javascript
 ## Lecture 5
 ## Lecture 6
 ## Lecture 7
