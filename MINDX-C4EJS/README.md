@@ -1,5 +1,10 @@
 ## C4E JS - Student book
 ### Mục lục
+
+1. [SYLLABUS](MINDX-C4EJS-SYLLABUS.md)
+
+
+
 1. [Giới thiệu khoá học (Introduction)](course_intro/course_introduction.md)
 2. [Biến (Variables)](./variables/variables.md)
 3. [Kiểu dữ liệu (Data types)](./data_types/data_types.md)
