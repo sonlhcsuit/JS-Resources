@@ -1,4 +1,4 @@
-# Giới thiệu về Front-End
+# Introduction to Front-End
 ## Front-End là gì?
 - Front-End sẽ tập trung nhiều thời gian dành ra để xây dựng, thiết kế giao diện sao cho dễ sử dụng, tiện tích và phù hợp nhất.Ngoài ra các developer còn phải để ý đến những trải nghiệm người dùng ở trên nhiều loại thiết bị khác nhau,...
 

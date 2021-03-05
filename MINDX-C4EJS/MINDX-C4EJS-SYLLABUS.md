@@ -3,10 +3,11 @@
 ---
 
 ## Lecture 1
-- Overview about Internet, and World Wide Web
-- Introduction to Front-End
-- Introduction to HTML
-- HTML tags
+
+- [Lecture 1.1](Lecture-1.1.Overview.md): Overview about Internet, and World Wide Web
+- [Lecture 1.2](Lecture-1.2.Introduction-to-Front-End.md): Introduction to Front-End
+- [Lecture 1.3](Lecture-1.3.Introduction-to-HTML.md): Introduction to HTML
+- [Lecture 1.4](Lecture-1.4.HTML.md): HTML tags
 - Exercise:
     * Brown Bear & Healthy Food ở trên lớp
     * Về nhà làm bài Norwegian Forest Cat (tương tự như Brown Bear nhưng thay vì gấu thì sẽ là mèo, và các thông tin thì các bạn tự tìm hiểu ở wiki)
