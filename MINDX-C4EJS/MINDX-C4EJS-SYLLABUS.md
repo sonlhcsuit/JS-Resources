@@ -34,12 +34,12 @@
     - measure unit
     - some css property
 
-- [Lecture 2.3](Lecture-2.1.CSS.md): CSS
+- [Lecture 2.3](Lecture-2.3.CSS.md): CSS
     - Naming with Bem Standard
     - Box Model
     - display
 
-- [Lecture 2.4](Lecture-2.1.CSS-II.md): CSS II
+- [Lecture 2.4](Lecture-2.4.CSS-II.md): CSS II
     - flex box
     
 - Exercise:
