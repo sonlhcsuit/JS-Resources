@@ -1,4 +1,4 @@
-# Web là gì?
+# HTML
 ## Resources tags
 - Các resource tag thường được dùng để thông tin vào trang mà không phải dạng text (chữ), thông thường các resource tag thường sử dụng là 
 ```html

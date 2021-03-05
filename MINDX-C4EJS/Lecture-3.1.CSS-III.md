@@ -1,4 +1,4 @@
-# Introduction to CSS
+# CSS III
 ## Position
 - Position là một thuộc tính quan trọng của CSS khi thực hiện việc căn chỉnh layout, giao diện. Postion giúp re-locate (đặt lại vị trí) của element trên trang web mà không ảnh hưởng tới element khác. Có 4 loại thuộc tính position cơ bản : static (mặc định cho tất cả element ), **relative**, **fixed**, **absolute**, **sticky** (thuộc tính static không tính nha các bạn).
 

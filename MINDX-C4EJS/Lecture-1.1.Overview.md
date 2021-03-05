@@ -1,4 +1,4 @@
-# Web là gì?
+# Overview
 ## Internet là gì? Web là gì? 
 
 > Internet hay Mạng là một hệ thống thông tin toàn cầu có thể được truy nhập công cộng gồm các mạng máy tính được liên kết với nhau. Hệ thống này truyền thông tin theo kiểu nối chuyển gói dữ liệu (packet switching) dựa trên một giao thức liên mạng đã được chuẩn hóa (giao thức IP). Hệ thống này bao gồm hàng ngàn mạng máy tính nhỏ hơn của các doanh nghiệp, của các viện nghiên cứu và các trường đại học, của người dùng cá nhân và các chính phủ trên toàn cầu, được liên kết bởi một loạt các công nghệ mạng điện tử, không dây và mạng quang. Internet mang theo một loạt các tài nguyên và dịch vụ thông tin, chẳng hạn như các tài liệu và ứng dụng siêu văn bản được liên kết với nhau của World Wide Web (WWW), thư điện tử, điện thoại và chia sẻ file.
