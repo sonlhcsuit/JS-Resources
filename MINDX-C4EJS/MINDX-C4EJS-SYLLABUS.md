@@ -49,6 +49,8 @@
     * Đọc thêm thông tin về các tag HTML & CSS ở w3school.
     * Làm tribute Page
 
+---
+
 ## Lecture 3
 - [Lecture 3.1](Lecture-3.1.CSS-III.md): CSS part 3
     - position
@@ -63,13 +65,28 @@
     * Về nhà hoàn thiện Survey form 2
     * 4 Corner & Button
 
+---
+
 ## Lecture 4
 - Exercise:
     * Thực hiện Fork, Fuji Mountain
     * Làm Product Landing Page (40%)
     * Về nhà hoàn thiện Product Landing Page (Navigation Bar, Products,...), 
     * Xem trước về Javascript
+
+---
+
 ## Lecture 5
+- Introduction to Javascript & Programming tools
+
+- Values, Variable & Data type
+
+- Operator and Expression
+
+
+
+---
+
 ## Lecture 6
 ## Lecture 7
 ## Lecture 8
