@@ -1,4 +1,4 @@
-# React Project
+# CIJS
 
 ## Lecture 1:
 - Basic Knowledge

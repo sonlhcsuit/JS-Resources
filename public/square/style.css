@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+}
+.container{
+    width: 30vw;
+    height: 30vh;
+    background-color: #5d3a3a;
+}
+.square {
+    width: calc(0.6*30vh);
+    height: calc(0.6*30vh);
+    background-color: #b5e0ba;
+}
