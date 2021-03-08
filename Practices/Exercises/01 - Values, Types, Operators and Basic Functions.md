@@ -94,70 +94,8 @@ isTriplet(1, 2, 3) ➞ false
 Notes:  
 Numbers may not be given in a **_sorted_** order.
 
-> ### 7. Last Digit Ultimate
->
-> Your job is to create a function, that takes 3 numbers: a, b, c and returns true if (the last digit of a \* the last digit of b) = the last digit of c. Check the examples below for an explanation.
 
-```js
-lastDig(25, 21, 125) ➞ true
-// The last digit of 25 is 5, the last digit of 21 is 1, and the last
-// digit of 125 is 5, and the last digit of 5*1 = 5, which is equal
-// to the last digit of 125(5).
-
-lastDig(55, 226, 5190) ➞ true
-// The last digit of 55 is 5, the last digit of 226 is 6, and the last
-// digit of 5190 is 0, and the last digit of 5*6 = 30 is 0, which is
-// equal to the last digit of 5190(0).
-
-lastDig(12, 215, 2142) ➞ false
-// The last digit of 12 is 2, the last digit of 215 is 5, and the last
-// digit of 2142 is 2, and the last digit of 2*5 = 10 is 0, which is
-// not equal to the last digit of 2142(2).
-
-```
-
-Notes:
-If you still don't understand:  
-The last digit of a = `x`, the last digit of `b` = `y`, and the last digit of `c` = `z`.
-Return true if `x*y = z`, and false otherwise.  
-Numbers can be negative.
-
-> ### 8. Automorphic Numbers
-
-A number n is automorphic if n^2 ends in n.
-
-For example: n=_5_, n^2=2*5*
-
-Create a function that takes a number and returns true if the number is automorphic, false if it isn't.
-
-```js
-
-isAutomorphic(5) ➞ true
-
-isAutomorphic(8) ➞ false
-
-isAutomorphic(76) ➞ true
-```
-
-> ### 9. factorialDivisible
-
-Create a function that takes a number **n** and the expression **L = (n - 1)! + 1 = 1 _ 2 _ 3 ... \* (n-1) + 1** please determine if **L** is divisible by **n**
-
-```js
-// with n is 3
-factorialDivisible(n); // return true
-// explain: L = 2! + 1 = 1*2 + 1 = 3 divisible by 3.
-
-// with n is 5
-factorialDivisible(n); // return true
-// explain: L = 4! + 1 = 1*2*3*4 + 1 = 25 divisible by 5.
-
-// with n is 4
-factorialDivisible(n); // return false
-// explain: L = 3! + 1 = 6 + 1 = 7 divisible by 4.
-```
-
-> ### 10 getArea
+> ### 7. Area
 >
 > Calculate and return the area of a rectangle having sides `height` and `width`.
 
@@ -171,7 +109,7 @@ getArea(1,2) -> 2
 getArea(100,200) -> 2000
 ```
 
-> ### 11 getArea
+> ### 8. Perimeter
 >
 > Calculate and return the perimeter of a rectangle having sides `height` and `width`.
 
@@ -185,7 +123,7 @@ getPerimeter(1,2) -> 6
 getPerimeter(100,200) -> 600
 ```
 
-> ### 12. BMI Calculator
+> ### 9. BMI Calculator
 >
 > Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
 
