@@ -123,13 +123,4 @@ getPerimeter(1,2) -> 6
 getPerimeter(100,200) -> 600
 ```
 
-> ### 9. BMI Calculator
->
-> Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
 
-```js
-BMI(170,60 ) ➞ "normal"
-
-BMI(180,55) ➞ "underweight"
-
-```
