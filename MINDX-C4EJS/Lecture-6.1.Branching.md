@@ -78,11 +78,12 @@ switch(variable){
 ---
 
 ## Exercise:
-- Làm bài 1 - 5 trong file 01 ở <a href="https://github.com/sonlhcsuit/JS-Resources/blob/master/Practices/Exercises/01 - Values, Types, Operators and Basic Functions.md">đây</a>
+
 
 ---
 
 ## Reference & More Resources: 
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+* https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/branching/branching.md
