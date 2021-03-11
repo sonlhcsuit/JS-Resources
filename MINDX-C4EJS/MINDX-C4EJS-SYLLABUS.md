@@ -83,7 +83,8 @@
 
 - Operator and Expression
 
-
+- Exercise:
+    * Làm bài 1 - 5 ở file <a href="https://github.com/sonlhcsuit/JS-Resources/blob/master/Practices/Exercises/01 - Values, Types, Operators and Basic Functions.md">đây</a> 
 
 ---
 

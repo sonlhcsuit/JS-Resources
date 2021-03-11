@@ -28,12 +28,12 @@
 <div>
 
 - Đối với các hàm ở trên thì mỗi khi cần tính giá trị sẽ gặp khó khăn khi cài đặt công thức! (về việc kiểm tra các dấu (, ),... )
-
-- function là một dạng đặc biệt của expression. 
-- Đôi khi có nhiều Bởi vì buổi học thứ 1 nên function chỉ ở mức độ overview 
+- Function là một dạng đặc biệt của expression, có thể sử dụng để khai báo công thức, mỗi khi cần tính toán thì sẽ thay số vào để xử lý.
+- Có khả năng tái sử dụng, độc lập, tích hợp ,...
 - Học cách khai báo hàm, sử dụng hàm cơ bản 
 ```js
-function f_name(x){
+function f_name(x,y,z){
+    // x, y, z là các biến input đầu vào. Khi sử dụng với hàm thì không cần phải thông qua từ khoá let, bắt buộc đặt ở phần khai báo
     // statement để xử lý input
     // ...
     return x**2
