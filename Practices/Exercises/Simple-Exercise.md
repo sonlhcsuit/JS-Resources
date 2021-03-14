@@ -278,3 +278,150 @@ leapYear(2021) ➞ false
 
 leapYear(1968) ➞ true
 ```
+
+
+> ### 21. Binary Array to Decimal
+>
+>  In mathematics and digital electronics, a binary number is a number expressed in the base-2 numeral system or binary numeral system. Given an array of `ones and zeroes` of a binary number, return the equivalent `decimal value`.
+
+```js
+binaryToDecimal([0, 0, 0, 1]) ➞ 1
+
+binaryToDecimal([0, 0, 1, 0]) ➞ 2
+
+binaryToDecimal([1, 1, 1, 1, 1, 0, 1, 1, 0, 1]) ➞ 1005
+```
+
+
+> ### 22. Return Types
+>
+>  Create a function that takes an array and returns the types of values (data types) in a new array.
+
+```js
+arrayValuesTypes([1, 2, "null", []])
+➞ ["number", "number", "string", "object"]
+
+arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+➞ ["string", "boolean", "boolean", "number", "number", "object", "object"]
+
+arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+➞ ["number", "string", "string", "object", "object", "boolean", "number"]
+```
+
+> ### 23. Many Operators!
+>
+>  Some basic arithmetic operators are `+, -, *, /, and %`. In this challenge you will be given three parameters, `num1`, `num2`, and an `operator`. Use the operator on number 1 and 2.
+
+```js
+operate(1, 2, "+") ➞ 3
+// 1 + 2 = 3
+
+operate(7, 10, "-") ➞ -3
+// 7 - 10 = -3
+
+operate(20, 10, "%") ➞ 0
+// 20 % 10 = 0
+```
+
+> ### 24. Upvotes vs Downvotes
+>
+>  Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+
+```js
+getVoteCount({ upvotes: 13, downvotes: 0 }) ➞ 13
+
+getVoteCount({ upvotes: 2, downvotes: 33 }) ➞ -31
+
+getVoteCount({ upvotes: 132, downvotes: 132 }) ➞ 0
+```
+
+
+> ### 25. Rotate the List by One 🔄
+
+>
+>  Given an array, rotates the values clockwise by one (the last value is sent to the first position).
+
+```js
+rotateByOne([1, 2, 3, 4, 5]) ➞ [5, 1, 2, 3, 4]
+
+rotateByOne([6, 5, 8, 9, 7]) ➞ [7, 6, 5, 8, 9]
+
+rotateByOne([20, 15, 26, 8, 4]) ➞ [4, 20, 15, 26, 8]
+```
+
+> ### 26. Reverse an Array
+
+>
+>  Write a function to reverse an array.
+
+```js
+reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+
+reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9]
+
+reverse([]) ➞ []
+```
+
+> ### 27. Movie Theatre Admittance
+
+>
+>  Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+- The person is at least 15 years old.
+- They have parental supervision.
+
+The function accepts two parameters, `age` and `isSupervised`. Return a boolean.
+```js
+acceptIntoMovie(14, true) ➞ true
+
+acceptIntoMovie(14, false) ➞ false
+
+acceptIntoMovie(16, false) ➞ true
+```
+
+****Notes****
+- `age` is a decimal.
+- `isSupervised` is a boolean.
+
+
+> ### 28. Drinks Allowed?
+
+>
+>  A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
+
+Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+
+```js
+shouldServeDrinks(17, true) ➞ false
+
+shouldServeDrinks(19, false) ➞ true
+
+shouldServeDrinks(30, true) ➞ false
+```
+
+> ### 29. Tallest Birthday Cake Candles
+
+>
+>  You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest.
+
+```js
+birthdayCakeCandles([4, 4, 1, 3]) ➞ 2
+// The maximum height candles are four units high.
+// There are two of them, so you return 2.
+
+birthdayCakeCandles([3, 2, 1, 3]) ➞ 2
+
+birthdayCakeCandles([82, 49, 82, 82, 41, 82, 15, 63, 38, 25]) ➞ 4
+```
+
+> ### 30. Binary Addition + 0 1 0 1
+
+>
+>  Create a function that takes two numbers and returns their sum as a binary string.
+
+```js
+addBinary(1, 1) ➞ "10"
+
+addBinary(1, 2) ➞ "11"
+
+addBinary(4, 5) ➞ "1001"
+```
