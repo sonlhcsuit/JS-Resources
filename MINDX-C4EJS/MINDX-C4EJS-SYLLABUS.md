@@ -89,8 +89,19 @@
 ---
 
 ## Lecture 6
+- Branching
+    - Conditional Statement
+    - if else if 
+    - switch case
 ## Lecture 7
+- Loops
+    - while
+    - for
+    - break & continue
+    - practices
+- Array
 ## Lecture 8
+- Object
 ## Lecture 9
 ## Lecture 10
 ## Lecture 11
