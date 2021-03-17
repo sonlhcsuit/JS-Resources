@@ -12,8 +12,28 @@
 
 </body>
 <script>
+    function insert(array, position, value) {
+        array.push(null)
+        // Thêm phần tử 
+        for (let i = array.length - 1; i > position; i--) {
+            array[i] = array[i - 1]
+        }
+        // "dời mảng" tạo thành chỗ trống, sau đó gán giá trị thừa vào
+        array[position] = value
+        return array
+    }
+
+    function remove(array, position) {
+        for (let i = position; i < array.length; i++) {
+            array[i] = array[i + 1]
+        }
+        array.pop()
+        return array
+    }
+
     let my_array = [123, true, 'false', NaN, undefined, ['what', 'is', 'this']]
-    console.log(my_array[undefined] )
+    my_array = remove(my_array,3,'??????')
+    console.log(my_array)
 </script>
 
 </html>
