@@ -20,12 +20,27 @@ let revenue_31 = 65
 let my_array = [123, true, 'false', NaN, undefined, ['what', 'is' ,'this'] ] 
 let our_array = []
 // Khai báo một mảng bằng cặp dấu [ ], các phần tử ngăn cách với nhau bởi dấu ,
+
+```
+
+---
+
+## Array manipulation
+- Khi thực hiện các thao tác xử lý mảng thì ta có 3 việc hay làm nhất: Đọc, thêm, xoá, sửa
+
+Đối với việc đọc các phần tử con (element of array) thì index chính là cách duy nhất để có thể lấy thông tin
+
+```js
+let my_array = [123, true, 'false', NaN, undefined, ['what', 'is' ,'this'] ] 
+console.log(my_array[0]*12)
+// như vậy thì my_array[0] tương ứng với phần tử đầu tiên - 0 chính là index (mảng bắt đầu đánh chỉ mục cho các phần tử bằng 0)
+// Lưu ý, index bắt buộc phải là số nguyên, không được phép là số thực (hay bất cứ thứ gì đó khác số nguyên!) thì sẽ ăn ngay 1 giá trị trả về undefined 
+
 ```
 
 ---
 
 ## Exercise:
-
 
 ---
 
