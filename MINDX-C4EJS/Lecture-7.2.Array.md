@@ -95,6 +95,8 @@ new_array = ['??','!!'].concat(array)	// Nối 2 mảng lại với nhau, và tr
 array.reverse()			// Trả về mảng nhưng với thứ thứ tự bị ngược
 ```
 
+- Array thường được kết hợp với vòng lặp để xứ lý dữ liệu !
+
 ---
 
 ## Exercise:
