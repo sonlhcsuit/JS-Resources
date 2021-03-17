@@ -34,7 +34,7 @@ let our_array = []
 let my_array = [123, true, 'false', NaN, undefined, ['what', 'is' ,'this'] ] 
 console.log(my_array[0]*12)
 // như vậy thì my_array[0] tương ứng với phần tử đầu tiên - 0 chính là index (mảng bắt đầu đánh chỉ mục cho các phần tử bằng 0)
-// Lưu ý, index bắt buộc phải là số nguyên, không được phép là số thực (hay bất cứ thứ gì đó khác số nguyên!) thì sẽ ăn ngay 1 giá trị trả về undefined 
+// Lưu ý, index bắt buộc phải là số nguyên dương, không được phép là số thực (hay bất cứ thứ gì đó khác số nguyên dương!) thì sẽ ăn ngay 1 giá trị trả về undefined 
 
 // Tương tự việc đọc, chúng ta cũng có thể cập nhật giá trị của một phần tử nhất định thông qua index 
 my_array[5] = 'changed'
@@ -83,11 +83,22 @@ function remove(array,position){
 
 ```
 
+---
+
+## Useful Function
+```js
+let array = [2,5,6,73,3,7,42,51,77,42,32,55,61,70,23,23]
+
+array.slice(0,10) 		// Trả về mảng con là mảng từ index 0 tới index 9 (không lấy index 10) => cắt mảng
+array.indexOf(23)		// Trả về vị trí của phần tử đầu tiên có giá trị bằng 23 => tìm phần có giá trị bất kỳ trong mảng
+new_array = ['??','!!'].concat(array)	// Nối 2 mảng lại với nhau, và trả về mảng mới theo đúng thứ tự từ trái sang phải
+array.reverse()			// Trả về mảng nhưng với thứ thứ tự bị ngược
+```
 
 ---
 
 ## Exercise:
-
+- Bài 1 - 5 ở file 03.1.Arrays
 ---
 
 ## Reference & More Resources: 
