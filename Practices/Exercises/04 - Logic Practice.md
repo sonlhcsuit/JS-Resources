@@ -253,12 +253,9 @@ findEvenNumberOfDigits([555, 901, 482, 1771]); // 1 ( Only 1771 contains an even
 ```
 
 
-### 2. Saler
-
-![requirement](https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/images/array/array_ex.png?raw=true)
 
 
-### 3. Sock Merchant
+### 12. Sock Merchant
 
 John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
@@ -281,20 +278,16 @@ The second line contains **_n_** space-separated integers describing the colors 
 
 **Sample Input**
 
-```javascript
+```js
     let n = 9;
     let arr = [10, 20, 20, 10, 10, 30, 50, 10, 20];
     function sockMerchant(n, arr) {
         result = // Do something
         return result;
     }
+    // output is 3
 ```
 
-**Sample Output**
-
-```
-    3
-```
 
 **Explanation**
 
@@ -302,7 +295,7 @@ The second line contains **_n_** space-separated integers describing the colors 
 
 John can match three pairs of socks.
 
-### 4. Chunk An Array
+### 13. Chunk An Array
 
 Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
 
@@ -311,19 +304,7 @@ Creates an array of elements split into groups the length of size. If array can'
 - **_arr_**: An array containing as many elements as you want
 - **_size_**: Is the length of each sub-array that you want to chunk
 
-**Sample Input**
 
-```javascript
-    let size = 3;
-    let arr = [10, 20, 20, 10, 10, 30, 50, 10, 20];
-    function chunk(arr, size) {
-        result = // Do something
-        return result;
-    }
-```
-
-**Sample Output**
-
-```
-   result = [[10, 20, 20], [10, 10, 30], [50, 10, 20]]
+```js
+    chunk([10, 20, 20, 10, 10, 30, 50, 10, 20],3) ➞ [[10, 20, 20], [10, 10, 30], [50, 10, 20]]
 ```

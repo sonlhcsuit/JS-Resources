@@ -1,5 +1,5 @@
 
-# ***Functions***
+# **_Functions_**
 ______________________________
 > ### 1. Remove all dollar sign of a string
 
