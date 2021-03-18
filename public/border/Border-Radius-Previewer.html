@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./Border-Radius-Previewer.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="mh-100" style="height: 100vh;">
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <input id="_left" type="range" class="h-50" style="-webkit-appearance: slider-vertical">
+        <div class="d-flex flex-column w-50 h-50" >
+            <input id="_top" type="range" class="h-50">
+            <div class="w-100 h-100 border">
+                <img id="img"class="w-100 h-100 border border-warning"
+                    src="https://cdn.vox-cdn.com/thumbor/e4KRzS--UsuixA2G8TOCwJ-O024=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/6839749/pokemon.0.png">
+            </div>
+            <input id="_bottom" type="range" class="h-50">
+        </div>
+        <input id="_right"class="h-50" type="range" style="-webkit-appearance: slider-vertical">
+        <h6 id="text"></h6>
+    </div>
+
+</body>
+<script src="./Border-Radius-Previewer.js">
+
+</script>
+
+</html>
