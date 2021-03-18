@@ -12,6 +12,8 @@ let user = ['hoangson','30/04/1975','mentor','C4E-D24','sonlh@gmail.com']
 <img src="../sources/ObjectProperty.png">
 
 - Mỗi element của object sẽ được gọi bằng property (gồm key & value). Bằng việc sử dụng key, ta có thể truy cập, xử lý với value của object. Lưu ý, mỗi key là một identifier (tức là phải tuân theo quy tắc đặt tên). Value có thể là mọi thứ (array, object, number,...)
+
+- Key phải là unique ở cùng độ depth (độ sâu). Nếu khai báo property trùng nhau thì giá trị khai báo ở trước sẽ bị ghi đè bởi giá trị phía sau!
 ---
 
 ## Object Manipulation
@@ -57,10 +59,36 @@ pokemon['type'] = 'electric'
 delete pokemon[1]
 ```
 ---
-## Exercise:
+## Useful Function
+```js
+let pokemon = {
+    name: "Pikachu",
+    stats: {
+        hp: 100,
+        level: 50,
+        attack: 86,
+        spattack: 150,
+        speed: 5000000000,
+        belongTo: "Red"
+    },
+    1: '?'
+}
 
-- Bài 1 - 5 ở file 03.2.Objects
+pokemon.keys()      // Trả về giá trị của key dưới dạng mảng. Thường hay để sử dụng vòng lặp
+pokemon.hasOwnProperty('name')      // Trả về true hoặc false nếu tồn tại một property có key là name
 
+// Có thể sử dụng cấu trúc for of để xử lý dữ liệu object 
+
+for(let key of pokemon){
+    console.log(key)
+    // Dùng vòng lặp for - of thì không thể cập nhật !
+}
+let keys = pokemon.keys()
+for(let i =0;i < keys.length;i++){
+    console.log(object[keys[i]])
+}
+```
+- Và nhiều hàm khác ở mục phía dưới!
 ---
 ## Exercise:
 
