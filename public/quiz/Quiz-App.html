@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./Quiz-App.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="width: 100vw; height: 100vh;" >
+    <div class="w-100 h-25 text-center d-flex align-items-center">
+        <h1 class="m-md-auto text-success" style="font-size: 200px;" id="question">Click me to start!</h1>
+    </div>
+    <div class="h-75 w-100 d-flex align-items-center justify-content-around flex-column">
+        <div class="row h-25  w-75">
+            <div id="areaA"class="offset-md-1 col-md-5 border p-0 border-primary d-flex flex-row">
+                <div class="w-25 border-right border-primary h-100 d-flex align-items-center justify-content-center">
+                    <h1>A</h1>
+                </div>
+                <div class="w-75  h-100 d-flex align-items-center justify-content-center " style="overflow: auto!important;">
+                    <p id="contA" style="font-size: 40px;" >Welcome</p>
+                </div>
+            </div>
+            <div id="areaB"class="offset-md-1 col-md-5 border p-0 border-primary d-flex flex-row">
+                <div class="w-25 border-right border-primary h-100 d-flex align-items-center justify-content-center">
+                    <h1>B</h1>
+                </div>
+                <div class="w-75  h-100 d-flex align-items-center justify-content-center" style="overflow: auto!important;">
+                    <p id="contB" style="font-size: 40px;" >to</p>
+                </div>
+            </div>
+        </div>
+        <div class="row h-25  w-75">
+            <div id="areaC"class="offset-md-1 col-md-5 border p-0 border-primary d-flex flex-row">
+                <div class="w-25 border-right border-primary h-100 d-flex align-items-center justify-content-center">
+                    <h1>C</h1>
+                </div>
+                <div class="w-75  h-100 d-flex align-items-center justify-content-center" style="overflow: auto!important;">
+                    <p id="contC" style="font-size: 40px;" >quizzes</p>
+                </div>
+            </div>
+            <div id="areaD"class="offset-md-1 col-md-5 border p-0 border-primary d-flex flex-row">
+                <div class="w-25 border-right border-primary h-100 d-flex align-items-center justify-content-center">
+                    <h1>D</h1>
+                </div>
+                <div class="w-75  h-100 d-flex align-items-center justify-content-center" style="overflow: auto!important;">
+                    <p id="contD" style="font-size: 40px;" >app!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Quiz-App.js">
+
+</script>
+
+</html>
