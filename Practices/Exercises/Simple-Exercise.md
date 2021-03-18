@@ -425,3 +425,61 @@ addBinary(1, 2) ➞ "11"
 
 addBinary(4, 5) ➞ "1001"
 ```
+
+=### 8. Is the Word Singular or Plural?
+
+Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+
+```js
+isPlural("changes") ➞ true
+
+isPlural("change") ➞ false
+
+isPlural("dudes") ➞ true
+
+isPlural("magic") ➞ false
+```
+
+**Notes**  
+Don't forget to return the result.   
+Remember that return true (boolean) is not the same as return "true" (string).  
+This is an oversimplification of the English language. We are ignoring edge cases like "goose" and "geese", "fungus" and "fungi", etc.   
+
+---
+### 9. factorialDivisible
+
+Create a function that takes a number **n** and the expression **L = (n - 1)! + 1 = 1 _ 2 _ 3 ... \* (n-1) + 1** please determine if **L** is divisible by **n**
+
+```js
+// with n is 3
+factorialDivisible(n); // return true
+// explain: L = 2! + 1 = 1*2 + 1 = 3 divisible by 3.
+
+// with n is 5
+factorialDivisible(n); // return true
+// explain: L = 4! + 1 = 1*2*3*4 + 1 = 25 divisible by 5.
+
+// with n is 4
+factorialDivisible(n); // return false
+// explain: L = 3! + 1 = 6 + 1 = 7 divisible by 4.
+
+```
+
+
+
+### 10. Automorphic Numbers
+
+A number n is automorphic if n^2 ends in n.
+
+For example: n=_5_, n^2=2*5*
+
+Create a function that takes a number and returns true if the number is automorphic, false if it isn't.
+
+```js
+
+isAutomorphic(5) ➞ true
+
+isAutomorphic(8) ➞ false
+
+isAutomorphic(76) ➞ true
+```
