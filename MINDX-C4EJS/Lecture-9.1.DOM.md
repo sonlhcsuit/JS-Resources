@@ -1,15 +1,14 @@
 # DOM
-## Object
+## View of the web
 
 ---
 
-## Object Manipulation
+## Tree
 ---
-## Useful Function
+## DOM and Javascript
 
 ---
 ## Exercise:
-
 
 ---
 
