@@ -112,4 +112,6 @@ và một đống lệnh khác nữa có mặt ở [google](https://git-scm.com/
 ---
 
 ## Reference:  
+* https://www.youtube.com/watch?v=hwP7WQkmECE
+* https://www.youtube.com/watch?v=1JuYQgpbrW0&t=737s
 * https://git-scm.com/doc
