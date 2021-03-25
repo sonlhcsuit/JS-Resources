@@ -12,19 +12,20 @@
 
 </body>
 <script>
-    let pokemon = {
-        name: "Pikachu",
-        stats: {
-            hp: 100,
-            level: 50,
-            attack: 86,
-            spattack: 150,
-            speed: 5000000000,
-            belongTo: "Red"
-        },
-        1: '?'
+    var x = 100
+
+    function temp() {
+        var x = '?'
+        // this.x=10
+        function temp2() {
+            console.log(x)
+        }
+        temp2()
+
+        console.log(x)
     }
-    console.log(pokemon[1])
+    temp()
+    console.log(x)
 </script>
 
 </html>
