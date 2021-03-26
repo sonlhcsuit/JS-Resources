@@ -97,9 +97,9 @@ function myFunction(){
 ---
 
 ## Scope Chain (Identifier chain, variable chain)
-- Khi một hàm được gọi (invoke, call,..), hoặc khi một biến được truy cập thì sẽ có các quy tắc sau để tìm kiếm các identifier phù hợp. Các quy tắc cơ bản để tuân theo đã được đề cập ở trên (outer & inner scope). Tuy nhiên vẫn còn một số điểm cơ bản phải chú ý.
+- Khi một hàm được gọi (invoke, call,...), hoặc khi một biến được truy cập thì sẽ có các quy tắc sau để tìm kiếm các identifier phù hợp. Các quy tắc cơ bản để tuân theo đã được đề cập ở trên (outer & inner scope). Tuy nhiên vẫn còn một số điểm cơ bản phải chú ý.
 
-- Khi khai báo identifier thì identifier sẽ được binding (gắn liền ) với scope ở đó. Và JS sẽ sử dụng scope (hoặc lexical) đó đành cho việc xác định các identifier. Có thể tham khảo rõ hơn về **Execution Environment**
+- Khi khai báo identifier thì identifier sẽ được binding (gắn liền) với scope ở đó. Và JS sẽ sử dụng scope (hoặc lexical) đó dành cho việc xác định các identifier. Có thể tham khảo rõ hơn về **Execution Environment**
 
 ```js
 let val = 'hola'
@@ -146,10 +146,10 @@ function myf1(){
 myf1()  
 // bonjour
 // bonjour
-// Hàm myf2 được khai báo ở trong hàm myf1, nên khi scope chain outer là myf1 mà không phải global, nên JS sẽ truy xuất ở outer lexical myf1 trước global
-// Ở ví dụ 1,2 thì hàm myf2 được khai báo ở lexical global nên scope chain sẽ truy xuất ở global, mặc dù hàm myf2 được gọi trong hàm myf1 
-```
 
+```
+- Ở ví dụ 3, hàm myf2 được khai báo ở trong hàm myf1, nên khi scope chain outer là myf1 mà không phải global, nên JS sẽ truy xuất ở outer lexical myf1 trước global
+- Ở ví dụ 1,2, hàm myf2 được khai báo ở lexical global nên scope chain sẽ truy xuất ở global, mặc dù hàm myf2 được gọi trong hàm myf1 
 ---
 
 ## Returned Function
