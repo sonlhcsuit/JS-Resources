@@ -149,16 +149,33 @@ myf1()
 // Hàm myf2 được khai báo ở trong hàm myf1, nên khi scope chain outer là myf1 mà không phải global, nên JS sẽ truy xuất ở outer lexical myf1 trước global
 // Ở ví dụ 1,2 thì hàm myf2 được khai báo ở lexical global nên scope chain sẽ truy xuất ở global, mặc dù hàm myf2 được gọi trong hàm myf1 
 ```
+
 ---
 
 ## Returned Function
+- Hàm có thể được xem là một loại data types (kế thừa từ object), cho nên cũng có thể được trả về từ một hàm khác, hoặc khai báo thông qua function expression
+- Có một function expression đơn giản được gọi là arrow function - Giúp tiết kiệm thời gian code (ngắn gọn, dễ đọc hiểu)
+
+```js
+function createPromotion(discount){
+    return function (price){
+        return (price * discount / 100).toFixed(2)
+    }
+}
+
+let discount50 = createPromotion(50)
+let newPrice = discount50(150)
+// 75.00
+
+```
+- Khả năng ghi nhớ giá trị discount của hàm được trả về được gọi là Closure
 ---
 
 ## Exercise:
 
-
 ---
 
 ## Reference & More Resources: 
-* https://developer.mozilla.org/en-US/docs/Glossary/Function
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+* https://en.wikipedia.org/wiki/Scope_(computer_science)
+* https://stackoverflow.com/questions/12599965/lexical-environment-and-function-scope
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures

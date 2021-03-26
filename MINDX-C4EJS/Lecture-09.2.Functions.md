@@ -77,18 +77,10 @@ function love(){
 
 ---
 
-## Lexical & Variable Chaining
----
-
-## Returned Function
----
-
-
 ## Callback
 
 ---
 ## Exercise:
-
 
 ---
 

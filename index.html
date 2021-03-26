@@ -12,22 +12,15 @@
 
 </body>
 <script>
-   let val = 'hola'
-function myf1(){
-    let val = 'bonjour'
-    console.log(val)
-    function myf2(){
-        console.log(val)
+function createPromotion(discount){
+    return function (price){
+        return (price * discount / 100).toFixed(2)
     }
-    myf2() 
-
 }
 
-myf1()  
-// bonjour
-// bonjour
-
-
+let discount50 = createPromotion(50)
+let newPrice = discount50(150)
+// 75.00
 
 
 </script>
