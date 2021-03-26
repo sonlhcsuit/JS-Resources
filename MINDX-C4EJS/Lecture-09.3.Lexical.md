@@ -1,92 +1,159 @@
 # Lexical
 ## Scope & Lexical environment
-- Function là một đoạn code ngắn, có thể sử dụng để thực thi một tác vụ nào đó tại ở một đoạn code khác hoặc chính trong bản thân nó. Tuỳ thuộc vào tác vụ mà lập trình viên muốn định ra sẽ khai báo function như thế nào
-- Về cơ bản function có 2 loại như sau
+- Scope là một khái niệm rất quan trọng trong các ngôn ngữ lập trình, vì nó định ra một khu vực code riêng. Nhằm xác định tính khả dụng (visibility) của một identifier
 
+- Có thể hiểu rằng: Một chương trình (project) của bạn có thể là một căn nhà, mỗi phòng là một khu vực riêng (mọi người trong gia đình,...). Đồ vật cá nhân trong mỗi căn phòng (identifier) thuộc quyền sở hữu của một nguời. Ngoài ra thì mọi người có thể sử dụng những đồ vật chung trong nhà (bếp, tủ lạnh,...)
+
+- Mỗi người ngoại trừ việc sử dụng đồ cá nhân của mình thì còn có thể sử dụng các đồ vật chung. Nhưng đồ cá nhân của mình thì người khác không dùng được
+
+- Một identifier ở mỗi scope cụ thể nhau thì không thể được sử ở scope khác. 
+
+- Identifier must be unique (một biến phải độc lập) đúng với mỗi scope khác nhau
+
+- Trong JS, một scope được xác định bởi cặp dấu ngoặc nhọn (curly brackets) **{}**
 ```js
-function myfunction(args){
-    // function body
+
+if (){
+    // It is a scope
+} else{
+    // It is another scope
 }
-// Đây được gọi là function declaration
-
-(function myf(args){
-    // function body
-})
-// Đây được gọi là function expression - named!
-(function (args){
-    // function body
-})
-// Đây cũng được gọi là function expression - anonymous!
-```
-- Sự khác biệt cơ bản nhất của 2 loại function declaration và function expression chính là hoisting ! 
-- Function expression thì có các tính chất như một expression vậy, sau khi được thực hiện xong thì biến mất (không nếu muốn lưu lại thì phải sử dụng biến để lưu trữ giá trị - function cũng được xem là 1 kiểu dữ liệu trong javascirpt - reference type!)
-- Named function expression thì tên hàm chỉ là để phân biệt, không có tác dụng lưu lại để tái sử dụng, phải sử dụng biến - chính xác hơn là identifier
-```js
-const myf = (function value() {
-        console.log('this is value named function expression')
-})
-console.log(myf)
-value() // value is not defined!
 
 ```
+
+- Một điều khá thú vị rằng là khi **khai báo hàm**, ta không gọi đó là scope mà sử dụng một cái tên hay ho hơn: **lexical environment** 
 ```js
-const myf = (function () {
-        console.log('this is value anonymous function expression')
-})
-console.log(myf)
+function myFunction(){
+    // It is not only scope but also lexical environment
+    let age = 12
+    if (true){
+        // Just scope
+        console.log(age)
+    }
+
+}
 ```
-- Khi khai báo 1 hàm sử dụng function expression như 2 trường hợp trên thì có thể bỏ qua cặp dấu ngoặc đơn!
+- Trong một scope nhỏ, ta có thể truy cập đến một identifier của outer scope (scope lớn hơn). Nhưng từ scope lớn ta **không thể** truy cập tới identifider ở bất kỳ inner scope (scope nhỏ hơn)
+- Quan sát một vài ví dụ sau:
+
+```js
+function myFunction(){
+    let age = 12
+    if (true){
+        console.log(age)
+        // console : 12
+    }
+}
+```
+
+```js
+function myFunction(){
+    let age = 12
+    if (true){
+        let age = '?'
+        console.log(age)
+        // console : ?
+    }
+}
+```
+
+```js
+function myFunction(){
+    let age = 12
+    if (true){
+        let age = '?'
+        console.log(age)
+        // console : ?
+    }
+}
+```
+
+```js
+function myFunction(){
+    // It is not only scope but also lexical environment
+    let age = 12
+    if (true){
+        // Just scope
+        let age = '?'
+        console.log(age)
+        // console : ?
+    }
+}
+```
+
+
+```js
+function myFunction(){
+    if (true){
+        let age = '?'
+        console.log(age)
+        // console : ?
+    }
+    console.log(age)
+    // console : 'Error' :age is not defined
+}
+```
 
 ---
 
-## Identifier Chaining
-- Hoisting nghĩa là kéo lên, các bạn sẽ bắt gặp tình huống này khi thực hiện việc declaration biến (khi sử dụng từ khoá "var"), hàm.
-- JS đảm bảo rằng toàn bộ quá trình Instantiation của các biến đều được diễn ra.
-- Giá trị mặc định của các biến là undefined
-- Điều này cũng đúng với function declaration, luôn được hoisting để khởi tạo trước, nhằm đảm bảo rằng hàm chạy tốt, tránh trường hợp gặp lỗi (not defined)
+## Scope Chain (Identifier chain, variable chain)
+- Khi một hàm được gọi (invoke, call,..), hoặc khi một biến được truy cập thì sẽ có các quy tắc sau để tìm kiếm các identifier phù hợp. Các quy tắc cơ bản để tuân theo đã được đề cập ở trên (outer & inner scope). Tuy nhiên vẫn còn một số điểm cơ bản phải chú ý.
+
+- Khi khai báo identifier thì identifier sẽ được binding (gắn liền ) với scope ở đó. Và JS sẽ sử dụng scope (hoặc lexical) đó đành cho việc xác định các identifier. Có thể tham khảo rõ hơn về **Execution Environment**
 
 ```js
+let val = 'hola'
+function myf1(){
+    console.log(val)
+}
+function myf2(){
+    console.log(val)
+}
+myf1()  
+myf2() 
 
-var myvar = 'some string value'
-
-// Đây là một ví dụ về việc khai báo biến gồm : Instantiation & Initialization
-// Instantiation : Khởi tạo ô nhớ, vùng nhớ để lưu trữ giá trị, mặc định giá trị của ô nhớ mà JS quyết định là undefined!
-// Initialization: Gán giá trị khởi tạo trực tiếp vào ô nhớ ngay lập tức khi quá trình Instantiation thực hiện xong! Có thể hiểu quá trình này giống như là assignment
-
+// hola
+// hola
 ```
-- Vậy hoisting có lợi ích và tác hại gì?
-- Lợi ích:
-    - Đảm bảo tất cả các biến đều có tồn tại trước khi bắt đầu thực hiện chương trình, tránh lỗi **not define** xảy ra
-- Tác hại:
-    - Khó kiểm soát flow, đôi khi gây rắc rối về ghi đè biến, khó debug, ...
 
 ```js
-love()
-var love = 'Hehe'
-love()
+let val = 'hola'
+function myf1(){
+    let val = 'bonjour'
+    console.log(val)
+}
+function myf2(){
+    console.log(val)
+}
+myf1()  
+myf2()  
+// bonjour
+// hola
+```
 
-function love(){
-    console.log('Hihi')
+```js
+let val = 'hola'
+function myf1(){
+    let val = 'bonjour'
+    console.log(val)
+    function myf2(){
+        console.log(val)
+    }
+    myf2() 
+
 }
 
-// Trường hợp như thế này thì sao? màn hình console của bạn sẽ là gì?
-
+myf1()  
+// bonjour
+// bonjour
+// Hàm myf2 được khai báo ở trong hàm myf1, nên khi scope chain outer là myf1 mà không phải global, nên JS sẽ truy xuất ở outer lexical myf1 trước global
+// Ở ví dụ 1,2 thì hàm myf2 được khai báo ở lexical global nên scope chain sẽ truy xuất ở global, mặc dù hàm myf2 được gọi trong hàm myf1 
 ```
-- Cách giải quyết trường hợp này là sử dụng từ khoá **let**, **const** thay vì **var** để khai báo biến. Vì như thế này sẽ báo lỗi, dễ dàng trong việc debug và kiểm soát
-- Sử dụng function expression để khai báo hàm (optional), tránh hoisting
-
----
-
-## Lexical & Variable Chaining
 ---
 
 ## Returned Function
 ---
 
-
-## Callback
-
----
 ## Exercise:
 
 
