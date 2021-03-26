@@ -12,14 +12,18 @@
 
 </body>
 <script>
-function myf(){
-    // Có thể đặt thêm những params đầu tiên, tuy nhiên vẫn có thể truy cập được thông qua 
-    // arguments[0],...
-    console.log(arguments.callee)
+function add(x){
+    let sum = x
+    function temp(y){
+        sum = sum + y
+        return temp
+    }
+    temp.valueOf = ()=>{
+        return sum
+    }
+    return temp
 }
-
-myf(1,2,3,4,5,6,7,8,9,)
-
+console.log(+add(10)(10)(20)(30))
 
 </script>
 
