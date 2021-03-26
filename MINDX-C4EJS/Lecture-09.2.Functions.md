@@ -77,7 +77,32 @@ function love(){
 
 ---
 
-## Callback
+## Parameters & Arguments
+- Một dạng chuẩn của việc khai báo hàm là như thế này
+```js
+// function declaration
+function functionName (params,params){
+    // function body
+    return 
+} 
+// function invocation
+functionName(args,args)
+
+```
+- Function mặc định sẽ có giá trị trả về là **undefined**, ta có thể sử dụng từ khoá **return** để trả về giá trị do chúng ta xác định. Gía trị trả về là giá trị bạn nhận được khi một lời gọi hàm hết hiệu lực (kết thúc)
+
+- Khi khai báo function, bạn phải xác định các parameter dành cho hàm - tức là input mà hàm nhận được là gì. Bạn sẽ đặt identifier cho input các bạn nhận được. Việc đặt tên này giống như đặt tên biến. Tuỳ ý nhưng phải tuân theo quy tắc.
+
+- Khi gọi hàm, bạn phải truyền vào các arguments (cung cấp input) bằng việc chỉ định rõ giá trị mà hàm sẽ nhận được thông qua **value** hoặc **identifier**
+
+---
+
+## Pass arguments into a function & Determine parameter received
+- JS không có hạn chế về số lượng các arguments truyền vào hàm, cũng như hạn chế về số lượng parameter khai báo (Đối với một số ngôn ngữ lập trình như C/C++, Java thì yêu cầu phải chính xác bằng nhau và đúng kiểu dữ liệu)
+
+- Khi khai báo hàm gồm 2 parameter đầu vào, khi gọi hàm thì truyền 1, 3, 5, 7 arguments cũng không sao vì JS không bắt lỗi điểm này. Tuy nhiên việc có đảm bảo hàm chạy đúng hay không, khai thác hết tham số đầu vào hay không thì lại là một câu chuyện khác
+
+- Chung
 
 ---
 ## Exercise:
@@ -87,3 +112,4 @@ function love(){
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Glossary/Function
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+* https://www.youtube.com/watch?v=GdAyat5P72Q
