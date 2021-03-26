@@ -1,5 +1,5 @@
-# Function
-## Function 
+# Lexical
+## Scope & Lexical environment
 - Function là một đoạn code ngắn, có thể sử dụng để thực thi một tác vụ nào đó tại ở một đoạn code khác hoặc chính trong bản thân nó. Tuỳ thuộc vào tác vụ mà lập trình viên muốn định ra sẽ khai báo function như thế nào
 - Về cơ bản function có 2 loại như sau
 
@@ -39,7 +39,7 @@ console.log(myf)
 
 ---
 
-## Hoisting
+## Identifier Chaining
 - Hoisting nghĩa là kéo lên, các bạn sẽ bắt gặp tình huống này khi thực hiện việc declaration biến (khi sử dụng từ khoá "var"), hàm.
 - JS đảm bảo rằng toàn bộ quá trình Instantiation của các biến đều được diễn ra.
 - Giá trị mặc định của các biến là undefined
