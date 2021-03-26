@@ -102,9 +102,34 @@ functionName(args,args)
 
 - Khi khai báo hàm gồm 2 parameter đầu vào, khi gọi hàm thì truyền 1, 3, 5, 7 arguments cũng không sao vì JS không bắt lỗi điểm này. Tuy nhiên việc có đảm bảo hàm chạy đúng hay không, khai thác hết tham số đầu vào hay không thì lại là một câu chuyện khác
 
-- Chung
+```js
+function myf(a,b,c){
+    console.log(a,b,c)
+}
+
+myf(1,2,3,4,5,6,7,8,9,)
+```
+
+- Vì vậy , JS hỗ một từ khoá là **arguments** để giúp kiểm soát tất cả các tham số đầu vào dưới dạng mảng. Như vậy thì ta có thể tận dụng được toàn bộ các **arguments** được truyền vào (đối với trường hợp không xác định được số lượng tham số truyền vào)
+
+```js
+function myf(){
+    // Có thể đặt thêm những params đầu tiên, tuy nhiên vẫn có thể truy cập được thông qua 
+    // arguments[0],...
+    // arguments không thực sự là mảng, tuy nhiên lại có cách hoạt động giống như mảng
+    console.log(arguments)
+}
+myf(1,2,3,4,5,6,7,8,9,)
+```
 
 ---
+
+## return
+- Từ khoá **return** được dùng để trả về giá trị cho hàm. Mang ý nghĩa rằng hàm đã kết thúc. Nếu không thể tìm được từ khoá **return** thì hàm thực hiện hết đoạn code đặt ra thì sẽ trả về giá trị undefined
+- Khi JS bắt gặp từ khoá **return** thì sẽ ngay lập tức kết thúc hàm (đồng nghĩa với việc kết thúc cả vòng lặp ngay lập tức)
+
+---
+
 ## Exercise:
 
 ---
