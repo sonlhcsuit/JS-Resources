@@ -14,17 +14,23 @@
 - Mỗi một HTML Element sẽ được cấu tạo, lưu trữ như 1 **object**, khi cần sử dụng thì làm giống như việc sử dụng **object**. Tuy nhiên **element** có rất nhiều property với đa tính năng, nên cần phải nhớ, tra cứu để có thể sử dụng thuần thục
 - **document** sẽ giúp chúng ta *select* các **element** ở trong DOM, cho phép chúng ta sử dụng thông qua biến
 - Việc đầu tiên cần phải học chính là cú pháp chọn các phần tử thông qua các **selector**
+
 ```js
 document.getElementById("intro")    // chọn element đầu tiên có id là intro
-document.getElementById("intro")    // chọn element đầu tiên có id là intro
-document.getElementById("intro")    // chọn element đầu tiên có id là intro
-document.getElementById("intro")    // chọn element đầu tiên có id là intro
-document.getElementById("intro")    // chọn element đầu tiên có id là intro
-
+document.getElementsByTagName("p")    // chọn tất cả p element - trả về một Collections (tương tự như mảng)
+document.getElementsByClassName("intro")    // chọn element đầu tiên có id là intro
+querySelector
+document.querySelector(".intro")    // chọn phần tử đầu tiên đáp ứng đủ điều kiện là các selector -> chọn tất cả class
+document.querySelectorAll(".intro")    // chọn các phần tử đáp ứng đủ điều kiện là các selector -> chọn tất cả class
 ```
+
 ---
 
 ## window
+- window là global object (cửa sổ) có chứa **document** object
+- Về mặc định thì số lượng của window và dom là 1 (nếu trang web của bạn không sử dụng bất kỳ iframe element nào khác)
+- window cung cấp công cụ khi tương tác với trình duyệt web
+- window chứa các event, thứ mà các bạn sẽ sử dụng rất nhiều
 
 ---
 ## Exercise:
@@ -32,4 +38,5 @@ document.getElementById("intro")    // chọn element đầu tiên có id là in
 ---
 
 ## Reference & More Resources: 
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+* https://developer.mozilla.org/en-US/docs/Web/API/Window
+* https://developer.mozilla.org/en-US/docs/Web/API/Document

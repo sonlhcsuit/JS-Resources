@@ -12,18 +12,8 @@
 
 </body>
 <script>
-function add(x){
-    let sum = x
-    function temp(y){
-        sum = sum + y
-        return temp
-    }
-    temp.valueOf = ()=>{
-        return sum
-    }
-    return temp
-}
-console.log(+add(10)(10)(20)(30))
+console.log(window)
+console.log(document)
 
 </script>
 
