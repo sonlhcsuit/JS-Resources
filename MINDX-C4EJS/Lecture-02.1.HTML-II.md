@@ -51,7 +51,7 @@
 ## DOM
 - Mối quan hệ giữa các HTML element (tag) là mối quan hệ cha và con. Có thể vẽ mối quan hệ này theo một cái cây gia phả như thế này.
 
-<img src="../sources/C4EJS-Lecture 2.1.png" alt="dom">
+<img src="../sources/C4EJS/C4EJS-Lecture-2.1.png" alt="dom">
 
 - Trang web trông như thế nào phụ thuộc vào cây DOM, như vậy nếu muốn thay đổi trang web thì việc thay đổi cây DOM là đơn giản nhất và Javascript hỗ trợ chúng ta các thao tác trên cây DOM, ví dụ như thêm, xoá, sửa, đổi vị trí,...
 ---
