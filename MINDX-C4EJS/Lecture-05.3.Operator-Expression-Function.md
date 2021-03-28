@@ -55,3 +55,13 @@ function f_name(x,y,z){
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+
+---
+<div>
+<a href="./Lecture-01.4.HTML.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-05.1.Introduction-to-Javascript.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

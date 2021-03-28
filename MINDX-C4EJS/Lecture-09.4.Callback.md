@@ -36,3 +36,12 @@ greeting('Stella',inviteLunch)
 
 * https://en.wikipedia.org/wiki/Callback_(computer_programming)
 * https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+---
+<div>
+<a href="./Lecture-09.2.Functions.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-07.2.Array.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

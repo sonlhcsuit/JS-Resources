@@ -24,3 +24,12 @@
 <!-- 17. [CSS - Part 2](./css/css-part2.md) -->
 <!-- 10. [Hàm Promise(Promise Function)](/function/function-promise.md) -->
 <!-- 10. [Hàm Calbacks(Callbacks Function)](/function/function-callback.md) -->
+---
+<div>
+<a href="./Lecture-05.2.Values-Variable-DataType.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-02.3.CSS.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

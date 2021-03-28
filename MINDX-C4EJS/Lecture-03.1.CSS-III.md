@@ -178,3 +178,12 @@ body{
 * https://cdnjs.com/libraries/font-awesome
 * https://www.w3schools.com/css/css_icons.asp
 * https://cdnjs.com/libraries/font-awesome
+---
+<div>
+<a href="./Lecture-02.3.CSS.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./MINDX-C4EJS-SYLLABUS.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

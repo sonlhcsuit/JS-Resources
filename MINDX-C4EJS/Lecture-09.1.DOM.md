@@ -27,3 +27,13 @@ C4EJS/
 * https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 * https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 * https://www.w3schools.com/js/js_htmldom.asp
+
+---
+<div>
+<a href="./Lecture-08.1.Object.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-02.4.CSS-II.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

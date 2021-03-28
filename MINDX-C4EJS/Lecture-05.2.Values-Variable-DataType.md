@@ -67,3 +67,12 @@ var_name = 'heheh'
 * https://www.w3schools.com/js/js_variables.asp
 * https://www.w3schools.com/js/js_datatypes.asp
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+---
+<div>
+<a href="./Lecture-02.1.HTML-II.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

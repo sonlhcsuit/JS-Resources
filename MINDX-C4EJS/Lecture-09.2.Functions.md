@@ -138,3 +138,13 @@ myf(1,2,3,4,5,6,7,8,9,)
 * https://developer.mozilla.org/en-US/docs/Glossary/Function
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 * https://www.youtube.com/watch?v=GdAyat5P72Q
+
+---
+<div>
+<a href="./Lecture-07.1.Loop.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-09.4.Callback.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

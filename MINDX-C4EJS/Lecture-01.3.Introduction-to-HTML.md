@@ -54,3 +54,12 @@ và các tag cơ bản khác
 ---
 
 ## Reference & More Resources: 
+---
+<div>
+<a href="./Lecture-05.1.Introduction-to-Javascript.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-01.2.Introduction-to-Front-End.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

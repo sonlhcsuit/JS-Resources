@@ -98,3 +98,13 @@ for(let i =0;i < keys.length;i++){
 
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+---
+<div>
+<a href="./MINDX-C4EJS-SYLLABUS.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-09.1.DOM.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>

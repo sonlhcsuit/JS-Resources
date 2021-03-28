@@ -87,3 +87,13 @@ switch(variable){
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
 * https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/branching/branching.md
+
+---
+<div>
+<a href="./Lecture-02.2.Introduction-to-CSS.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-07.1.Loop.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>
