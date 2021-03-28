@@ -148,10 +148,12 @@ body{
 }
 
 ```
+
 ---
 
 ## CSS Properties
 - Giới thiệu thêm về các CSS property quen thuộc, border-radius, background,....
+
 ---
 
 ## Font / Font Icon
