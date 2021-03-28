@@ -29,9 +29,10 @@ div {
 ---
 ## Exercise
 - Thực hiện Portfolio
-## Reference & More Resources: 
 
- 
+---
+
+## Reference & More Resources: 
 
 ---
 <!-- Navigator -->
