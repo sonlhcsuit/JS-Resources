@@ -89,11 +89,13 @@ switch(variable){
 * https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/branching/branching.md
 
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-02.2.Introduction-to-CSS.md">
+<a href="./Lecture-05.3.Operator-Expression-Function.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
 <a href="./Lecture-07.1.Loop.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

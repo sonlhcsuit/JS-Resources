@@ -92,12 +92,15 @@
 * https://www.w3schools.com/whatis/whatis_htmldom.asp
 * https://www.w3schools.com/html/html_entities.asp
 * https://www.w3schools.com/html/html_filepaths.asp
+
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-09.3.Lexical.md">
+<a href="./Lecture-01.4.HTML.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-05.2.Values-Variable-DataType.md">
+<a href="./Lecture-02.2.Introduction-to-CSS.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

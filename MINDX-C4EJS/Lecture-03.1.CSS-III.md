@@ -178,12 +178,15 @@ body{
 * https://cdnjs.com/libraries/font-awesome
 * https://www.w3schools.com/css/css_icons.asp
 * https://cdnjs.com/libraries/font-awesome
+
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-02.3.CSS.md">
+<a href="./Lecture-02.4.CSS-II.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./MINDX-C4EJS-SYLLABUS.md">
+<a href="./Lecture-05.1.Introduction-to-Javascript.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

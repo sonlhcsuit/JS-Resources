@@ -29,11 +29,13 @@ C4EJS/
 * https://www.w3schools.com/js/js_htmldom.asp
 
 ---
+<!-- Navigator -->
 <div>
 <a href="./Lecture-08.1.Object.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-02.4.CSS-II.md">
+<a href="./Lecture-09.2.Functions.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

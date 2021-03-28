@@ -37,16 +37,14 @@
 * https://nodejs.org/api/url.html
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
 
-
 ---
 <!-- Navigator -->
 <div>
 <a href="./None">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-02.2.Introduction-to-CSS.md">
+<a href="./Lecture-01.2.Introduction-to-Front-End.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
 <!-- Navigator -->
-

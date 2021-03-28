@@ -179,12 +179,15 @@ let newPrice = discount50(150)
 * https://en.wikipedia.org/wiki/Scope_(computer_science)
 * https://stackoverflow.com/questions/12599965/lexical-environment-and-function-scope
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-10.3.Navigating.md">
+<a href="./Lecture-09.2.Functions.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-02.1.HTML-II.md">
+<a href="./Lecture-09.4.Callback.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

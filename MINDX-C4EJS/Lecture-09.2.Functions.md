@@ -140,11 +140,13 @@ myf(1,2,3,4,5,6,7,8,9,)
 * https://www.youtube.com/watch?v=GdAyat5P72Q
 
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-07.1.Loop.md">
+<a href="./Lecture-09.1.DOM.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-09.4.Callback.md">
+<a href="./Lecture-09.3.Lexical.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

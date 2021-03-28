@@ -109,12 +109,4 @@
 ## Lecture 13
 ## Lecture 14
 
----
-<div>
-<a href="./Lecture-03.1.CSS-III.md">
-    <img width=50 src="../sources/left-arrow.svg" >
-</a>
-<a href="./Lecture-08.1.Object.md">
-    <img  width=50 src="../sources/right-arrow.svg">
-    </a>
-</div>
+

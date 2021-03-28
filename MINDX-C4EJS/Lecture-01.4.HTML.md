@@ -154,12 +154,15 @@ x<sup>2</sup> - Superscript text
 * https://nodejs.org/api/url.html
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
 * https://www.w3schools.com/tags/default.asp
+
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-07.2.Array.md">
+<a href="./Lecture-01.3.Introduction-to-HTML.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-05.3.Operator-Expression-Function.md">
+<a href="./Lecture-02.1.HTML-II.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

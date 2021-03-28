@@ -107,11 +107,13 @@ array.reverse()			// Trả về mảng nhưng với thứ thứ tự bị ngư�
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-09.4.Callback.md">
+<a href="./Lecture-07.1.Loop.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-01.4.HTML.md">
+<a href="./Lecture-08.1.Object.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->

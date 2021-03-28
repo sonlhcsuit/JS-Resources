@@ -40,12 +40,15 @@ document.querySelectorAll(".intro")    // chọn các phần tử đáp ứng đ
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/API/Window
 * https://developer.mozilla.org/en-US/docs/Web/API/Document
+
 ---
+<!-- Navigator -->
 <div>
-<a href="./Lecture-02.4.CSS-II.md">
+<a href="./Lecture-09.4.Callback.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./None">
+<a href="./Lecture-10.2.element.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
+<!-- Navigator -->
