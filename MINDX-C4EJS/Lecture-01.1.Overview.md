@@ -8,7 +8,7 @@
 - Web (WWW) là một hệ thống tin, mà mỗi tài liệu được xác định bằng cách sử dụng URL ( Uniform Resource Locators). Mỗi document (tài liệu) đều phải ở dưới dạng hypertext (siêu văn bản), được truyền tải bằng việc sử dụng HTTP (HyperText Transper Protocol).
 
 - Đây là các thành phần cơ bản của URL
-<img src="../sources/C4EJS-Lecture 1.1.png" alt="URL">
+<img src="../sources/C4EJS/C4EJS-Lecture-1.1.png" alt="URL">
 
 ---
 
