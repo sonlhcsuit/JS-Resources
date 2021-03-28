@@ -4,7 +4,7 @@
 - Có nhiều loại toán tử như +,-,=,*,/,%,**,... là những toán tử dành cho tính toán
 - Có nhiều loại toán tử không nhất thiết phải là các ký hiệu toán học, mà có thể là từ khoá typeof, new,...
 - Dựa vào chức năng thì có thể phân loại toán tử thành các nhóm sau 
-<img src="../sources/C4EJS-Lecture 5.3.png">
+<img src="../sources/C4EJS/C4EJS-Lecture-5.3.png">
 
 ---
 
@@ -21,10 +21,10 @@
 - Đôi khi việc tính toán của chúng ta cần rất nhiều sự tương tác của các loại toán tử với nhau. Bởi vì đặc tính của ngôn ngữ lập trình nên chúng ta chỉ có thẻ viết những công thức toán học theo 1 dòng (hoặc ít nhất là theo các dòng riêng lẻ). Giả sử chúng ta cần triển khai 1 hàm tính toán "nhỏ" như thế này thì sao?
 
 <div style="dislay:flex">
-    <img style="height:40px" src="../sources/C4EJS-Lecture 5.4.png">
-    <img style="height:40px" src="../sources/C4EJS-Lecture 5.5.png">
-    <img style="height:40px" src="../sources/C4EJS-Lecture 5.6.png">
-    <img style="height:40px" src="../sources/C4EJS-Lecture 5.7.jpg">
+    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.4.png">
+    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.5.png">
+    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.6.png">
+    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.7.jpg">
 <div>
 
 - Đối với các hàm ở trên thì mỗi khi cần tính giá trị sẽ gặp khó khăn khi cài đặt công thức! (về việc kiểm tra các dấu (, ),... )
