@@ -20,11 +20,11 @@
 ## Function
 - Đôi khi việc tính toán của chúng ta cần rất nhiều sự tương tác của các loại toán tử với nhau. Bởi vì đặc tính của ngôn ngữ lập trình nên chúng ta chỉ có thẻ viết những công thức toán học theo 1 dòng (hoặc ít nhất là theo các dòng riêng lẻ). Giả sử chúng ta cần triển khai 1 hàm tính toán "nhỏ" như thế này thì sao?
 
-<div style="dislay:flex">
-    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.4.png">
-    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.5.png">
-    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.6.png">
-    <img style="height:40px" src="../sources/C4EJS/C4EJS-Lecture-5.7.jpg">
+<div>
+    <img height=40 src="../sources/C4EJS/C4EJS-Lecture-5.4.png">
+    <img height=40 src="../sources/C4EJS/C4EJS-Lecture-5.5.png">
+    <img height=40 src="../sources/C4EJS/C4EJS-Lecture-5.6.png">
+    <img height=40 src="../sources/C4EJS/C4EJS-Lecture-5.7.jpg">
 <div>
 
 - Đối với các hàm ở trên thì mỗi khi cần tính giá trị sẽ gặp khó khăn khi cài đặt công thức! (về việc kiểm tra các dấu (, ),... )
