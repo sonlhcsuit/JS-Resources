@@ -38,6 +38,7 @@
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
 
 --- 
-
-<img style="width:50px!important" src="../sources/left-arrow.svg">
-<img style="width:50px!important" src="../sources/right-arrow.svg">
+<div>
+<img width=50 src="../sources/left-arrow.svg">
+<img  width=50 src="../sources/right-arrow.svg">
+<div>
