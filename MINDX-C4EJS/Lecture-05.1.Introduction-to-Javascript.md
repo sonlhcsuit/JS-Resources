@@ -34,11 +34,11 @@ dòng
 
 ## Giới thiệu về cách làm việc với JS
 - Làm việc trực tiếp trên console của một trang web. Mở một file HTML bằng *Live server*, sau đó click chuột phải vào trang, chọn inspect (kiểm tra - phím tắt là *Ctrl + Shift + I* hoặc là *Cmd + Shift + I*)
-<img src="../sources/C4EJS/C4EJS-Lecture 5.1.png">
+<img src="../sources/C4EJS/C4EJS-Lecture-5.1.png">
 Các trình duyệt khác nhau sẽ có từng developer tools khác nhau về giao diện tuy nhiên vẫn đảm bảo những nhu cầu tối thiểu. Lưu ý, Safari không hiển thị dev tool mặc định, phải tuỳ chỉnh thêm như ở [google](https://coolestguidesontheplanet.com/safari-web-developer-tools-show-dock-browser-window/)
 
 - Đối với việc sử dụng console, có thể để ý dấu **>** , mang ý nghĩa thực hiện 1 statement trong javascript. Thông thường thì một statement sẽ có kết quả trả về mặc định là **undefined** nếu không có giá trị nào được thực hiện bởi việc tính toán.Ngược lại nếu có kết quả thì sẽ hiển thị ở console với dấu "<"
-<img src="../sources/C4EJS/C4EJS-Lecture 5.2.png">
+<img src="../sources/C4EJS/C4EJS-Lecture-5.2.png">
 
 ---
 
