@@ -62,8 +62,9 @@
 
 ## parent & child
 - Có thể thông qua các thuộc tính của một element để truy cập tới các element ở bậc cao hơn
-
-<img src="../sources/C4EJS-Lecture 10.2.jpg" style="diplay:block;margin:auto">
+<div>
+    <img style="display:block;margin:auto" src="../sources/C4EJS-Lecture 10.2.jpg" >
+<div>
 
 ```js
 const element = document.getElementById('more')     // tag a 
