@@ -8,7 +8,7 @@
 ## Box Model
 - Tất cả mọi HTML element đều được biểu diễn trên trang web với mặt phẳng 2D (Oxy - Cartesian). Tất cả Element đều được xem như là một box. Có thể hiểu box model là một box, hình vuông bao quanh các element.
 - Một box model sẽ gồm 4 phần: margin - lề ngoài, border - biên, padding - lề trong,content - Nội dung của element.
-<img src="../sources/C4EJS-Lecture 2.3.png" alt="css syntax">
+<img src="../sources/C4EJS/C4EJS-Lecture-2.3.png" alt="css syntax">
 - Box Model sẽ liên quan tới việc xác định kích thước của một element, thông thường được sử dụng trong việc thiết kế và căn chỉnh giao diện.
 
 ```css

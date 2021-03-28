@@ -9,7 +9,7 @@
 <p style="color:red;font-size:30px">There are red and big! </p>
 ```
 - Đối với Internal & External CSS thì còn có thêm selector
-<img src="../sources/C4EJS-Lecture 2.2.png" alt="css syntax">
+<img src="../sources/C4EJS/C4EJS-Lecture-2.2.png" alt="css syntax">
 
 ---
 
