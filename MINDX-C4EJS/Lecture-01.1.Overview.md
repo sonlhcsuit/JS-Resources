@@ -39,6 +39,10 @@
 
 --- 
 <div>
-<img width=50 src="../sources/left-arrow.svg">
+<a href="./Lecture-01.2.Introduction-to-Front-End.md">
+<img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./Lecture-01.2.Introduction-to-Front-End.md">
 <img  width=50 src="../sources/right-arrow.svg">
-<div>
+</a>
+</div>
