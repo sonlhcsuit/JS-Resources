@@ -5,11 +5,11 @@
 - Đây cũng chính là một số nguyên tắc cần phải tuân theo khi áp dụng CSS (ví dụ các đơn vị đo độ dài như: %,..)
 
 ---
-
+C4EJS/
 ## Tree
 - Có thể biểu diễn các mối quan hệ giữa các element bằng một sơ đồ cây gia phả (còn có tên khác là cây DOM) bởi vì các mối quan hệ giữa các element là quan hệ cha - con và anh chị em
 - Đây là một ví dụ đơn giản về DOM
-<img src="../sources/C4EJS-Lecture 2.1.png" alt="dom">
+<img src="../sources/C4EJS/C4EJS-Lecture-2.1.png" alt="dom">
 - Một Element trên cây này có thể còn được gọi với tên khác là các Node (tuy nhiên từ "Element" sử dụng rộng rãi hơn).
 
 ---

@@ -22,7 +22,7 @@ el.
 
 ## event
 - Event là một Interface giúp các developer biết được các hành động của người dùng khi tương tác với trang web. Các Event được kích hoạt khi người dùng thực hiện các hành động tương tác với trang web (ví dụ: click, input,...)
-<img src="../sources/C4EJS-Lecture 10.1.jpg">
+<img src="../sources/C4EJS/C4EJS-Lecture-10.1.jpg">
 
 - Event gồm
     - **emitter** , sẽ được kích hoạt, gửi 1 tín hiệu ngay khi người dùng tương tác, có hành động bất kỳ.   
