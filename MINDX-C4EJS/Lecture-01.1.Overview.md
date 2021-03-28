@@ -36,3 +36,8 @@
 * https://vi.wikipedia.org/wiki/Internet
 * https://nodejs.org/api/url.html
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
+
+--- 
+
+<img style="width:50px" src="../sources/left-arrow.svg">
+<img style="width:50px" src="../sources/right-arrow.svg">
