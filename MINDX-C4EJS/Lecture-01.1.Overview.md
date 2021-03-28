@@ -39,5 +39,5 @@
 
 --- 
 
-<img style="width:50px" src="../sources/left-arrow.svg">
-<img style="width:50px" src="../sources/right-arrow.svg">
+<img style="width:50px!important" src="../sources/left-arrow.svg">
+<img style="width:50px!important" src="../sources/right-arrow.svg">
