@@ -61,11 +61,13 @@
 </body>
 <script>
 const element = document.getElementById('more')
-const introDIV = element.parentNode                  // tag div với id là introduction
+const introDIV = element.parentElement                  // tag div với id là introduction
+introDIV.firstElementChild                              // tag con đầu tiên
+introDIV.lastElementChild                               // tag con cuối cùng 
+introDIV.children                                       // tất cả tag con, ở dạng HTML collections - giống như mảng!
+introDIV.children[5]                                    // tag con thứ 5 - h3:species
 
-console.log(
-
-)
+console.log(introDIV.children,introDIV.children[3])
 
 </script>
 

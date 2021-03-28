@@ -62,22 +62,24 @@
 
 ## parent & child
 - Có thể thông qua các thuộc tính của một element để truy cập tới các element ở bậc cao hơn
-<div>
-    <img style="display:block;margin:auto" src="../sources/C4EJS-Lecture 10.2.jpg" >
-<div>
+<img style="display:block;margin:auto;" src="../sources/C4EJS-Lecture 10.2.jpg" >
 
 ```js
-const element = document.getElementById('more')     // tag a 
-element.par
-
+const element = document.getElementById('more')
+const introDIV = element.parentElement                  // tag div với id là introduction
+introDIV.firstElementChild                              // tag con đầu tiên - h2:About Brown Bears
+introDIV.lastElementChild                               // tag con cuối cùng - p:Brown bears are not...
+introDIV.children                                       // tất cả tag con, ở dạng HTML collections - giống như mảng!
+introDIV.children[5]                                    // tag con thứ 5 - h3:species
 ```
-
-
 
 ---
 
 ## sibling
+```js
 
+
+```
 ---
 
 ## Exercise:
