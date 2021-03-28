@@ -12,7 +12,7 @@
         <a href="./aboutme.html">About Me</a>
     </nav>
     <h1>The Brown Bear</h1>
-    <nav>
+    <nav id="nav">
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#habitat">Habitat</a></li>
@@ -25,7 +25,7 @@
             conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies
             within the brown bear species, including the
             Atlas bear and the Himalayan brown bear.</p>
-        <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
+        <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank" id="link">Learn More</a>
         <h3>Species</h3>
         <ul>
             <li>Arctos</li>
@@ -63,6 +63,13 @@
 ## parent & child
 - Có thể thông qua các thuộc tính của một element để truy cập tới các element ở bậc cao hơn
 
+<img src="../sources/C4EJS-Lecture 10.2.jpg" style="diplay:block;margin:auto">
+
+```js
+const element = document.getElementById('more')     // tag a 
+element.par
+
+```
 
 
 
@@ -77,4 +84,5 @@
 ---
 
 ## Reference & More Resources: 
+* https://www.w3schools.com/js/js_htmldom_navigation.asp
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
