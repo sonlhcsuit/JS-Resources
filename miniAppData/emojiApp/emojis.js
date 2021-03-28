@@ -1,4 +1,4 @@
-const emojis[
+const emojis=[
   {
     "title": "100",
     "symbol": "💯",
