@@ -19,3 +19,4 @@
 ## Reference:
 
 * https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+* https://www.youtube.com/watch?v=4KHiSt0oLJ0
