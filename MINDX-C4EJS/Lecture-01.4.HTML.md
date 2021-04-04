@@ -160,7 +160,7 @@ x<sup>2</sup> - Superscript text
 <a href="Lecture-01.3.Introduction-to-HTML.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-02.1.HTML-II.md">

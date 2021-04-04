@@ -46,7 +46,7 @@ document.querySelectorAll(".intro")    // chọn các phần tử đáp ứng đ
 <a href="Lecture-09.4.Callback.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-10.2.element.md">

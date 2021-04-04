@@ -98,7 +98,7 @@
 <a href="Lecture-01.4.HTML.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-02.2.Introduction-to-CSS.md">

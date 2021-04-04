@@ -50,7 +50,7 @@ Các trình duyệt khác nhau sẽ có từng developer tools khác nhau về g
 <a href="Lecture-03.1.CSS-III.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-05.2.Values-Variable-DataType.md">

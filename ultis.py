@@ -87,11 +87,13 @@ def create_navigators(directory_path=''):
                              index_path=os.path.join(directory_path, 'README.md'))
         elif i == len(files) - 1:
             create_navigator(file_path=os.path.join(directory_path, files[i]),
-                             previous_path=os.path.join(directory_path, files[i - 1]), )
+                             previous_path=os.path.join(directory_path, files[i - 1]),
+                             index_path=os.path.join(directory_path, 'README.md'))
         else:
             create_navigator(file_path=os.path.join(directory_path, files[i]),
                              previous_path=os.path.join(directory_path, files[i - 1]),
-                             next_path=os.path.join(directory_path, files[i + 1]))
+                             next_path=os.path.join(directory_path, files[i + 1]),
+                             index_path=os.path.join(directory_path, 'README.md'))
         print(os.path.join(directory_path, files[i]))
 
 

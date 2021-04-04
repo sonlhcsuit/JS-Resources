@@ -61,7 +61,7 @@ function f_name(x,y,z){
 <a href="Lecture-05.2.Values-Variable-DataType.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-06.1.Branching.md">

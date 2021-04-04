@@ -73,7 +73,7 @@ var_name = 'heheh'
 <a href="Lecture-05.1.Introduction-to-Javascript.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-05.3.Operator-Expression-Function.md">

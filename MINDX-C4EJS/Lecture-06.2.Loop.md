@@ -73,7 +73,7 @@ while(a=1)
 <a href="Lecture-06.1.Branching.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-07.1.Object.md">

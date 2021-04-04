@@ -39,7 +39,7 @@
 <a href="Lecture-01.1.Overview.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-01.3.Introduction-to-HTML.md">

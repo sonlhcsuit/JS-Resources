@@ -144,7 +144,7 @@ myf(1,2,3,4,5,6,7,8,9,)
 <a href="Lecture-09.1.DOM.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-09.3.Lexical.md">

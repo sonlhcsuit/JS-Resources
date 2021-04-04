@@ -33,7 +33,7 @@ C4EJS/
 <a href="Lecture-07.2.Array.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="..">
+<a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
 <a href="Lecture-09.2.Functions.md">
