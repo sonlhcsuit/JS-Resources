@@ -71,7 +71,7 @@ def create_navigator(file_path='', previous_path='', next_path='', index_path=''
     f_stream.write(template)
     f_stream.close()
 
-def create_navigators(directory_path=''):
+def create_navigators(directory_path='', config_path='/config/navigator.toml'):
     print(directory_path)
     if directory_path == '':
         return
@@ -84,16 +84,20 @@ def create_navigators(directory_path=''):
         if i == 0:
             create_navigator(file_path=os.path.join(directory_path, files[i]),
                              next_path=os.path.join(directory_path, files[i + 1]),
-                             index_path=os.path.join(directory_path, 'README.md'))
+                             index_path=os.path.join(directory_path, 'README.md'),
+                             config_path=config_path
+                             )
         elif i == len(files) - 1:
             create_navigator(file_path=os.path.join(directory_path, files[i]),
                              previous_path=os.path.join(directory_path, files[i - 1]),
-                             index_path=os.path.join(directory_path, 'README.md'))
+                             index_path=os.path.join(directory_path, 'README.md'),
+                             config_path=config_path)
         else:
             create_navigator(file_path=os.path.join(directory_path, files[i]),
                              previous_path=os.path.join(directory_path, files[i - 1]),
                              next_path=os.path.join(directory_path, files[i + 1]),
-                             index_path=os.path.join(directory_path, 'README.md'))
+                             index_path=os.path.join(directory_path, 'README.md'),
+                             config_path=config_path)
         print(os.path.join(directory_path, files[i]))
 
 
@@ -131,19 +135,45 @@ def parser():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('resource', help='Specify which kinds of resources you would like to perform an action')
     arg_parser.add_argument('action', help='Specify action (create, update, delete) for navigators, indexes, articles')
-    arg_parser.add_argument('directory', default=None, help='Specify directory to perform an action.')
-    arg_parser.add_argument('-c', '--config', default=None, help='Specify configuration of resources.')
+    arg_parser.add_argument('directory', help='Specify directory to perform an action.')
+    arg_parser.add_argument('-c', '--config',  help='Specify configuration of resources.')
 
     args = arg_parser.parse_args()
     args = vars(args)
-    # print(args)
+    if args['action'] == 'create' or args['action'] == 'update':
+        if args['config'] == None:
+            raise Exception('Must specify config file when create or update')
+        if args['config'][-4:] != 'toml':
+            raise Exception('config file must be in toml format')
+    print(args)
+    return args
 
 
+def main(args):
+    if args['resource'] == 'navigator':
+        if args['action'] == 'create':
+            print('Creating')
+            create_navigators(args['directory'], args['config'])
+        elif args['action'] == 'delete':
+            delete_navigators(args['directory'])
+
+            print('Deleting')
+
+
+        elif args['action'] == 'update':
+            delete_navigators(args['directory'])
+
+            create_navigators(args['directory'], args['config'])
+
+            print('Updating')
+
+            print(args['directory'])
+
+
+    elif args['resources'] == 'index':
+        pass
 
 
 if __name__ == '__main__':
-    parser()
-    delete_navigators('MINDX-C4EJS')
-    create_navigators('MINDX-C4EJS')
-    # remove_controls('MINDX-C4EJS')
-    # add_controls('MINDX-C4EJS')
+    args = parser()
+    main(args)
