@@ -36,3 +36,18 @@
 * https://vi.wikipedia.org/wiki/Internet
 * https://nodejs.org/api/url.html
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
+
+------
+<!-- Navigator -->
+<div>
+<a href="Lecture-01.1.Overview.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="README.md">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="../MINDX-CIJS/Lecture 1.1 Basic Knowledge.md">
+    <img  width=50 src="../MINDX-CIJS/Lecture 1.1 Basic Knowledge.md">
+    </a>
+</div>
+<!-- Navigator -->
