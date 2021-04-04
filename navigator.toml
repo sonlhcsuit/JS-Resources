@@ -1,0 +1,9 @@
+name = "navigator"
+description = "navigate between previous & next page"
+
+[icon]
+previous_icon = './sources/left-arrow.svg'
+index_icon = './sources/index.svg'
+previous_icon = './sources/right-arrow.svg'
+
+template = "./navigator.templates"

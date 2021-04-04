@@ -1,0 +1,14 @@
+---
+<!-- Navigator -->
+<div>
+<a href="%{previous}%">
+    <img width=50 src="%{previous_icon}%" >
+</a>
+<a href="%{index}%">
+    <img width=50 src="%{index_icon}%" >
+</a>
+<a href="%{next}%">
+    <img  width=50 src="%{next}%">
+    </a>
+</div>
+<!-- Navigator -->

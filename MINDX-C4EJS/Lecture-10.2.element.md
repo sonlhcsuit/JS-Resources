@@ -45,24 +45,3 @@ el.addEventListener("click",function(ev)=>{
 * https://www.w3schools.com/jsref/dom_obj_all.asp
 * https://developer.mozilla.org/en-US/docs/Web/API/Event
 * https://developer.mozilla.org/en-US/docs/Web/API/Event/Comparison_of_Event_Targets
-
-
-
-
-
-
-
----
-<!-- Navigator -->
-<div>
-<a href="./Lecture-10.1.document.md">
-    <img width=50 src="../sources/left-arrow.svg" >
-</a>
-<a href="./README.md">
-    <img width=50 src="../sources/index.svg" >
-</a>
-<a href="./Lecture-10.3.Navigating.md">
-    <img  width=50 src="../sources/right-arrow.svg">
-    </a>
-</div>
-<!-- Navigator -->

@@ -32,25 +32,4 @@
 
 ---
 
-## Reference & More Resources: 
-
-
-
-
-
-
-
----
-<!-- Navigator -->
-<div>
-<a href="./Lecture-01.1.Overview.md">
-    <img width=50 src="../sources/left-arrow.svg" >
-</a>
-<a href="./README.md">
-    <img width=50 src="../sources/index.svg" >
-</a>
-<a href="./Lecture-01.3.Introduction-to-HTML.md">
-    <img  width=50 src="../sources/right-arrow.svg">
-    </a>
-</div>
-<!-- Navigator -->
+## Reference & More Resources:
