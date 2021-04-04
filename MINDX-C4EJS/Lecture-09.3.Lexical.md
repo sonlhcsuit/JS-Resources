@@ -184,11 +184,16 @@ let newPrice = discount50(150)
 
 
 
+
+
 ---
 <!-- Navigator -->
 <div>
 <a href="./Lecture-09.2.Functions.md">
     <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
 </a>
 <a href="./Lecture-09.4.Callback.md">
     <img  width=50 src="../sources/right-arrow.svg">

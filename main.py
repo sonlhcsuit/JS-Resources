@@ -1,6 +1,6 @@
 import os
 import re
-def add_control(file=None,previous_href=None,next_href=None):
+def add_control(file='#',previous_href='#',next_href='#',syllabus='README.md'):
     # next_href & previous href must be relative with the current file
     fs = open(file,'a') # must be absolute path
     control_str = """
@@ -11,11 +11,14 @@ def add_control(file=None,previous_href=None,next_href=None):
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
 <a href="./{}">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="./{}">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>
 <!-- Navigator -->
-""".format(previous_href,next_href)
+""".format(previous_href,syllabus,next_href)
     fs.write(control_str)
     fs.close()
 

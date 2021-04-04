@@ -108,15 +108,16 @@ array.reverse()			// Trả về mảng nhưng với thứ thứ tự bị ngư�
 
 
 
-
-
 ---
 <!-- Navigator -->
 <div>
-<a href="./Lecture-07.1.Loop.md">
+<a href="./Lecture-07.1.Object.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
-<a href="./Lecture-08.1.Object.md">
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="./Lecture-09.1.DOM.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>

@@ -18,11 +18,16 @@
 
 
 
+
+
 ---
 <!-- Navigator -->
 <div>
 <a href="./Lecture-02.3.CSS.md">
     <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
 </a>
 <a href="./Lecture-03.1.CSS-III.md">
     <img  width=50 src="../sources/right-arrow.svg">

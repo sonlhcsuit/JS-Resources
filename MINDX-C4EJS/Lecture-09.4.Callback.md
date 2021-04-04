@@ -41,11 +41,16 @@ greeting('Stella',inviteLunch)
 
 
 
+
+
 ---
 <!-- Navigator -->
 <div>
 <a href="./Lecture-09.3.Lexical.md">
     <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
 </a>
 <a href="./Lecture-10.1.document.md">
     <img  width=50 src="../sources/right-arrow.svg">

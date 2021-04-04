@@ -44,7 +44,7 @@ lines  -->
 - Sau đây là một vài self-closing tag:
 > area, base, br, col, embed, hr, img, input, link, meta, para, source, track, wbr,...
 
-- HTML tag có rất nhiều(và đơn giản nữa), và khá ít khi có người nhớ hết, nên việc tra cứa dựa trên keywords sẽ quan trọng, các nguồn tra cứu quan trọng là ở [google](https://www.w3schools.com/tags/default.asp) và ở [google](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- HTML tag có rất nhiều(và đơn giản nữa), và khá ít khi có người nhớ hết, nên việc tra cứa dựa trên keywords sẽ quan trọng, các nguồn tra cứu quan trọng là ở [google](https://www.w3schools.com/tags/default.asp) và ở [youtube](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 - h1,h6,p
 - video, source,img 
@@ -60,11 +60,16 @@ và các tag cơ bản khác
 
 
 
+
+
 ---
 <!-- Navigator -->
 <div>
 <a href="./Lecture-01.2.Introduction-to-Front-End.md">
     <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
 </a>
 <a href="./Lecture-01.4.HTML.md">
     <img  width=50 src="../sources/right-arrow.svg">

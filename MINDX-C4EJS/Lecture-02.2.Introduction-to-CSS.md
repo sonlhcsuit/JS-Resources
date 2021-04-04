@@ -100,13 +100,14 @@ p {
 
 ## Measure unit
 - Có 2 loại unit để đo độ dài chính trong CSS 
-- absolute: Độ dài cụ thể, tường minh. Ví dụ: px, cm, mm, in (inches),...add
+- absolute: Độ dài cụ thể, tường minh. Ví dụ: px, cm, mm, in (inches),...
 - relative: không tường minh, phụ thuộc vào thứ khác. Ví dụ: %, vw, vh,...
 
 ---
 
 ## CSS properties
 - Giới thiệu về các CSS property hay được sử dụng 
+- 
 ---
 
 ## Reference & More Resources: 
@@ -120,14 +121,14 @@ p {
 
 
 
-
-
-
 ---
 <!-- Navigator -->
 <div>
 <a href="./Lecture-02.1.HTML-II.md">
     <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="./README.md">
+    <img width=50 src="../sources/index.svg" >
 </a>
 <a href="./Lecture-02.3.CSS.md">
     <img  width=50 src="../sources/right-arrow.svg">
