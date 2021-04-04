@@ -45,6 +45,10 @@ Các trình duyệt khác nhau sẽ có từng developer tools khác nhau về g
 ## Reference & More Resources: 
 * https://quantrimang.com/javascript-la-gi-internet-co-the-ton-tai-ma-khong-co-javascript-hay-khong-131753
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

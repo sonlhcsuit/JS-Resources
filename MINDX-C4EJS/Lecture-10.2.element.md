@@ -46,6 +46,10 @@ el.addEventListener("click",function(ev)=>{
 * https://developer.mozilla.org/en-US/docs/Web/API/Event
 * https://developer.mozilla.org/en-US/docs/Web/API/Event/Comparison_of_Event_Targets
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

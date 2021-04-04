@@ -106,6 +106,10 @@ array.reverse()			// Trả về mảng nhưng với thứ thứ tự bị ngư�
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

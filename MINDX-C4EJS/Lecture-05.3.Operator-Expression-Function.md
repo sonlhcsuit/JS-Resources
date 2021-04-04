@@ -56,6 +56,10 @@ function f_name(x,y,z){
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

@@ -139,6 +139,10 @@ myf(1,2,3,4,5,6,7,8,9,)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 * https://www.youtube.com/watch?v=GdAyat5P72Q
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

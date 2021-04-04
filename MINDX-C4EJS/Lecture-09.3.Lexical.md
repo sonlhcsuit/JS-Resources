@@ -180,6 +180,10 @@ let newPrice = discount50(150)
 * https://stackoverflow.com/questions/12599965/lexical-environment-and-function-scope
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

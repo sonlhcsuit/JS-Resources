@@ -96,6 +96,10 @@ element.previousSibling									// element liền trước, là element p:The br
 * https://www.w3schools.com/js/js_htmldom_navigation.asp
 * https://www.w3schools.com/js/js_htmldom_nodes.asp
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

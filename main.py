@@ -34,7 +34,6 @@ def add_controls(dir_path=None):
         else:
             add_control(os.path.join(path,files[i]),files[i-1],files[i+1])
 
-
 def remove_control(file):
     rg_str = r'^-{3}\n\<\!-{2}\sNavigator\s-{2}\>.*?\<\!-{2}\sNavigator\s-{2}\>'
     rg = re.compile(rg_str,re.IGNORECASE|re.MULTILINE|re.DOTALL)
@@ -47,7 +46,19 @@ def remove_control(file):
     f = open(file,'w')
     f.write(f_content)
     f.close()
-if __name__ == '__main__':
-    add_controls('MINDX-C4EJS')
 
-    # remove_control('/Users/apple/silver/projects/personal/JS-Resources/MINDX-C4EJS/Lecture-01.1.Overview.md')
+def remove_controls(dir_path=None):
+    c_path = os.getcwd()
+    d_path = dir_path
+    path = os.path.join(c_path,d_path)
+    files = os.listdir(path)
+    files = sorted(list(filter(lambda x:'Lecture' in x,files)))
+    print(files)
+    for i in range(len(files)):
+        remove_control(os.path.join(path,files[i]))
+        
+
+if __name__ == '__main__':
+
+    remove_controls('MINDX-C4EJS')
+    add_controls('MINDX-C4EJS')

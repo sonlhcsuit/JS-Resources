@@ -155,6 +155,10 @@ x<sup>2</sup> - Superscript text
 * https://www.geeksforgeeks.org/difference-between-static-and-dynamic-web-pages/
 * https://www.w3schools.com/tags/default.asp
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>

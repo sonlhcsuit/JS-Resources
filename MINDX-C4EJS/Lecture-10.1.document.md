@@ -41,6 +41,10 @@ document.querySelectorAll(".intro")    // chọn các phần tử đáp ứng đ
 * https://developer.mozilla.org/en-US/docs/Web/API/Window
 * https://developer.mozilla.org/en-US/docs/Web/API/Document
 
+
+
+
+
 ---
 <!-- Navigator -->
 <div>
