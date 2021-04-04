@@ -95,3 +95,17 @@ element.previousSibling									// element liền trước, là element p:The br
 * https://developer.mozilla.org/en-US/docs/Web/API/Node
 * https://www.w3schools.com/js/js_htmldom_navigation.asp
 * https://www.w3schools.com/js/js_htmldom_nodes.asp
+---
+<!-- Navigator -->
+<div>
+<a href="Lecture-10.2.element.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="..">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="Lecture-11.1.API.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>
+<!-- Navigator -->

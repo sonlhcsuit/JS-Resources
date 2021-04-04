@@ -118,3 +118,17 @@ p {
 * https://www.w3schools.com/css/css_specificity.asp
 * https://www.w3schools.com/cssref/css_units.asp
 * https://www.w3schools.com/css/default.asp
+---
+<!-- Navigator -->
+<div>
+<a href="Lecture-02.1.HTML-II.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="..">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="Lecture-02.3.CSS.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>
+<!-- Navigator -->

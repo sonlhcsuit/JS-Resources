@@ -67,3 +67,17 @@ while(a=1)
 
 ## Reference & More Resources: 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+---
+<!-- Navigator -->
+<div>
+<a href="Lecture-06.1.Branching.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="..">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="Lecture-07.1.Object.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>
+<!-- Navigator -->

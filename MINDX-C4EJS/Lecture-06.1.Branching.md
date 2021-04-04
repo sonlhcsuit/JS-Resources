@@ -87,3 +87,17 @@ switch(variable){
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
 * https://github.com/edtechkidsvn/c4ejs-student-book/blob/master/branching/branching.md
+---
+<!-- Navigator -->
+<div>
+<a href="Lecture-05.3.Operator-Expression-Function.md">
+    <img width=50 src="../sources/left-arrow.svg" >
+</a>
+<a href="..">
+    <img width=50 src="../sources/index.svg" >
+</a>
+<a href="Lecture-06.2.Loop.md">
+    <img  width=50 src="../sources/right-arrow.svg">
+    </a>
+</div>
+<!-- Navigator -->
