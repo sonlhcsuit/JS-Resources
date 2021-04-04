@@ -13,7 +13,8 @@ def extract_file_directory(file_path=''):
     return f_d
 
 
-def create_navigator(file_path='', previous_path='', next_path='', index_path='', config_path='./navigator.toml'):
+def create_navigator(file_path='', previous_path='', next_path='', index_path='',
+                     config_path='./config/navigator.toml'):
     """
     :param file_path: file to be added navigator at last
     :param previous_path: previous file path to go back
@@ -54,38 +55,31 @@ def create_navigator(file_path='', previous_path='', next_path='', index_path=''
     f_stream.close()
     for nav in navigate.keys():
         abs_path = os.path.normpath(ROOT + '/./' + navigate[nav])
-        rel_path = os.path.relpath(abs_path,start=file_dir)
-        template = template.replace(f"%{{{config['navigate'][nav]}}}%",rel_path)
+        rel_path = os.path.relpath(abs_path, start=file_dir)
+        template = template.replace(f"%{{{config['navigate'][nav]}}}%", rel_path)
     for i in icon.keys():
         config['icon'][i]
         abs_path = os.path.normpath(ROOT + '/./' + config['icon'][i])
         rel_path = os.path.relpath(abs_path, start=config_dir)
         template = template.replace(f"%{{{i}}}%", rel_path)
-    print(template)
-
-    # for nav in navigate.keys():
-    #     template = template.replace(f"%{{{config['navigate'][nav]}}}%", navigate[nav])
-    # for i in icon.keys():
-    #     icon_path = os.path.relpath(os.path.join(PWD), start=os.path.join(PWD, conf_dir))
-    #     print(icon_path)
-    #     template = template.replace(f"%{{{i}}}%", config['icon'][i])
-    #
-    # print(template)
 
 
-# extract_file_directory(file_path)
-# previous_t = '%\{previous\}%'
-# index_t = '%\{index\}%'
-# next_t = '%\{next\}%'
-# f = open(os.path.normpath(os.path.join(pwd,template)),'r')
-# t = f.read()
-# f.close()
-# t = re.sub(previous_t,previous_path,t)
-# t = re.sub(index_t,previous_path,t)
-# t = re.sub(next_t,previous_path,t)
-# print(t)
-# print(os.path.join(pwd,'MINDX-C4EJS',previous_path))
-# print(os.path.relpath(os.path.join(pwd,'MINDX-C4EJS',previous_path),start=os.path.join(pwd,'sources')))
+def create_navigators(directory_path=''):
+    print(directory_path)
+    if directory_path == '':
+        return
+    dir = os.path.normpath(ROOT + '/./' + directory_path)
+
+    files = os.listdir(dir)
+    files = sorted(list(filter(lambda x: 'Lecture' in x, files)))
+
+    for i in range(len(files)):
+        if i == 0:
+            create_navigator(os.path.join(directory_path, files[i]), None, files[i + 1])
+        elif i == len(files) - 1:
+            create_navigator(os.path.join(directory_path, files[i]), files[i - 1], None)
+        else:
+            create_navigator(os.path.join(directory_path, files[i]), files[i - 1], files[i + 1])
 
 
 # def update_index(dir_path):
@@ -167,8 +161,7 @@ def parser():
 
 if __name__ == '__main__':
     parser()
-    create_navigator('MINDX-C4EJS/Lecture-01.1.Overview.md', 'MINDX-C4EJS/Lecture-01.1.Overview.md',
-                     'MINDX-CIJS/Lecture 1.1 Basic Knowledge.md', 'MINDX-C4EJS/README.md', './config/navigator.toml')
+    create_navigators('MINDX-C4EJS')
     # create_navigator('miniAppData/countries/countries.json', 'MINDX-C4EJS/Lecture-01.1.Overview.md',
     #                  'MINDX-CIJS/Lecture 1.1 Basic Knowledge.md', 'MINDX-C4EJS/README.md')
 

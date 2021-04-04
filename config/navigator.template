@@ -8,7 +8,7 @@
     <img width=50 src="%{index_icon}%" >
 </a>
 <a href="%{next}%">
-    <img  width=50 src="%{next}%">
+    <img  width=50 src="%{next_icon}%">
     </a>
 </div>
 <!-- Navigator -->
