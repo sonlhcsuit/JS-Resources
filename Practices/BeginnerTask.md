@@ -1,7 +1,8 @@
+## Counter
+Create an counter, like an example [here]()
+
 ## Timer
 Create an timer, like an example [here]()
-
-## 
 
 ## [Count Down Timer](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
 
