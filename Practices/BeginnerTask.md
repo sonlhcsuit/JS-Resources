@@ -1,10 +1,11 @@
 ## Counter
-Create an counter, like an example [here]()
+Create an counter, like an example [here](https://prank-sonlh.netlify.app/counter/)
 
 ## Timer
-Create an timer, like an example [here]()
+Create an timer, like an example [here](https://prank-sonlh.netlify.app/timer/)
 
-## [Count Down Timer](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
+## Count Down Timer
+Create an count down timer, like an example [here](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
 
 ## [Binary to Decimal](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 ## [Dollars To Cents](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Dollars-To-Cents-App.md)
