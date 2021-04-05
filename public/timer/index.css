@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    border:1px solid red;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer{
+    width: 20%;
+    height: 20%;
+    min-width: 200px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* border:1px solid red; */
+
+}
+.timer > *{
+    height: 75%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+
+}
+.btn {
+    height: 5vh;
+    width: 5vh;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.timer__time > input[type=number]{
+    width: 100%;
+    font-size: 15px;
+    text-align: right;
+    outline: none;
+}
+.timer__display{
+    flex-grow: 1;
+    height: auto;
+}
+.timer__display > p {
+    font-size: 40px;
+    font-weight: 100;
+}
