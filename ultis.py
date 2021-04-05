@@ -12,7 +12,6 @@ def extract_file_directory(file_path=''):
     f_d = os.path.join(sub_paths[0], parent_dir)
     return f_d
 
-
 def create_navigator(file_path='', previous_path='', next_path='', index_path='',
                      config_path='/config/navigator.toml'):
     """
@@ -100,7 +99,6 @@ def create_navigators(directory_path='', config_path='/config/navigator.toml'):
                              config_path=config_path)
         print(os.path.join(directory_path, files[i]))
 
-
 def delete_navigators(directory_path):
     if directory_path == '':
         return
@@ -112,7 +110,6 @@ def delete_navigators(directory_path):
     for i in range(len(files)):
         delete_navigator(file_path=os.path.join(directory_path, files[i]))
     # print(os.path.join(directory_path, files[i]))
-
 
 def delete_navigator(file_path=''):
     if file_path == '':

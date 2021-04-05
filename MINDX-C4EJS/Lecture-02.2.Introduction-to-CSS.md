@@ -107,7 +107,7 @@ p {
 
 ## CSS properties
 - Giới thiệu về các CSS property hay được sử dụng 
-- 
+- Hoàn thành tutorial ở w3schools
 ---
 
 ## Reference & More Resources: 

@@ -1,4 +1,5 @@
 # Navigation 
+## Navigation
 - Một điều cần phải chú ý rằng là chúng ta không nên đặt quá nhiều id để chọn => nhớ nhiều id => khó kiểm soát
 - Thay vì dùng **id** thì ta có thể sử dụng class và dùng hàm **getElementsByClassName** để xử lý.
 - Nếu nắm rõ các quy tắc để viết **selector** của CSS thì sử dụng **querySelector**, **querySelectorAll** để chọn element cũng là một cách nhanh chóng
@@ -59,6 +60,8 @@
 	</div>
 </body>
 ```
+
+---
 
 ## parent & child
 - Có thể thông qua các thuộc tính của một element để truy cập tới các element ở bậc cao hơn
