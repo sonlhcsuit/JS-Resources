@@ -30,7 +30,6 @@
 - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-
 ---
 <!-- Navigator -->
 <div>
@@ -40,7 +39,7 @@
 <a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
-<a href="Lecture-11.3.Networking.md">
+<a href="Lecture-11.3.fetch.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>

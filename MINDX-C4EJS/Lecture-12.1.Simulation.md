@@ -2,7 +2,7 @@
 ---
 <!-- Navigator -->
 <div>
-<a href="Lecture-11.3.Networking.md">
+<a href="Lecture-11.3.fetch.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
 <a href="README.md">
