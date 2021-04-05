@@ -1,4 +1,10 @@
-
+# Public API
+## Public API
+- Có một vài public API có thể sử dụng hoàn toàn miễn phí
+- Hãy tìm hiểu xem sử dụng các API này như thế nào cho hiệu quả nhé
+- https://github.com/public-apis/public-apis
+---
+## Reference & More Resources: 
 ---
 <!-- Navigator -->
 <div>
