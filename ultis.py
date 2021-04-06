@@ -154,7 +154,7 @@ def create_indexes(directory_path='', config_path='/config/index.toml'):
         title = re.findall(config['title']['regex'],f,re.IGNORECASE|re.DOTALL|re.MULTILINE)
         idx = idx.replace(f'%{{title}}%',title[0])
         idx = idx.replace(f'%{{path}}%',f)
-        index = index+'\n'+idx
+        index = index+'\n'+idx.strip() + '   '
     index= index + '\n' + index_end
     ct = ''
     f_stream = open(os.path.normpath(dir + '/./'+'README.md'),'r')
