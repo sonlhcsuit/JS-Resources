@@ -85,7 +85,8 @@ body{
 </div>
 ```
 - Nếu không có điểm neo phù hợp thì sẽ chọn viewport làm neo, tuy nhiên vị trí không giữ nguyên mà sẽ bị thay đổi khi cuộn trang.
-<img src="../sources/C4EJS/C4EJS-Lecture -2.7.png" alt="css syntax">
+
+<img src="../sources/C4EJS/C4EJS-Lecture-2.7.png" alt="css syntax">
 
 - relative : Điểm neo chính là vị trí cơ bản (vị trí bình thường của element, static).
 <img src="../sources/C4EJS/C4EJS-Lecture-2.8.png" alt="css syntax">
@@ -183,7 +184,7 @@ body{
 ---
 <!-- Navigator -->
 <div>
-<a href="Lecture-02.4.CSS-II.md">
+<a href="Lecture-03.1.Flexbox.md">
     <img width=50 src="../sources/left-arrow.svg" >
 </a>
 <a href="README.md">

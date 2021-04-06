@@ -42,7 +42,7 @@ div {
 <a href="README.md">
     <img width=50 src="../sources/index.svg" >
 </a>
-<a href="Lecture-02.4.CSS-II.md">
+<a href="Lecture-03.1.Flexbox.md">
     <img  width=50 src="../sources/right-arrow.svg">
     </a>
 </div>

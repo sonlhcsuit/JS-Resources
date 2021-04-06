@@ -4,7 +4,7 @@
 - Hãy tìm hiểu xem sử dụng các API này như thế nào cho hiệu quả nhé
 - https://github.com/public-apis/public-apis
 ---
-## Reference & More Resources: 
+## Reference & More Resources:
 ---
 <!-- Navigator -->
 <div>

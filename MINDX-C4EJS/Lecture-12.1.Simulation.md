@@ -3,8 +3,7 @@
 - Sử dụng mockAPI để *giả lập* một ứng dụng khác
 - Cho phép chúng ta thử nghiệm, làm việc giống như thực tế
 ---
-## Reference & More Resources: 
-
+## Reference & More Resources:
 ---
 <!-- Navigator -->
 <div>
