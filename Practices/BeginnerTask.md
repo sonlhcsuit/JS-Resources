@@ -5,13 +5,24 @@ Create a counter, like an example [here](https://prank-sonlh.netlify.app/counter
 Create a timer, like an example [here](https://prank-sonlh.netlify.app/timer/)
 
 ## Count Down Timer
-Create a countdown timer, like an example [here](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
+Create a countdown timer, like an example [here](https://prank-sonlh.netlify.app/countdown-timer/)
+
+## Quotes App
+Create a random quotes app, like an example [here](https://prank-sonlh.netlify.app/quotes/)
 
 ## Binary to Decimal
 Create a count down binary - decimal converter, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
 
+
+## Colorful
+Create a colorful , like an example [here](https://prank-sonlh.netlify.app/colorful)
+
 ## Dollars To Cents
-Create a money convention machine, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a money convention machine, like an example [here](https://prank-sonlh.netlify.app/https://prank-sonlh.netlify.app/timer//)
+## Color Quiz
+Create a color quiz, like an example [here](https://prank-sonlh.netlify.app/color-quiz)
+
+
 
 ## CSV to JSON - Optional
 Create a JSON - CSV converter, like an example [here](https://prank-sonlh.netlify.app/csv-json/)
