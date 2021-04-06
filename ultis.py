@@ -127,6 +127,42 @@ def delete_navigator(file_path=''):
     f.write(f_content.strip())
     f.close()
 
+def create_indexes(directory_path='', config_path='/config/index.toml'):
+    
+    if directory_path == '':
+        return
+    dir = os.path.normpath(ROOT + '/./' + directory_path)
+    config = toml.load(os.path.normpath(ROOT + '/./' + config_path))
+    
+    config_dir = os.path.normpath(ROOT + '/./' + extract_file_directory(config_path) )
+    template_path = os.path.normpath(config_dir + '/./' + config['template'])
+    files = os.listdir(dir)
+    files = sorted(list(filter(lambda x: 'Lecture' in x, files)))
+    rgstr = r'(?<=-{3}\n\<\!-{2}\sIndex\s-{2}\>).*?(?=\<\!-{2}\sIndex\s-{2}\>)'
+    f_stream = open(template_path,'r')
+    template = f_stream.read()
+    f_stream.close()
+    data = re.findall(rgstr,template,re.MULTILINE|re.IGNORECASE|re.DOTALL)
+    template = data[0].strip()
+    index_start = '---\n<!-- Index -->'
+    index_end = '<!-- Index -->'
+    index = ''
+    index = index + '\n' + index_start
+    for (i,f) in enumerate (files):
+        nu =int(config['int']['start'])+i
+        idx = template.replace(f'%{{int}}%',str(nu))
+        title = re.findall(config['title']['regex'],f,re.IGNORECASE|re.DOTALL|re.MULTILINE)
+        idx = idx.replace(f'%{{title}}%',title[0])
+        idx = idx.replace(f'%{{path}}%',f)
+        index = index+'\n'+idx
+    index= index + '\n' + index_end
+    ct = ''
+    f_stream = open(os.path.normpath(dir + '/./'+'README.md'),'r')
+    ct = f_stream.read()
+    f_stream.close()
+    f_stream = open(os.path.normpath(dir + '/./'+'README.md'),'w')
+    f_stream.write(ct.strip())
+    f_stream.write(index)
 
 def parser():
     arg_parser = argparse.ArgumentParser()
@@ -142,7 +178,7 @@ def parser():
             raise Exception('Must specify config file when create or update')
         if args['config'][-4:] != 'toml':
             raise Exception('config file must be in toml format')
-    print(args)
+    # print(args)
     return args
 
 
@@ -153,22 +189,19 @@ def main(args):
             create_navigators(args['directory'], args['config'])
         elif args['action'] == 'delete':
             delete_navigators(args['directory'])
-
             print('Deleting')
-
-
         elif args['action'] == 'update':
             delete_navigators(args['directory'])
-
             create_navigators(args['directory'], args['config'])
-
             print('Updating')
-
             print(args['directory'])
-
-
-    elif args['resources'] == 'index':
-        pass
+    elif args['resource'] == 'index':
+        if args['action'] == 'create':
+            create_indexes(args['directory'],args['config'])
+        elif args['action']=='delete':
+            pass
+        elif args['update'] =='update':
+            pass
 
 
 if __name__ == '__main__':

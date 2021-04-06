@@ -1,122 +1,5 @@
 ## C4E JS - Student book
 ### Mục lục
-
-1. [SYLLABUS](MINDX-C4EJS-SYLLABUS.md)
-
-
-# C4EJS
-
----
-
-## Lecture 1
-
-- [Lecture 1.1](Lecture-1.1.Overview.md): Overview about Internet, and World Wide Web
-
-- [Lecture 1.2](Lecture-1.2.Introduction-to-Front-End.md): Introduction to Front-End
-
-- [Lecture 1.3](Lecture-1.3.Introduction-to-HTML.md): Introduction to HTML
-
-- [Lecture 1.4](Lecture-1.4.HTML.md): HTML tags
-
-- Exercise:
-    * Brown Bear & Healthy Food ở trên lớp
-    * Về nhà làm bài Norwegian Forest Cat (tương tự như Brown Bear nhưng thay vì gấu thì sẽ là mèo, và các thông tin thì các bạn tự tìm hiểu ở wiki)
-    * Đọc thêm thông tin về các tag ở link 4 
-
----
-
-## Lecture 2
-- [Lecture 2.1](Lecture-2.1.HTML-II.md): HTML tags part 2 
-    - Forms
-    - DOM
-    - Block and non Block
-    - file path
-    - entity
-
-- [Lecture 2.2](Lecture-2.2.Introduction-to-CSS.md): Introduction to CSS
-    - declarations
-    - selectors
-    - specificity
-    - measure unit
-    - some css property
-
-- [Lecture 2.3](Lecture-2.3.CSS.md): CSS
-    - Naming with Bem Standard
-    - Box Model
-    - display
-
-- [Lecture 2.4](Lecture-2.4.CSS-II.md): CSS II
-    - flex box
-    
-- Exercise:
-    * Thực hiện Survey form
-    * Thực hiện Portfolio
-    * Về nhà làm riêng cho mình một porfolio
-    * Đọc thêm thông tin về các tag HTML & CSS ở w3school.
-    * Làm tribute Page
-
----
-
-## Lecture 3
-- [Lecture 3.1](Lecture-3.1.CSS-III.md): CSS part 3
-    - position
-    - font icon
-    - CSS function: var, calc,...
-    - some property: z-index, transform
-    - Using font
-
-- Exercise:
-    * Thực hiện Survey form 2 (50%)
-    * Làm Just a Square & Crescent Moon
-    * Về nhà hoàn thiện Survey form 2
-    * 4 Corner & Button
-
----
-
-## Lecture 4
-- Exercise:
-    * Thực hiện Fork, Fuji Mountain
-    * Làm Product Landing Page (40%)
-    * Về nhà hoàn thiện Product Landing Page (Navigation Bar, Products,...), 
-    * Xem trước về Javascript
-
----
-
-## Lecture 5
-- Introduction to Javascript & Programming tools
-
-- Values, Variable & Data type
-
-- Operator and Expression
-
-- Exercise:
-    * Làm bài 1 - 5 ở file <a href="https://github.com/sonlhcsuit/JS-Resources/blob/master/Practices/Exercises/01 - Values, Types, Operators and Basic Functions.md">đây</a> 
-
----
-
-## Lecture 6
-- Branching
-    - Conditional Statement
-    - if else if 
-    - switch case
-## Lecture 7
-- Loops
-    - while
-    - for
-    - break & continue
-    - practices
-- Array
-## Lecture 8
-- Object
-## Lecture 9
-## Lecture 10
-## Lecture 11
-## Lecture 12
-## Lecture 13
-## Lecture 14
-
-
-
 <!-- 1. [Giới thiệu khoá học (Introduction)](course_intro/course_introduction.md) -->
 <!-- 2. [Biến (Variables)](./variables/variables.md) -->
 <!-- 3. [Kiểu dữ liệu (Data types)](./data_types/data_types.md) -->
@@ -136,4 +19,102 @@
 <!-- 17. [CSS - Part 2](./css/css-part2.md) -->
 <!-- 10. [Hàm Promise(Promise Function)](/function/function-promise.md) -->
 <!-- 10. [Hàm Calbacks(Callbacks Function)](/function/function-callback.md) -->
-
+---
+ <!-- Index -->
+1.[01.1.Overview](Lecture-01.1.Overview.md)
+2.[01.2.Introduction-to-Front-End](Lecture-01.2.Introduction-to-Front-End.md)
+3.[01.3.Introduction-to-HTML](Lecture-01.3.Introduction-to-HTML.md)
+4.[01.4.HTML](Lecture-01.4.HTML.md)
+5.[02.1.HTML-II](Lecture-02.1.HTML-II.md)
+6.[02.2.Introduction-to-CSS](Lecture-02.2.Introduction-to-CSS.md)
+7.[02.3.CSS](Lecture-02.3.CSS.md)
+8.[03.1.Flexbox](Lecture-03.1.Flexbox.md)
+9.[03.2.Position](Lecture-03.2.Position.md)
+10.[05.1.Introduction-to-Javascript](Lecture-05.1.Introduction-to-Javascript.md)
+11.[05.2.Values-Variable-DataType](Lecture-05.2.Values-Variable-DataType.md)
+12.[05.3.Operator-Expression-Function](Lecture-05.3.Operator-Expression-Function.md)
+13.[06.1.Branching](Lecture-06.1.Branching.md)
+14.[06.2.Loop](Lecture-06.2.Loop.md)
+15.[07.1.Object](Lecture-07.1.Object.md)
+16.[07.2.Array](Lecture-07.2.Array.md)
+17.[09.1.DOM](Lecture-09.1.DOM.md)
+18.[09.2.Functions](Lecture-09.2.Functions.md)
+19.[09.3.Lexical](Lecture-09.3.Lexical.md)
+20.[09.4.Callback](Lecture-09.4.Callback.md)
+21.[10.1.document](Lecture-10.1.document.md)
+22.[10.2.element](Lecture-10.2.element.md)
+23.[10.3.Navigating](Lecture-10.3.Navigating.md)
+24.[11.1.API](Lecture-11.1.API.md)
+25.[11.2.Networking](Lecture-11.2.Networking.md)
+26.[11.3.fetch](Lecture-11.3.fetch.md)
+27.[12.1.Simulation](Lecture-12.1.Simulation.md)
+28.[12.2.PublicAPI](Lecture-12.2.PublicAPI.md)
+29.[13.1.WebAPI](Lecture-13.1.WebAPI.md)
+30.[13.2.ServiceWorker](Lecture-13.2.ServiceWorker.md)
+<!-- Index -->
+---
+<!-- Index -->
+1 .[01.1.Overview](Lecture-01.1.Overview.md)
+2 .[01.2.Introduction-to-Front-End](Lecture-01.2.Introduction-to-Front-End.md)
+3 .[01.3.Introduction-to-HTML](Lecture-01.3.Introduction-to-HTML.md)
+4 .[01.4.HTML](Lecture-01.4.HTML.md)
+5 .[02.1.HTML-II](Lecture-02.1.HTML-II.md)
+6 .[02.2.Introduction-to-CSS](Lecture-02.2.Introduction-to-CSS.md)
+7 .[02.3.CSS](Lecture-02.3.CSS.md)
+8 .[03.1.Flexbox](Lecture-03.1.Flexbox.md)
+9 .[03.2.Position](Lecture-03.2.Position.md)
+10 .[05.1.Introduction-to-Javascript](Lecture-05.1.Introduction-to-Javascript.md)
+11 .[05.2.Values-Variable-DataType](Lecture-05.2.Values-Variable-DataType.md)
+12 .[05.3.Operator-Expression-Function](Lecture-05.3.Operator-Expression-Function.md)
+13 .[06.1.Branching](Lecture-06.1.Branching.md)
+14 .[06.2.Loop](Lecture-06.2.Loop.md)
+15 .[07.1.Object](Lecture-07.1.Object.md)
+16 .[07.2.Array](Lecture-07.2.Array.md)
+17 .[09.1.DOM](Lecture-09.1.DOM.md)
+18 .[09.2.Functions](Lecture-09.2.Functions.md)
+19 .[09.3.Lexical](Lecture-09.3.Lexical.md)
+20 .[09.4.Callback](Lecture-09.4.Callback.md)
+21 .[10.1.document](Lecture-10.1.document.md)
+22 .[10.2.element](Lecture-10.2.element.md)
+23 .[10.3.Navigating](Lecture-10.3.Navigating.md)
+24 .[11.1.API](Lecture-11.1.API.md)
+25 .[11.2.Networking](Lecture-11.2.Networking.md)
+26 .[11.3.fetch](Lecture-11.3.fetch.md)
+27 .[12.1.Simulation](Lecture-12.1.Simulation.md)
+28 .[12.2.PublicAPI](Lecture-12.2.PublicAPI.md)
+29 .[13.1.WebAPI](Lecture-13.1.WebAPI.md)
+30 .[13.2.ServiceWorker](Lecture-13.2.ServiceWorker.md)
+<!-- Index -->
+---
+<!-- Index -->
+1 .[01.1.Overview](Lecture-01.1.Overview.md)
+2 .[01.2.Introduction-to-Front-End](Lecture-01.2.Introduction-to-Front-End.md)
+3 .[01.3.Introduction-to-HTML](Lecture-01.3.Introduction-to-HTML.md)
+4 .[01.4.HTML](Lecture-01.4.HTML.md)
+5 .[02.1.HTML-II](Lecture-02.1.HTML-II.md)
+6 .[02.2.Introduction-to-CSS](Lecture-02.2.Introduction-to-CSS.md)
+7 .[02.3.CSS](Lecture-02.3.CSS.md)
+8 .[03.1.Flexbox](Lecture-03.1.Flexbox.md)
+9 .[03.2.Position](Lecture-03.2.Position.md)
+10 .[05.1.Introduction-to-Javascript](Lecture-05.1.Introduction-to-Javascript.md)
+11 .[05.2.Values-Variable-DataType](Lecture-05.2.Values-Variable-DataType.md)
+12 .[05.3.Operator-Expression-Function](Lecture-05.3.Operator-Expression-Function.md)
+13 .[06.1.Branching](Lecture-06.1.Branching.md)
+14 .[06.2.Loop](Lecture-06.2.Loop.md)
+15 .[07.1.Object](Lecture-07.1.Object.md)
+16 .[07.2.Array](Lecture-07.2.Array.md)
+17 .[09.1.DOM](Lecture-09.1.DOM.md)
+18 .[09.2.Functions](Lecture-09.2.Functions.md)
+19 .[09.3.Lexical](Lecture-09.3.Lexical.md)
+20 .[09.4.Callback](Lecture-09.4.Callback.md)
+21 .[10.1.document](Lecture-10.1.document.md)
+22 .[10.2.element](Lecture-10.2.element.md)
+23 .[10.3.Navigating](Lecture-10.3.Navigating.md)
+24 .[11.1.API](Lecture-11.1.API.md)
+25 .[11.2.Networking](Lecture-11.2.Networking.md)
+26 .[11.3.fetch](Lecture-11.3.fetch.md)
+27 .[12.1.Simulation](Lecture-12.1.Simulation.md)
+28 .[12.2.PublicAPI](Lecture-12.2.PublicAPI.md)
+29 .[13.1.WebAPI](Lecture-13.1.WebAPI.md)
+30 .[13.2.ServiceWorker](Lecture-13.2.ServiceWorker.md)
+<!-- Index -->

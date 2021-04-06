@@ -1,0 +1,12 @@
+name = "index"
+description = "indexing"
+template = "/index.template"
+
+[int]
+start = 1
+
+[title]
+regex = '(?<=-)[\w\-0-9\.\?]+?(?=\.md)'
+
+[filename]
+raw = true
