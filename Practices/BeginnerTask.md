@@ -1,39 +1,38 @@
 ## Counter
-Create an counter, like an example [here](https://prank-sonlh.netlify.app/counter/)
+Create a counter, like an example [here](https://prank-sonlh.netlify.app/counter/)
 
 ## Timer
-Create an timer, like an example [here](https://prank-sonlh.netlify.app/timer/)
+Create a timer, like an example [here](https://prank-sonlh.netlify.app/timer/)
 
 ## Count Down Timer
-Create an countdown timer, like an example [here](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
+Create a countdown timer, like an example [here](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Countdown-Timer-App.md)
 
 ## Binary to Decimal
-Create an count down binary - decimal converter, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a count down binary - decimal converter, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
 
 ## Dollars To Cents
-Create an money convention machine, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a money convention machine, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
 
 ## CSV to JSON - Optional
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a JSON - CSV converter, like an example [here](https://prank-sonlh.netlify.app/csv-json/)
 
 ## Roman Number Converter - Optional
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create an roman - decima converter, like an example [here](https://prank-sonlh.netlify.app/roman-converter/)
 
 ## Word Frequency - Optinal
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a word frequency counter, like an example [here](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Word-Frequency-App.md)
 
 
 ## Random Meal
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create a meal generator, like an example [here](https://prank-sonlh.netlify.app/random-meal/)
 
 ## Book Finder
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
+Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/book-finder/)
 ## Charity Finder
+Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/charity-finder/)
 
 ## Weather
-Create an count down timer, like an example [here](https://prank-sonlh.netlify.app/binary-to-decimal/)
-https://codepen.io/tutsplus/pen/gObLaEP
-<!--  -->
+Create an count down timer, like an example [here](https://codepen.io/tutsplus/pen/gObLaEP)
 
 ## [Recipe App] - Optional
-https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Recipe-App.md
+Checkout an example [here](https://codepen.io/eddyerburgh/full/xVeJvB)
