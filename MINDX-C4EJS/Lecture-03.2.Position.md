@@ -10,6 +10,7 @@
 Tuỳ thuộc vào từng giá trị của thuộc tính position mà có một cách xác định điểm neo khác nhau. 
 - fixed: Điểm neo chính là toàn bộ viewport. 
 <img src="../sources/C4EJS/C4EJS-Lecture-2.4.png" alt="css syntax">
+
 ```html
 <style>
 *{
@@ -46,6 +47,7 @@ body{
 - absolute: Điểm neo là một element gần nhất (tính từ dưới lên theo cấu trúc DOM) mà thuộc tính position không phải là static. Nếu không có điểm neo hợp lệ (một positioned element - thuộc tính position khác static ) viewport được chọn là điểm neo tuy nhiên với 1 vị trí sẽ thay đổi khi việc cuộn trang xảy ra (page scrolling ), không hẳn là fixed.
 <img src="../sources/C4EJS/C4EJS-Lecture-2.5.png" alt="css syntax">
 <img src="../sources/C4EJS/C4EJS-Lecture-2.6.png" alt="css syntax">
+
 ```html
 <style>
 *{
@@ -84,6 +86,7 @@ body{
     </div>
 </div>
 ```
+
 - Nếu không có điểm neo phù hợp thì sẽ chọn viewport làm neo, tuy nhiên vị trí không giữ nguyên mà sẽ bị thay đổi khi cuộn trang.
 
 <img src="../sources/C4EJS/C4EJS-Lecture-2.7.png" alt="css syntax">
@@ -91,6 +94,7 @@ body{
 - relative : Điểm neo chính là vị trí cơ bản (vị trí bình thường của element, static).
 <img src="../sources/C4EJS/C4EJS-Lecture-2.8.png" alt="css syntax">
 <img src="../sources/C4EJS/C4EJS-Lecture-2.9.png" alt="css syntax">
+
 ```html
 <style>
     *{
@@ -127,6 +131,7 @@ body{
     </div>
 </div>
 ```
+
 - sticky: Lúc bình thường thì là static, còn khi có điều kiện đặc biệt thì sẽ là fixed (Điều kiện đặc biện là overflow). Thường hay sử dụng với Navigation bar.
 <img src="../sources/C4EJS/C4EJS-Lecture-2.10.gif" alt="css syntax">
 
