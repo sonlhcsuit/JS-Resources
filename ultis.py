@@ -137,7 +137,7 @@ def create_indexes(directory_path='', config_path='/config/index.toml'):
     config_dir = os.path.normpath(ROOT + '/./' + extract_file_directory(config_path) )
     template_path = os.path.normpath(config_dir + '/./' + config['template'])
     files = os.listdir(dir)
-    files = sorted(list(filter(lambda x: 'Lecture' in x, files)))
+    files = sorted(list(filter(lambda x: 'Topic' in x, files)))
     rgstr = r'(?<=-{3}\n\<\!-{2}\sIndex\s-{2}\>).*?(?=\<\!-{2}\sIndex\s-{2}\>)'
     f_stream = open(template_path,'r')
     template = f_stream.read()
@@ -148,6 +148,7 @@ def create_indexes(directory_path='', config_path='/config/index.toml'):
     index_end = '<!-- Index -->'
     index = ''
     index = index + '\n' + index_start
+    print(files)
     for (i,f) in enumerate (files):
         nu =int(config['int']['start'])+i
         idx = template.replace(f'%{{int}}%',str(nu))
