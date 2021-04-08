@@ -18,10 +18,9 @@ Create a count down binary - decimal converter, like an example [here](https://p
 Create a colorful , like an example [here](https://prank-sonlh.netlify.app/colorful)
 
 ## Dollars To Cents
-Create a money convention machine, like an example [here](https://prank-sonlh.netlify.app/https://prank-sonlh.netlify.app/timer//)
+Create a money convention machine, like an example [here](https://prank-sonlh.netlify.app/dollar-to-cent/)
 ## Color Quiz
 Create a color quiz, like an example [here](https://prank-sonlh.netlify.app/color-quiz)
-
 
 
 ## CSV to JSON - Optional
