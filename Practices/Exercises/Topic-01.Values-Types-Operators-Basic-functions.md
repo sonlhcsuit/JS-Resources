@@ -118,9 +118,9 @@ Calculate and return the area of a rectangle having sides `height` and `width`.
 - Return a number denoting the rectangle's area.
 
 ```js
-getArea(2,5) - 10
-getArea(1,2) - 2
-getArea(100,200) - 2000
+getArea(2,5) ➞ 10
+getArea(1,2) ➞ 2
+getArea(100,200) ➞ 2000
 ```
 
 ---
@@ -134,9 +134,9 @@ Calculate and return the perimeter of a rectangle having sides `height` and `wid
 - Return a number denoting the perimeter of a rectangle.
 
 ```js
-getPerimeter(2,5) - 14
-getPerimeter(1,2) - 6
-getPerimeter(100,200) - 600
+getPerimeter(2,5) ➞ 14
+getPerimeter(1,2) ➞ 6
+getPerimeter(100,200) ➞ 600
 ```
 
 ---
