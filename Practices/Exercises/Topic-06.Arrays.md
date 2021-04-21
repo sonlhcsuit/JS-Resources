@@ -72,7 +72,7 @@ arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
 Write a JavaScript function to find the unique elements from two arrays
 
 ```javascript
-function difference(arr) {
+function difference(arr1,arr2) {
   return arr;
 }
 console.log(difference([1, 2, 3], [100, 2, 1, 10]));
@@ -102,7 +102,7 @@ sumMinimums([
   [1, 2, 3, 4, 5],
   [5, 6, 7, 8, 9],
   [20, 21, 34, 56, 100]
-] ➞ 26
+]) ➞ 26
 
 // minimum value of the first row is 1
 // minimum value of the second row is 5
@@ -118,7 +118,7 @@ sumMinimums([
   [1, 2, 3, 4, 5],
   [5, 6, 7, 8, 9],
   [20, 21, 34, 56, 100]
-] ➞ 15
+]) ➞ 15
 
 // minimum value of the each column are 1,2,3,4,5
 
