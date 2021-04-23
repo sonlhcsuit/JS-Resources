@@ -1,6 +1,6 @@
 # Entrance exam for mentor
 
-## Basic
+## JSB
 ### Kiến thức về HTML
 1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block.
 ```html
@@ -120,9 +120,9 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 ### Kiến thức về CSS 
 
 1. Liệt kê các loại CSS selector cơ bản (4 loại)
-
-2. Liệt kê 5 CSS pseudo element cơ bản 
-
+> Universal (*), class(.), id (#), element([elementName]- p,h1,eg.)
+2. Liệt kê 5 CSS pseudo class/element
+> :hover, :focus, :visited, :disabled, :first-child, :last-child,... Hoặc những thứ tương tự.
 3. Sử dụng thuộc tính CSS phù hợp khiến một hình ảnh (vuông) trở thành hình tròn
 
 4. Tạo một button có hình pill như sau
@@ -159,7 +159,7 @@ delete a
 - Kiến thức về Javascript document
 document.*
 
-### Advanced
+## JSA
 - git & github
 1. tạo một commit 
 2. thêm/xoá origin
@@ -187,7 +187,8 @@ var & let vs function defination & expression, closure
 3. thực hiện hàm sau bằng 2 cách async & promise 
 4. promiseAll ?
 5. timeout a request?
-### Intensive
+
+## JSI
 - DB / NoSQl / Firebase
 1. Điểm yếu của noSQL? Firestore? 
 2. onSnapshot?
