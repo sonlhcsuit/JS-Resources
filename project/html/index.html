@@ -7,21 +7,41 @@
     <!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
     <title>Document</title>
     <style>
-        div{
-            width: 500px;
-            height: 500px;
-            background-color:yellow;
+        div > p:nth-child(1){
+            color: blue;
         }
-        .rounded{
-            border-radius: 50%;
-            clip-path: circle(50%);
+        div > p:nth-child(2){
+            color: orange;
+        }
+        span > p {
+            color: black;
+        }
+        div > span > p{
+            color: purple;
+        }
+        span ~ p{
+            color: aqua;
+        }
+        div + p{
+            color: orange;
         }
     </style>
 </head>
 
 <body>
-    <div class="rounded">
+    <div>
+        <p>Blue</p>
+        <p>Orange</p>
+        <span>
+            <p>Purple</p>
+        </span>
     </div>
+    <p>Orange</p>
+
+    <span>
+        <p>Black</p>
+    </span>
+    <p>Aqua</p>
 </body>
 <!-- <script src="/assets/js/index.js"></script> -->
 

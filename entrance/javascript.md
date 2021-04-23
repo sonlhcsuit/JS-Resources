@@ -24,6 +24,7 @@ Các inline element là `<span> <label> <input> <b> <br> <img>` và các block e
 Đa số inline element không thể xác định kích thước (width & height), vì kích thước tuỳ thuộc vào nội dung bên trong, hiển thị trên cùng một hàng. Block element mặc định sẽ chiếm toàn bộ chiều dài (của element cha  - nếu có). Khi đặt thuộc tính width & height thì chiều dài vẫn không thay đổi vì được bù qua phần margin
 
 </details>
+
 ---
 
 2. viết code html để liên kết file js & css từ page.html & index.html cấu trúc thư mục sau.
@@ -54,6 +55,7 @@ project
 hoặc các cách viết path khác mang lại kết quả tương tự
 
 </details>
+
 ---
 
 3. Tác dụng của thẻ br & hr
@@ -77,6 +79,7 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 ```
 
 </details>
+
 ---
 
 5. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
@@ -100,7 +103,9 @@ Gồm table head và table body (foot là optional). Sử dụng tag `<thead>` �
 </details>
 
 ---
+
 7. Hãy nêu điểm giống và khác nhau cơ bản giữa ul & ol & dl
+
 <details>
 <summary>Đáp án</summary>
 
@@ -109,7 +114,6 @@ Cả 3 đều có một mục đích chung là biểu diễn một danh sách nh
 </details>
 
 ---
-
 
 8. Làm một radio set như hình
 <img src="./../sources/entrance-1.png">
@@ -163,31 +167,77 @@ Cả 3 đều có một mục đích chung là biểu diễn một danh sách nh
 ### Kiến thức về CSS 
 
 1. Liệt kê các loại CSS selector cơ bản (4 loại)
-> Universal (*), class(.), id (#), element([elementName]- p,h1,eg.)
+
+<details>
+<summary>Đáp án</summary>
+
+Universal (*), class(.), id (#), element([elementName]- p,h1,eg.)
+
+</details>
 
 ---
 
 2. Liệt kê 5 CSS pseudo class/element
-> :hover, :focus, :visited, :disabled, :first-child, :last-child,... Hoặc những thứ tương tự.
+
+<details>
+<summary>Đáp án</summary>
+
+:hover, :focus, :visited, :disabled, :first-child, :last-child,... Hoặc những thứ tương tự.
+
+</details>
 
 ---
 
-3. Sử dụng thuộc tính CSS phù hợp khiến một hình ảnh (vuông) trở thành hình tròn.
+3. Hãy nêu sự khác nhau của hệ màu RGBA so với RGB
+
+<details>
+<summary>Đáp án</summary>
+Có thêm thuộc tính alpha để tuỳ chỉnh transparent (độ trong suốt)
+
+</details>
+
+---
+
+4. justify-content và align-items (flexbox) căn chỉnh theo các chiều nào? Giải thích.
+
+<details>
+<summary>Đáp án</summary>
+
+Căn chỉnh theo main/cross axis tuỳ thuộc vào direction của container flexbox
+
+</details>
+
+---
+
+5. `box-sizing:border-box` là gì? Giải thích về việc đặt kích thước đối với `content-box` & `border-box`.
+
+<details>
+<summary>Đáp án</summary>
+
+Khiến element biến bản thân thành border-box thay vì content-box. 
+Khi xác định kích thước cho element `border-box` thì kích thước thực tế chính là kích thước đã được xác định (content + padding + border). Đối với `content-box` thì kích thước đã xác định chỉ là phần kích thước của content, vậy nên kích thước thực tế sẽ dư thêm border & padding
+
+</details>
+
+---
+
+6. Sử dụng thuộc tính CSS phù hợp khiến một hình ảnh (vuông) trở thành hình tròn.
 
 ```html
 <div class="rounded">
 </div>
 ```
+
 ```css
 div{
     width: 500px;
     height: 500px;
     background-color:yellow;
 }
-.rounded{
-    /* Điền vào đây */
-}
 ```
+
+<details>
+<summary>Đáp án</summary>
 
 ```css
  .rounded{
@@ -196,9 +246,11 @@ div{
 }
 ```
 
+</details>
+
 ---
 
-4. Tạo một button có hình pill như sau
+7. Tạo một button có hình pill như sau
 
 ```html
 <div class="pill">
@@ -210,10 +262,10 @@ div{
     height: 500px;
     background-color:yellow;
 }
-.pill{
-    /* Điền vào đây */
-}
 ```
+
+<details>
+<summary>Đáp án</summary>
 
 ```css
 .pill{
@@ -221,33 +273,185 @@ div{
 }
 ```
 
----
-
-5. thêm vài đoạn code để sửa lỗi cho phần sau (position)
+</details>
 
 ---
 
-6. Căn giữa element sau
+8. Viết file css để căn giữa element div trong trường hợp sau
+
+<img src="./../sources/entrance-4.png" height=200>
+
+```html
+<div class="container border">
+    <div class="square border"></div>
+</div>
+```
+
+```css
+.border{
+    border:1px solid red;
+}
+.container{
+    width: 300px;
+    height: 300px;
+}
+.square{
+    width: 50px;
+    height: 50px;
+}
+```
+
+<details>
+<summary>Đáp án</summary>
+
+```css
+
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.square{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+```
+
+</details>
 
 ---
 
-7. Viết các selector phù hợp để được kết quả như hình 
+9. Viết các selector phù hợp để được kết quả như hình 
+
+```html
+ <div>
+        <p>Blue</p>
+        <p>Orange</p>
+        <span>
+            <p>Purple</p>
+        </span>
+    </div>
+    <p>Orange</p>
+
+    <span>
+        <p>Black</p>
+    </span>
+    <p>Aqua</p>
+```
+
+Viết CSS Selector để cho màu chữ của thẻ p có cùng màu với nội dung bên trong
+
+<details>
+<summary>Đáp án</summary>
+
+```css
+div > p:nth-child(1){
+            color: blue;
+        }
+        div > p:nth-child(2){
+            color: orange;
+        }
+        span > p {
+            color: black;
+        }
+        div > span > p{
+            color: purple;
+        }
+        span ~ p{
+            color: aqua;
+        }
+        div + p{
+            color: orange;
+        }
+
+```
+
+</details>
 
 ---
 
-8. khác nhau của dải màu rbga
+10. Chỉ sử dụng CSS, hãy di chuyển vị trí các ô trở nên sang như hình mẫu với cấu trúc HTML/CSS cho sẵn
+
+<img src="./../sources/entrance-3.png" height=200>
+
+```html
+<div class="container border">
+    <div class="rectangle red"></div>
+    <div class="square green"></div>
+    <div class="square green"></div>
+    <div class="square yellow"></div>
+    <div class="square yellow"></div>
+    <div class="rectangle blue"></div>
+</div>
+```
+
+```css
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 600px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+}
+.rectangle{
+    width: 300px;
+    height: 100px;
+}
+```
+
+<details>
+<summary>Đáp án</summary>
+
+```css
+.container > div:nth-child(2){
+    position: absolute;
+    left: 300;
+    top: 0;
+}
+.container > div:nth-child(3){
+    position: relative;
+    top: 100;
+    left: 0;
+}
+    .container > div:nth-child(4){
+    position: relative;
+    top: 100;
+}
+.container > div:nth-child(5){
+    position: absolute;
+    top: 200;
+    left: 300;
+}
+.container > div:nth-child(6){
+    position: absolute;
+    left: 300;
+} 
+
+```
+
+</details>
 
 ---
 
-9. boxsizing:borderbox là gì?
-
----
-
-10. flex-wrap?
-
----
-
-- Kiến thức về Javascript cơ bản
+### Kiến thức về Javascript
 1. typeof null/function/array? Làm sao để kiểm tra 1 biến có kiểu dữ liệu là array?
 2. Kết quả 
 delete b[0]
