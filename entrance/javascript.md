@@ -1,7 +1,35 @@
 # Entrance exam for mentor
 
-### Basic
-- Kiến thức về HTML
+## Basic
+### Kiến thức về HTML
+1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block.
+```html
+    <div>
+    <h1>
+    <p>
+    <video>
+    <ol>
+    <label>
+    <input>
+    <span>
+    <b>
+    <br>
+    <hr>
+    <img>
+```
+Tự luận: 
+---
+2. viết code html để liên kết file js & css sau
+3. sự khác biệt giữa text area & input
+4. chèn hình/video/âm thanh vào (có cây thư mục)
+5. sự khác nhau giữa ul & ol & li
+6. cấu trúc cơ bản của table
+7. làm một radio set 
+8. làm một combobox
+9. tag a open new tab
+10. tác dụng của thẻ br & hr
+
+</details>
 1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block
 2. viết code html để liên kết file js & css sau
 3. sự khác biệt giữa text area & input
