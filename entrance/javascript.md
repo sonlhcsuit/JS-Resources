@@ -79,6 +79,7 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 
 8. Làm một radio set như hình
 <img src="./../sources/entrance-1.png">
+
 ```html
 <form>
     <input type="radio" name="age" value="Prenatal"> <label>Prenatal</label> <br/>
