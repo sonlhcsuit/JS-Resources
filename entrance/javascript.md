@@ -4,18 +4,18 @@
 ### Kiến thức về HTML
 1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block.
 ```html
-    <div>
-    <span>
-    <p>
-    <ol>
-    <label>
-    <input>
-    <h1>
-    <b>
-    <video>
-    <br>
-    <hr>
-    <img>
+<div>
+<span>
+<p>
+<ol>
+<label>
+<input>
+<h1>
+<b>
+<video>
+<br>
+<hr>
+<img>
 ```
 > Các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
 > Đa số inline element không thể xác định kích thước (width & height), vì kích thước tuỳ thuộc vào nội dung bên trong, hiển thị trên cùng một hàng. Block element mặc định sẽ chiếm toàn bộ chiều dài (của element cha  - nếu có). Khi đặt thuộc tính width & height thì chiều dài vẫn không thay đổi vì được bù qua phần margin
@@ -48,9 +48,8 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 
 ---
 
-3. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
-
-> input có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
+3. Tác dụng của thẻ br & hr
+> `<br>` giúp xuống hàng ngay lập tức, `<hr>` xuống hàng ngay lập tức và kẻ một đường ngang 
 
 ---
 
@@ -62,34 +61,62 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 
 ---
 
-5. Hãy nêu điểm giống và khác nhau cơ bản giữa ul & ol & dl
-> Cả 3 đều có một mục đích chung là biểu diễn một danh sách nhiều nội dung khi kết hợp với `li`. Điểm khác nhau cơ bản là `ul` sử dụng dấu chấm tròn (có thể tuỳ chỉnh dấu khác) để phân tách nội dung. `ol` sử dụng số (thập phân, la mã). `dl` sử dụng indetation (thụt lề)
+5. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
+
+> input có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
 
 ---
 
 6. Cấu trúc cơ bản của `<table>` gồm những gì? Làm thế nào để tạo một table có đủ các thành phần sử dụng các element liên quan.
 > Gồm table head và table body (foot là optional). Sử dụng tag `<thead>` để tạo headings (tên các cột) kết hợp với `<th>`. `<tbody>` kết hợp với `<tr>` (table row) & `<td>` (table data cell)
-7. Làm một radio set như sau
+
+---
+7. Hãy nêu điểm giống và khác nhau cơ bản giữa ul & ol & dl
+> Cả 3 đều có một mục đích chung là biểu diễn một danh sách nhiều nội dung khi kết hợp với `li`. Điểm khác nhau cơ bản là `ul` sử dụng dấu chấm tròn (có thể tuỳ chỉnh dấu khác) để phân tách nội dung. `ol` sử dụng số (thập phân, la mã). `dl` sử dụng indetation (thụt lề)
+
+---
+
+
+8. Làm một radio set như hình
 <img src="./../sources/entrance-1.png">
-8. làm một combobox
-9. tag a open new tab
-10. tác dụng của thẻ br & hr
+```html
+<form>
+    <input type="radio" name="age" value="Prenatal"> <label>Prenatal</label> <br/>
+    <input type="radio" name="age" value="Baby"> <label>Baby</label><br/>
+    <input type="radio" name="age" value="Toddler"> <label>Toddler</label><br/>
+    <input type="radio" name="age" value="Preschool"> <label>Preschool</label><br/>
+    <input type="radio" name="age" value="Gradeschooler"> <label>Gradeschooler</label><br/>
+    <input type="radio" name="age" value="Teen"> <label>Teen</label><br/>
+    <input type="radio" name="age" value="Young Adult"> <label>Young Adult</label><br/>
+    <input type="radio" name="age" value="Adult"> <label>Adult</label><br/>
+</form>
+```
 
-</details>
-1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block
-2. viết code html để liên kết file js & css sau
-3. sự khác biệt giữa text area & input
-4. chèn hình/video/âm thanh vào (có cây thư mục)
-5. sự khác nhau giữa ul & ol & li
-6. cấu trúc cơ bản của table
-7. làm một radio set 
-8. làm một combobox
-9. tag a open new tab
-10. tác dụng của thẻ br & hr
+---
 
+9. Làm một combobox như hình
 
+<img src="./../sources/entrance-2.gif" height=200>
 
-- Kiến thức về CSS 
+```html
+<form>
+    <label>Chose your favorite Animal</label> <br>
+    <select>
+        <option value="null" selected disabled>Choose your option</option>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+        <option value="rabbit">Rabbit</option>
+        <option value="fox">Fox</option>
+        <option value="tiger">Tiger</option>
+        <option value="lynx">Lynx</option>
+        <option value="others">Others</option>
+    </select>
+</form>
+```
+
+---
+
+### Kiến thức về CSS 
 
 1. Liệt kê các loại CSS selector cơ bản (4 loại)
 
