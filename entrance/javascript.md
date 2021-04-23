@@ -17,7 +17,8 @@
     <hr>
     <img>
 ```
-Tự luận: các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
+> Các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
+> Đa số inline element không thể xác định kích thước (width & height), vì kích thước tuỳ thuộc vào nội dung bên trong, hiển thị trên cùng một hàng. Block element mặc định sẽ chiếm toàn bộ chiều dài (của element cha  - nếu có). Khi đặt thuộc tính width & height thì chiều dài vẫn không thay đổi vì được bù qua phần margin
 
 ---
 
@@ -45,9 +46,13 @@ project
 ```
 hoặc các cách viết path khác mang lại kết quả tương tự
 
+---
+
 3. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
 
 > input có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
+
+---
 
 4. Viết một hyperlink dẫn tới google, khi click vào tự chuyển sang tab mới.
 
@@ -55,10 +60,17 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 <a href="https://google.com" targe="_blank">
 ```
 
-5. Hãy nêu điểm giống và khác nhau giữa ul & ol & dl
+---
 
-6. Cấu trúc cơ bản của `<table>` gồm những gì?
-7. làm một radio set 
+5. Hãy nêu điểm giống và khác nhau cơ bản giữa ul & ol & dl
+> Cả 3 đều có một mục đích chung là biểu diễn một danh sách nhiều nội dung khi kết hợp với `li`. Điểm khác nhau cơ bản là `ul` sử dụng dấu chấm tròn (có thể tuỳ chỉnh dấu khác) để phân tách nội dung. `ol` sử dụng số (thập phân, la mã). `dl` sử dụng indetation (thụt lề)
+
+---
+
+6. Cấu trúc cơ bản của `<table>` gồm những gì? Làm thế nào để tạo một table có đủ các thành phần sử dụng các element liên quan.
+> Gồm table head và table body (foot là optional). Sử dụng tag `<thead>` để tạo headings (tên các cột) kết hợp với `<th>`. `<tbody>` kết hợp với `<tr>` (table row) & `<td>` (table data cell)
+7. Làm một radio set như sau
+<img src="./../sources/entrance-1.png">
 8. làm một combobox
 9. tag a open new tab
 10. tác dụng của thẻ br & hr
