@@ -17,9 +17,13 @@
 <hr>
 <img>
 ```
-> Các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
-> Đa số inline element không thể xác định kích thước (width & height), vì kích thước tuỳ thuộc vào nội dung bên trong, hiển thị trên cùng một hàng. Block element mặc định sẽ chiếm toàn bộ chiều dài (của element cha  - nếu có). Khi đặt thuộc tính width & height thì chiều dài vẫn không thay đổi vì được bù qua phần margin
+<details>
+<summary>Đáp án</summary>
 
+Các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
+Đa số inline element không thể xác định kích thước (width & height), vì kích thước tuỳ thuộc vào nội dung bên trong, hiển thị trên cùng một hàng. Block element mặc định sẽ chiếm toàn bộ chiều dài (của element cha  - nếu có). Khi đặt thuộc tính width & height thì chiều dài vẫn không thay đổi vì được bù qua phần margin
+
+</details>
 ---
 
 2. viết code html để liên kết file js & css từ page.html & index.html cấu trúc thư mục sau.
@@ -38,6 +42,9 @@ project
     └── index.html
 ```
 
+<details>
+<summary>Đáp án</summary>
+
 ```html
 <link rel="stylesheet" href="./css/page.css">
 <script src="./js/page.js"></script>
@@ -46,33 +53,60 @@ project
 ```
 hoặc các cách viết path khác mang lại kết quả tương tự
 
+</details>
 ---
 
 3. Tác dụng của thẻ br & hr
-> `<br>` giúp xuống hàng ngay lập tức, `<hr>` xuống hàng ngay lập tức và kẻ một đường ngang 
+
+<details>
+<summary>Đáp án</summary>
+
+`<br>` giúp xuống hàng ngay lập tức, `<hr>` xuống hàng ngay lập tức và kẻ một đường ngang 
+
+</details>
 
 ---
 
 4. Viết một hyperlink dẫn tới google, khi click vào tự chuyển sang tab mới.
 
+<details>
+<summary>Đáp án</summary>
+
 ```html 
 <a href="https://google.com" targe="_blank">
 ```
 
+</details>
 ---
 
 5. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
 
-> input có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
+<details>
+<summary>Đáp án</summary>
+
+Tag `input` có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
+
+</details>
 
 ---
 
 6. Cấu trúc cơ bản của `<table>` gồm những gì? Làm thế nào để tạo một table có đủ các thành phần sử dụng các element liên quan.
-> Gồm table head và table body (foot là optional). Sử dụng tag `<thead>` để tạo headings (tên các cột) kết hợp với `<th>`. `<tbody>` kết hợp với `<tr>` (table row) & `<td>` (table data cell)
+
+<details>
+<summary>Đáp án</summary>
+
+Gồm table head và table body (foot là optional). Sử dụng tag `<thead>` để tạo headings (tên các cột) kết hợp với `<th>`. `<tbody>` kết hợp với `<tr>` (table row) & `<td>` (table data cell)
+
+</details>
 
 ---
 7. Hãy nêu điểm giống và khác nhau cơ bản giữa ul & ol & dl
-> Cả 3 đều có một mục đích chung là biểu diễn một danh sách nhiều nội dung khi kết hợp với `li`. Điểm khác nhau cơ bản là `ul` sử dụng dấu chấm tròn (có thể tuỳ chỉnh dấu khác) để phân tách nội dung. `ol` sử dụng số (thập phân, la mã). `dl` sử dụng indetation (thụt lề)
+<details>
+<summary>Đáp án</summary>
+
+Cả 3 đều có một mục đích chung là biểu diễn một danh sách nhiều nội dung khi kết hợp với `li`. Điểm khác nhau cơ bản là `ul` sử dụng dấu chấm tròn (có thể tuỳ chỉnh dấu khác) để phân tách nội dung. `ol` sử dụng số (thập phân, la mã). `dl` sử dụng indetation (thụt lề)
+
+</details>
 
 ---
 
@@ -80,6 +114,8 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 8. Làm một radio set như hình
 <img src="./../sources/entrance-1.png">
 
+<details>
+<summary>Đáp án</summary>
 ```html
 <form>
     <input type="radio" name="age" value="Prenatal"> <label>Prenatal</label> <br/>
@@ -93,11 +129,16 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 </form>
 ```
 
+</details>
+
 ---
 
 9. Làm một combobox như hình
 
 <img src="./../sources/entrance-2.gif" height=200>
+
+<details>
+<summary>Đáp án</summary>
 
 ```html
 <form>
@@ -114,6 +155,8 @@ hoặc các cách viết path khác mang lại kết quả tương tự
     </select>
 </form>
 ```
+
+</details>
 
 ---
 
