@@ -5,25 +5,59 @@
 1. HTML 2 loại tag chủ yếu là inline & block. Hãy phân loại các tag sau và nêu sự khác biệt của loại tag inline & block.
 ```html
     <div>
-    <h1>
+    <span>
     <p>
-    <video>
     <ol>
     <label>
     <input>
-    <span>
+    <h1>
     <b>
+    <video>
     <br>
     <hr>
     <img>
 ```
-Tự luận: 
+Tự luận: các inline element là `<span> <label> <input> <b> <br> <img>` và các block element là `<div> <p> <ol> <h1> <video> <hr>`
+
 ---
-2. viết code html để liên kết file js & css sau
-3. sự khác biệt giữa text area & input
-4. chèn hình/video/âm thanh vào (có cây thư mục)
-5. sự khác nhau giữa ul & ol & li
-6. cấu trúc cơ bản của table
+
+2. viết code html để liên kết file js & css từ page.html & index.html cấu trúc thư mục sau.
+Cây thư mục của các file hiện tại   
+```txt
+project
+├── assets
+│   ├── css
+│   │   ├── index.css
+│   │   └── page.css
+│   ├── js
+│   │   ├── index.js
+│   │   └── page.js
+│   └── page.html
+└── html
+    └── index.html
+```
+
+```html
+<link rel="stylesheet" href="./css/page.css">
+<script src="./js/page.js"></script>
+<link rel="stylesheet" href="/assets/css/index.css">
+<script src="/assets/js/index.js"></script>
+```
+hoặc các cách viết path khác mang lại kết quả tương tự
+
+3. Hãy nêu sự khác biệt giữa `<textarea>` & `<input>` elements
+
+> input có thể có nhiều loại (range, color, ...) tuỳ thuộc vào attribute `type`. textarea thường dùng để nhập một số lượng văn bản lớn, có thể tuỳ chỉnh font chữ, resize,..
+
+4. Viết một hyperlink dẫn tới google, khi click vào tự chuyển sang tab mới.
+
+```html 
+<a href="https://google.com" targe="_blank">
+```
+
+5. Hãy nêu điểm giống và khác nhau giữa ul & ol & dl
+
+6. Cấu trúc cơ bản của `<table>` gồm những gì?
 7. làm một radio set 
 8. làm một combobox
 9. tag a open new tab
