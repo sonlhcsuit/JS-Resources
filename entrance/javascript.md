@@ -121,23 +121,88 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 
 1. Liệt kê các loại CSS selector cơ bản (4 loại)
 > Universal (*), class(.), id (#), element([elementName]- p,h1,eg.)
+
+---
+
 2. Liệt kê 5 CSS pseudo class/element
 > :hover, :focus, :visited, :disabled, :first-child, :last-child,... Hoặc những thứ tương tự.
-3. Sử dụng thuộc tính CSS phù hợp khiến một hình ảnh (vuông) trở thành hình tròn
+
+---
+
+3. Sử dụng thuộc tính CSS phù hợp khiến một hình ảnh (vuông) trở thành hình tròn.
+
+```html
+<div class="rounded">
+</div>
+```
+```css
+div{
+    width: 500px;
+    height: 500px;
+    background-color:yellow;
+}
+.rounded{
+    /* Điền vào đây */
+}
+```
+
+```css
+ .rounded{
+    border-radius: 50%;
+    clip-path: circle(50%);
+}
+```
+
+---
 
 4. Tạo một button có hình pill như sau
 
+```html
+<div class="pill">
+</div>
+```
+```css
+div{
+    width: 500px;
+    height: 500px;
+    background-color:yellow;
+}
+.pill{
+    /* Điền vào đây */
+}
+```
+
+```css
+.pill{
+    border-radius: 999px;
+}
+```
+
+---
+
 5. thêm vài đoạn code để sửa lỗi cho phần sau (position)
+
+---
 
 6. Căn giữa element sau
 
+---
+
 7. Viết các selector phù hợp để được kết quả như hình 
+
+---
 
 8. khác nhau của dải màu rbga
 
+---
+
 9. boxsizing:borderbox là gì?
 
+---
+
 10. flex-wrap?
+
+---
 
 - Kiến thức về Javascript cơ bản
 1. typeof null/function/array? Làm sao để kiểm tra 1 biến có kiểu dữ liệu là array?
