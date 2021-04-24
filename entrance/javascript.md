@@ -520,7 +520,10 @@ Object là reference type nên khi khai báo, ta thực chất đang tạo một
 
 ---
 
-7. Có bao nhiêu cách viết vòng lặp for? Nêu cấu trúc phù hợp với các loại vòng lặp?
+3. Có bao nhiêu cách viết vòng lặp for? Nêu cấu trúc phù hợp với các loại vòng lặp?
+
+<details>
+<summary>Đáp án</summary>
 
 Có 3 loại vòng lặp for: vòng lặp `for` cổ điển gồm 3 thành phần lặp n lần, vòng lặp `for in` và vòng lặp `for of`
 ```js
@@ -540,12 +543,31 @@ for(let key in obj){
 }
 ```
 
+</details>
+
+---
+
 4. Sự khác nhau giữa break & continue
 
-break kết thúc vòng lặp gần nhất, continue kết thúc lần lặp hiện tại, bắt đầu lần lặp mới 
+<details>
+<summary>Đáp án</summary>
 
+`break` kết thúc vòng lặp gần nhất, continue kết thúc lần lặp hiện tại, bắt đầu lần lặp mới. 
 
-3. Kết quả của đoạn code là gì? Giải thích
+</details>
+
+---
+
+5. khác sự khác nhau giữa sự kiện input & change của text?
+
+<details>
+<summary>Đáp án</summary>
+
+</details>
+
+---
+
+6. Kết quả của đoạn code là gì? Giải thích
 ```js
 function f (){
         let b = 9
@@ -555,13 +577,19 @@ function f (){
     console.log(a)
 ```
 
+<details>
+<summary>Đáp án</summary>
+
 ```js
 Yah
 ```
 Lí do bởi vì toán tử ++ là toán tử tăng, và được đặt bên trái (pre-increment) nên biến b được tăng lên 1 (10). Khi so sánh bé hơn thì kết quả là false nên kết quả là 'Yah'
 
+</details>
 
-5. Đề xuất giải pháp thay thế cấu trúc if else sau đây để khiến code trở nên gọn gàng.
+---
+
+7. Đề xuất giải pháp thay thế cấu trúc if else sau đây để khiến code trở nên gọn gàng.
 Chữ La Mã hàng đơn vị. Sửa đổi hàm `roman_unit`
 
 ```js
@@ -606,9 +634,44 @@ function roman_unit(decimal_number) {
     let result = roman_unit(9)
 ```
 
+<details>
+<summary>Đáp án</summary>
+
 Sử dụng switch case hoặc object để chuyển đổi
 
-6. Chỉnh sửa đoạn code sau trở lại cho chính xác. Giải thích 
+</details>
+
+---
+
+8. Giải thích phương thức `element.insertAdjacentHTML()`. Viết một hàm 10 nút tương ứng, đi kèm với eventListener là in ra màn hình giá trị của nút đó (được cung cấp trong mảng) và chèn vào trong element có id là `container`.
+```js
+let animals = ['cat','rabbit','dog','fox','fish','racoon','tiger','bear','parrot','snake']
+```
+
+<details>
+<summary>Đáp án</summary>
+
+```js
+let animals = ['cat','rabbit','dog','fox','fish','racoon','tiger','bear','parrot','snake']
+function createButton(inner){
+    return `
+    <button>${inner}</button>
+    `
+}
+let cont = document.getElementById("container")
+cont.insertAdjacentHTML("beforeend",animals.map(createButton).join(""))
+let btns = document.querySelectorAll("button")
+btns.forEach(btn => {
+    btn.addEventListener("click",(e)=>{
+        console.log(e.target.innerHTML)
+    })
+})
+```
+<details>
+
+---
+
+9. Chỉnh sửa đoạn code sau trở lại cho chính xác. Giải thích 
 
 ```js
 function bmi_calculator(weight_in_kg, height_in_cm) {
@@ -645,13 +708,37 @@ console.log(result)
 // {bmi: 22.49, status: "Underweight"}
 ```
 
+<details>
+<summary>Đáp án</summary>
 
+<details>
 
-8. một element có thể có tối đa bao nhiêu listener cho 1 event cố định. Làm sao xoá listener (unsubscribe) khỏi 1 event?
+---
 
+10. một element có thể có tối đa bao nhiêu listener cho 1 event cố định. Làm sao xoá listener (unsubscribe) khỏi 1 event? Cho ví dụ cụ thể.
 
-9. element.insertAdjacentHTML()
-10. khác sự khác nhau giữa sự kiện input & change của text?
+<details>
+<summary>Đáp án</summary>
+
+Một element có thể có nhiều listener cho 1 event cố định. Thứ tự invoke lần lượt đúng như thứ tự khi subscribe event đó. Lưu ý rằng nếu các listener là async thì vẫn tuân theo quy tắc xử lý bất đồng bộ. 
+Để xoá một eventListener cần phải lưu trữ lại reference tới function, và sử dụng hàm `removeEventListener`
+
+```js
+ let btn = document.getElementById("btn")
+    let a = async () => {
+        console.log("first")
+    }
+    btn.addEventListener("click", a)
+    
+    btn.addEventListener("click",()=>{
+        btn.removeEventListener("click",a)
+        console.log("second")
+    })
+```
+
+</details>
+
+---
 
 ## JSA
 - git & github
@@ -663,13 +750,9 @@ console.log(result)
 - Kiến thức về JS Advanced
 var & let vs function defination & expression, closure
 1. giải thích ví dụ (MDN) sau về closure
-2. banana
 3. local storage ? lưu trữ Object trong localStorage
-4. kết quả của hàm setInterval sau ?
-5. create Timer()
-6. viết hàm để chuyển đổi 1 số thập phân sang nhị phân
 7. implement lại làm bultin map/reduce/filter
-8. JSON
+8. JSON và local storage ? lưu trữ Object trong localStorage
 9. copy a project
 10. write regex
 
