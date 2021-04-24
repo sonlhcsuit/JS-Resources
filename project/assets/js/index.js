@@ -1,1 +1,1 @@
-alert("index")
+console.log("ads")

@@ -69,7 +69,7 @@ hoặc các cách viết path khác mang lại kết quả tương tự
 
 ---
 
-4. Viết một hyperlink dẫn tới google, khi click vào tự chuyển sang tab mới.
+4. Viết một hyperlink dẫn tới google, khi click vào tự mở sang tab mới.
 
 <details>
 <summary>Đáp án</summary>
@@ -452,24 +452,206 @@ div > p:nth-child(1){
 ---
 
 ### Kiến thức về Javascript
-1. typeof null/function/array? Làm sao để kiểm tra 1 biến có kiểu dữ liệu là array?
-2. Kết quả 
-delete b[0]
-delete a 
-3. kết quả in ra (kết hợp return và ? : )
-4. sự khác nhau giữa break & continue
-5. Đề xuất giải pháp thay thế cấu trúc if else if else sau đây bằng
-6. Đề xuất giải pháp thay thế cấu trúc switch case sau
-7. có bao nhiêu cách viết vòng lạp for? liệt kê
+
+1. Trả lời kết quả được in ra màn hình ở console của đoạn code sau? Giải thích dòng thứ 4. Làm sao để kiểm tra giá trị một biến có kiểu dữ liệu là Array
+
+```js
+let a = {};
+let b = "";
+let c = 0;
+let d = [];
+console.log(typeof a)
+console.log(typeof b)
+console.log(typeof c)
+console.log(typeof d)
+```
+
+<details>
+<summary>Đáp án</summary>
+
+```
+object
+string
+number
+object
+```
+
+Giải thích. Array kế thừa từ object nên về cơ bản array cũng là object. typeof chỉ kiểm tra các kiểu dữ liệu nguyên thuỷ (primitives) (và một số khác). Còn lại thì sẽ trả về object (kể cả instance của một class nếu sử dụng typeof).
+Sử dụng static method `Array.isArray()` 
+
+</details>
+
+---
+
+2. Đoạn code sau in ra màn hình kết quả gì? Giải thích.
+```js
+let a = {
+    b:{
+        name:'Son',
+        role:'ta'
+    },
+    c:{
+        name:'Quang',
+        role:'mentor'
+    }
+}
+let b = a.b;
+let c = a.c;
+delete a
+delete a.b
+delete a.c
+console.log(a)
+console.log(b)
+console.log(c)
+```
+
+<details>
+<summary>Đáp án</summary>
+
+```js
+{}
+{name: "Son", role: "ta"}
+{name: "Quang", role: "mentor"}
+```
+
+Object là reference type nên khi khai báo, ta thực chất đang tạo một reference tới một vùng nhớ lưu giá trị. Điều này cũng đúng đối với việc khai báo key của property, nếu value là một obect thì sẽ cũng tạo reference. Sử dụng `delete` chỉ xoá reference tới ô nhớ đó chứ không phải giải phóng vùng nhớ. Khi gán b,c thực chất chúng ta đã lưu reference tới của object và lưu vào biến b,c.
+
+</details>
+
+---
+
+7. Có bao nhiêu cách viết vòng lặp for? Nêu cấu trúc phù hợp với các loại vòng lặp?
+
+Có 3 loại vòng lặp for: vòng lặp `for` cổ điển gồm 3 thành phần lặp n lần, vòng lặp `for in` và vòng lặp `for of`
+```js
+for(let i =0 ;i<5;i++){
+    console.log(i)
+}
+let array = [1,2,3,4]
+for (let element of array){
+    console.log(element)
+}
+let obj = {
+    name:'Mindx',
+    company:'Illiat'
+}
+for(let key in obj){
+    console.log(obj[key])
+}
+```
+
+4. Sự khác nhau giữa break & continue
+
+break kết thúc vòng lặp gần nhất, continue kết thúc lần lặp hiện tại, bắt đầu lần lặp mới 
+
+
+3. Kết quả của đoạn code là gì? Giải thích
+```js
+function f (){
+        let b = 9
+        return ++b < 10 ? b : 'Yah'
+    }
+    let a = f()
+    console.log(a)
+```
+
+```js
+Yah
+```
+Lí do bởi vì toán tử ++ là toán tử tăng, và được đặt bên trái (pre-increment) nên biến b được tăng lên 1 (10). Khi so sánh bé hơn thì kết quả là false nên kết quả là 'Yah'
+
+
+5. Đề xuất giải pháp thay thế cấu trúc if else sau đây để khiến code trở nên gọn gàng.
+Chữ La Mã hàng đơn vị. Sửa đổi hàm `roman_unit`
+
+```js
+function roman_unit(decimal_number) {
+        let decimal = parseInt(decimal_number)
+        let roman_number = ""
+        if (decimal_number == 1) {
+            roman_number = "I"
+
+        } else if (decimal_number == 2) {
+            roman_number = "II"
+
+        } else if (decimal_number == 3) {
+            roman_number = "III"
+
+        } else if (decimal_number == 4) {
+            roman_number = "IV"
+
+        } else if (decimal_number == 5) {
+            roman_number = "V"
+
+        } else if (decimal_number == 6) {
+            roman_number = "VI"
+
+        } else if (decimal_number == 7) {
+            roman_number = "VII"
+
+        } else if (decimal_number == 8) {
+            roman_number = "VIII"
+
+        } else if (decimal_number == 9) {
+            roman_number = "IX"
+
+        } else if (decimal_number == 10) {
+            roman_number = "X"
+
+        } else {
+            roman_number = "?"
+        }
+        return roman_number
+    }
+    let result = roman_unit(9)
+```
+
+Sử dụng switch case hoặc object để chuyển đổi
+
+6. Chỉnh sửa đoạn code sau trở lại cho chính xác. Giải thích 
+
+```js
+function bmi_calculator(weight_in_kg, height_in_cm) {
+    let bmi = weight_in_kg / height_in_cm /height_in_cm * 10000  ;
+    bmi = parseFloat(bmi.toFixed(2))
+    let status = ""
+    switch (true) {
+        case 0 < bmi < 18.5:
+            status = "Underweight"
+            break
+        case 18.5 < bmi < 25:
+            status = "Normal"
+
+            break
+        case 25 < bmi < 30:
+            status = "Overweight"
+
+            break
+        case bmi < 30:
+            status = "Obese"
+
+            break
+        default:
+            status = '?'
+    }
+    return {
+        bmi:bmi,
+        status:status
+    }
+
+}
+let result = bmi_calculator(65, 170)
+console.log(result)
+// {bmi: 22.49, status: "Underweight"}
+```
+
+
+
 8. một element có thể có tối đa bao nhiêu listener cho 1 event cố định. Làm sao xoá listener (unsubscribe) khỏi 1 event?
+
+
 9. element.insertAdjacentHTML()
 10. khác sự khác nhau giữa sự kiện input & change của text?
-- data types, variable, const, primitives
-
-- toán tử, biểu thức, hàm vòng lặp
-
-- Kiến thức về Javascript document
-document.*
 
 ## JSA
 - git & github

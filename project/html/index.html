@@ -6,43 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
     <title>Document</title>
-    <style>
-        div > p:nth-child(1){
-            color: blue;
-        }
-        div > p:nth-child(2){
-            color: orange;
-        }
-        span > p {
-            color: black;
-        }
-        div > span > p{
-            color: purple;
-        }
-        span ~ p{
-            color: aqua;
-        }
-        div + p{
-            color: orange;
-        }
-    </style>
 </head>
 
 <body>
-    <div>
-        <p>Blue</p>
-        <p>Orange</p>
-        <span>
-            <p>Purple</p>
-        </span>
-    </div>
-    <p>Orange</p>
 
-    <span>
-        <p>Black</p>
-    </span>
-    <p>Aqua</p>
 </body>
-<!-- <script src="/assets/js/index.js"></script> -->
+<script>
+
+    for(let i =0 ;i<5;i++){
+        console.log(i)
+    }
+    let array = [1,2,3,4]
+    for (let element of array){
+        console.log(element)
+    }
+    let obj = {
+        name:'Mindx',
+        company:'Illiat'
+    }
+    for(let key in obj){
+        console.log(obj[key])
+    }
+</script>
 
 </html>
