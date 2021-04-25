@@ -741,29 +741,157 @@ Một element có thể có nhiều listener cho 1 event cố định. Thứ t�
 ---
 
 ## JSA
-- git & github
-1. tạo một commit 
-2. thêm/xoá origin
-3. tạo một branch
-4. reset HEAD
-5. khởi tạo repo
-- Kiến thức về JS Advanced
-var & let vs function defination & expression, closure
-1. giải thích ví dụ (MDN) sau về closure
-3. local storage ? lưu trữ Object trong localStorage
-7. implement lại làm bultin map/reduce/filter
-8. JSON và local storage ? lưu trữ Object trong localStorage
-9. copy a project
-10. write regex
 
-- CSS Transition/Effect
+### Kiến thức git & github
+1. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github
 
-- async
-1. kết quả đoạn code sau
-2. fetch()
-3. thực hiện hàm sau bằng 2 cách async & promise 
-4. promiseAll ?
-5. timeout a request?
+2. Tạo một commit. Quay lui HEAD về commit trước đó.
+3. Thêm/xoá branch. Merge branchs. Giải quyết conflict
+4. Giải thích các lệnh cơ bản của git 
+
+### Kiến thức về Javascript 
+
+1. giải thích ví dụ (MDN) sau về closure. Tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
+```html
+<p id="help">Helpful notes will appear here</p>
+<p>E-mail: <input type="text" id="email" name="email"></p>
+<p>Name: <input type="text" id="name" name="name"></p>
+<p>Age: <input type="text" id="age" name="age"></p>
+```
+```js
+function showHelp(help) {
+  document.getElementById('help').textContent = help;
+}
+
+function setupHelp() {
+  var helpText = [
+      {'id': 'email', 'help': 'Your e-mail address'},
+      {'id': 'name', 'help': 'Your full name'},
+      {'id': 'age', 'help': 'Your age (you must be over 16)'}
+    ];
+
+  for (var i = 0; i < helpText.length; i++) {
+    var item = helpText[i];
+    document.getElementById(item.id).onfocus = function() {
+      showHelp(item.help);
+    }
+  }
+}
+
+setupHelp();
+```
+
+2. localStorage là gì? Các kiểu dữ liệu mà localStorage có thể lưu trữ? Làm sao lữu trữ dữ liệu dạng array/object?
+
+3. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
+
+4. Event Loops của Javascript là gì? Tại sao Javascript chạy được nhiều tác vụ bất đồng bộ khác nhau cùng 1 lúc (promise)?
+
+5. write regex
+```txt
+Letters to the Editor (Your complete mailing address is required):
+letters@thehindu.co.in
+Readers' Editor:
+readerseditor@thehindu.co.in
+Advertisements Queries (Print):
+inetads@thehindu.co.in
+Advertisements Queries (Online):
+digital@thehindu.co.in
+Advertisements Queries (International):
+international@thehindu.co.in
+Subscription Queries:
+subs@thehindu.co.in
+Comments on the website:
+web.thehindu@thehindu.co.in
+```
+```txt
+digital@thehindu.co.in;
+inetads@thehindu.co.in;
+international@thehindu.co.in;
+letters@thehindu.co.in;
+readerseditor@thehindu.co.in;
+subs@thehindu.co.in;
+web.thehindu@thehindu.co.in;
+```
+
+6. fetch().Thực hiện hàm lấy dữ liệu thông endoints bằng fetch(). Viết bằng 2 cách (async - await & promise) 
+
+7. Hãy cho biết kết quả đoạn code sau và giải thích.
+```js
+function resolveAfter2Seconds() {
+  console.log("starting slow promise")
+  return new Promise(resolve => {
+    setTimeout(function() {
+      resolve("slow")
+      console.log("slow promise is done")
+    }, 2000)
+  })
+}
+
+function resolveAfter1Second() {
+  console.log("starting fast promise")
+  return new Promise(resolve => {
+    setTimeout(function() {
+      resolve("fast")
+      console.log("fast promise is done")
+    }, 1000)
+  })
+}
+
+async function sequentialStart() {
+  console.log('==SEQUENTIAL START==')
+
+  // 1. Execution gets here almost instantly
+  const slow = await resolveAfter2Seconds()
+  console.log(slow) // 2. this runs 2 seconds after 1.
+
+  const fast = await resolveAfter1Second()
+  console.log(fast) // 3. this runs 3 seconds after 1.
+}
+
+async function concurrentStart() {
+  console.log('==CONCURRENT START with await==');
+  const slow = resolveAfter2Seconds() // starts timer immediately
+  const fast = resolveAfter1Second() // starts timer immediately
+
+  // 1. Execution gets here almost instantly
+  console.log(await slow) // 2. this runs 2 seconds after 1.
+  console.log(await fast) // 3. this runs 2 seconds after 1., immediately after 2., since fast is already resolved
+}
+
+function concurrentPromise() {
+  console.log('==CONCURRENT START with Promise.all==')
+  return Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
+    console.log(messages[0]) // slow
+    console.log(messages[1]) // fast
+  })
+}
+
+async function parallel() {
+  console.log('==PARALLEL with await Promise.all==')
+
+  // Start 2 "jobs" in parallel and wait for both of them to complete
+  await Promise.all([
+      (async()=>console.log(await resolveAfter2Seconds()))(),
+      (async()=>console.log(await resolveAfter1Second()))()
+  ])
+}
+
+sequentialStart() // after 2 seconds, logs "slow", then after 1 more second, "fast"
+
+// wait above to finish
+setTimeout(concurrentStart, 4000) // after 2 seconds, logs "slow" and then "fast"
+
+// wait again
+setTimeout(concurrentPromise, 7000) // same as concurrentStart
+
+// wait again
+setTimeout(parallel, 10000) // truly parallel: after 1 second, logs "fast", then after 1 more second, "slow"
+```
+
+9. promiseAll ?
+
+10. timeout a request too long?
 
 ## JSI
 - DB / NoSQl / Firebase
