@@ -11,85 +11,23 @@
 
 </body>
 <script>
-const domain = 'https://pokeapi.co/api/v2'
-const endpoint = 'pokemon'
-async function getPokemonNames(pokemonID) {
-    const start_time = new Date().valueOf()
-    const pokemonName = [];
-    for (let i = 0; i < pokemonID.length; i++) {
-        pokemonName.push(await getPokemon( `${domain}/${endpoint}/${pokemonID[i]}`))
+    Array.prototype.myReduce = function (callback,accumulator) {
+        let acc = accumulator || 0
+        let t = []
+        for (let e of this){
+            acc = callback(acc,e)     
+        }
+        return acc
     }
-    return pokemonName
-}
-async function getPokemon(url) {
-    const response = await fetch(url)
-    const pokemon = await response.json()
-    const name = pokemon.name
-    return name
-}
-function main(){
-    const pokemonId = []
-    for (let i = 0; i < 10; i++) {
-        pokemonId.push(Math.floor(Math.random() * 600))
-    }
-    console.time('Operation')
-    getPokemonNames(pokemonId)
-    .then(pokemons => {
-        console.log(pokemons)
-        console.timeEnd("Operation")
-        console.timeLog("Operation")
-    })
-}
-main()
+    let a = [1, 2, 3, 4, 5]
+    console.log(a.reduce((acc,e) => {
+        return acc + e
+    },0))
+    console.log(a.myReduce((acc,e) => {
+        return acc + e
 
-// const domain = 'https://pokeapi.co/api/v2'
-// const endpoint = 'pokemon'
-// const pokemonId = []
-// for (let i = 0; i < 10; i++) {
-//     pokemonId.push(Math.floor(Math.random() * 600))
-// }
-// async function getPokemonNames(pokemonID) {
-//     const start_time = new Date().valueOf()
-//     // const pokemonName = [];
-//     // for (let i = 0; i < pokemonID.length; i++) {
-//     //     pokemonName.push(await getPokemon(`${domain}/${endpoint}/${pokemonId[i]}`))
-//     // }
-//     // console.log()
-//     // return pokemonName
 
-//     const pokes = Promise.all(
-//         pokemonID.map(id=>{
-//             return getPokemon(`${domain}/${endpoint}/${id}`)
-//         })
-//     )
-//     return await pokes
-// }
-// function main(){
-//     console.time('Operation')
-//     getPokemonNames(pokemonId)
-//     .then(pokemons => {
-//         console.log(pokemons)
-//         console.timeEnd("Operation")
-//         console.timeLog("Operation")
-//     })
-// }
-
-// async function getPokemon(url) {
-//     const response = await fetch(url)
-//     const pokemon = await response.json()
-//     const name = pokemon.name
-//     return name
-// }
-// // function getPokemon(url) {
-// //     return fetch(url)
-// //         .then(response => response.json())
-// //         .then(pokemon => {
-// //             return pokemon.name
-// //         })
-// // }
-
-// main()
-
+    },0))
 </script>
 
 </html>

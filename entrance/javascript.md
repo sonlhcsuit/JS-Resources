@@ -751,7 +751,7 @@ Một element có thể có nhiều listener cho 1 event cố định. Thứ t�
 
 ### Kiến thức về Javascript 
 
-1. giải thích ví dụ (MDN) sau về closure. Tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
+1. Cho đoạn code như sau. Kết quả khi tương tác với form là gì? Giải thích tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
 ```html
 <p id="help">Helpful notes will appear here</p>
 <p>E-mail: <input type="text" id="email" name="email"></p>
@@ -782,12 +782,41 @@ setupHelp();
 ```
 
 2. localStorage là gì? Các kiểu dữ liệu mà localStorage có thể lưu trữ? Làm sao lữu trữ dữ liệu dạng array/object?
+`localStorage`  một property read-only của global giúp giúp ta truy cập tới Storage Object của bất kỳ document nhằm mục đích lưu trữ dữ liệu ở client vô thời hạn.`localStorage` lưu trữ dữ liệu `primitives`. Muốn lưu trữ các `Object`/`Array` trong javascript thì phải parse sang dạng `JSON`
 
 3. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
-
+```js
+// Ít nhất làm đúng logic cơ bản là thế này
+Array.prototype.myMap = function (callback) {
+        let t = []
+        for (let e of this){
+            t.push(callback(e))
+        }
+        return t
+    }
+Array.prototype.myFilter = function (callback) {
+    let t = []
+    for (let e of this){
+        if (callback(e)){
+            t.push(e)
+        }
+    }
+    return t
+}
+Array.prototype.myReduce = function (callback,accumulator) {
+        let acc = accumulator || 0
+        let t = []
+        for (let e of this){
+            acc = callback(acc,e)     
+        }
+        return acc
+    }
+```
 4. Event Loops của Javascript là gì? Tại sao Javascript chạy được nhiều tác vụ bất đồng bộ khác nhau cùng 1 lúc (promise)?
+[Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) là một vòng lặp vô tận trong Javascript Runtime dùng để lắng nghe các Event (khi các event được trigger).
 
-5. write regex
+
+5. Viết một regular expression có thể match được email. Ví dụ 
 ```txt
 Letters to the Editor (Your complete mailing address is required):
 letters@thehindu.co.in
@@ -887,7 +916,9 @@ setTimeout(concurrentPromise, 7000) // same as concurrentStart
 setTimeout(parallel, 10000) // truly parallel: after 1 second, logs "fast", then after 1 more second, "slow"
 ```
 
-7. Thực hiện hàm lấy dữ liệu thông endoints bằng `fetch()`, sau đó trả về mảng gồm tên của từng Pokemon. Viết bằng 2 cách (async - await & promise).
+---
+
+Từ câu tiếp theo trở đi sẽ sử dụng chung source code như sau. Đoạn code trên có thể chọn ngẫu nhiên 10 pokemon.
 ```js
 const domain = 'https://pokeapi.co/api/v2'
 const endpoint = 'pokemon'
@@ -901,13 +932,6 @@ async function getPokemonNames(pokemonID) {
     return pokemonName
 }
 
-async function getPokemon(url) {
-    const response = await fetch(url)
-    const pokemon = await response.json()
-    const name = pokemon.name
-    return name
-}
-
 function main(){
     const pokemonId = []
     for (let i = 0; i < 10; i++) {
@@ -917,18 +941,21 @@ function main(){
     getPokemonNames(pokemonId)
     .then(pokemons => {
         console.log(pokemons)
-        console.timeEnd("Operation")
         console.timeLog("Operation")
     })
 }
-
+async function getPokemon(url) {
+    // 
+}
 main()
 ```
+
+7. Viết hàm `getPokemon` để chương trình chạy đúng, lấy dữ liệu thông endoints bằng `fetch()`, sau đó trả về mảng gồm tên của từng Pokemon. Viết bằng 2 cách (async - await & promise).
 
 ```js
 function getPokemon(url) {
     return fetch(url)
-        .then(response => res.json())
+        .then(response => response.json())
         .then(pokemon => {
             return pokemon.name
         })
@@ -941,7 +968,7 @@ async function getPokemon(url) {
 }
 ```
 
-8. Đoạn code ở trên có thời gian thực thi trên trình duyệt Brave (nhân Chrome) là khoảng 3500ms (Có thể sai số bởi vì tốc độ mạng, server,...). Có cách nào giảm thời gian thực thi xuống không? Nếu có thì hãy trình bày giải pháp và giải thích.
+8. Đoạn code ở trên có thời gian thực thi ước tính trên trình duyệt Brave (nhân Chrome) là khoảng 3500ms (Có thể sai số bởi vì tốc độ mạng, server,...). Có cách nào giảm thời gian thực thi xuống không? Nếu có thì hãy trình bày giải pháp và giải thích.
 
 Cập nhật hàm getPokemonNames sử dụng Promise.all. Promise all sẽ bắt đầu tất cả các project tại cùng 1 thời điểm => thời gian hoàn thành bằng thời gian dài nhất của các request. Đoạn code cũ, ta đợi từng request hoàn và tiếp tục gửi request => thời gian hoàn thành bằng tổng thời gian hoàn thành của request
 
@@ -957,8 +984,28 @@ async function getPokemonNames(pokemonID) {
 }
 ```
 
-9. Cập nhật hàm ở trên để có thể kết thúc hàm main() nếu thời gian chạy quá chậm  (> 1000ms)
-
+9. Cập nhật hàm ở` main` để có thể kết thúc hàm công việc đang chạy (lấy dữ liệu) nếu thời gian chạy quá chậm  (> 2000ms)
+Hàm main có thể dùng được viết lại như sau.
+```js
+function main(){
+    return new Promise((resolve,reject)=>{
+        const pokemonId = []
+        for (let i = 0; i < 10; i++) {
+            pokemonId.push(Math.floor(Math.random() * 600))
+        }
+        console.time('Operation')
+        getPokemonNames(pokemonId)
+        .then(pokemons => {
+            console.timeLog("Operation")
+            resolve(pokemons)
+        })
+        setTimeout(()=>{
+            reject(new Error("Too long"))
+        },1000)
+    })
+    
+}
+```
 ## JSI
 - DB / NoSQl / Firebase
 1. Điểm yếu của noSQL? Firestore? 
