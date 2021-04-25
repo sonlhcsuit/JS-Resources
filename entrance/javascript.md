@@ -814,9 +814,7 @@ subs@thehindu.co.in;
 web.thehindu@thehindu.co.in;
 ```
 
-6. fetch().Thực hiện hàm lấy dữ liệu thông endoints bằng fetch(). Viết bằng 2 cách (async - await & promise) 
-
-7. Hãy cho biết kết quả đoạn code sau và giải thích.
+6. Hãy cho biết kết quả đoạn code sau và giải thích.
 ```js
 function resolveAfter2Seconds() {
   console.log("starting slow promise")
@@ -889,9 +887,77 @@ setTimeout(concurrentPromise, 7000) // same as concurrentStart
 setTimeout(parallel, 10000) // truly parallel: after 1 second, logs "fast", then after 1 more second, "slow"
 ```
 
-9. promiseAll ?
+7. Thực hiện hàm lấy dữ liệu thông endoints bằng `fetch()`, sau đó trả về mảng gồm tên của từng Pokemon. Viết bằng 2 cách (async - await & promise).
+```js
+const domain = 'https://pokeapi.co/api/v2'
+const endpoint = 'pokemon'
 
-10. timeout a request too long?
+async function getPokemonNames(pokemonID) {
+    const start_time = new Date().valueOf()
+    const pokemonName = [];
+    for (let i = 0; i < pokemonID.length; i++) {
+        pokemonName.push(await getPokemon( `${domain}/${endpoint}/${pokemonID[i]}`))
+    }
+    return pokemonName
+}
+
+async function getPokemon(url) {
+    const response = await fetch(url)
+    const pokemon = await response.json()
+    const name = pokemon.name
+    return name
+}
+
+function main(){
+    const pokemonId = []
+    for (let i = 0; i < 10; i++) {
+        pokemonId.push(Math.floor(Math.random() * 600))
+    }
+    console.time('Operation')
+    getPokemonNames(pokemonId)
+    .then(pokemons => {
+        console.log(pokemons)
+        console.timeEnd("Operation")
+        console.timeLog("Operation")
+    })
+}
+
+main()
+```
+
+```js
+function getPokemon(url) {
+    return fetch(url)
+        .then(response => res.json())
+        .then(pokemon => {
+            return pokemon.name
+        })
+}
+async function getPokemon(url) {
+    const response = await fetch(url)
+    const pokemon = await response.json()
+    const name = pokemon.name
+    return name
+}
+```
+
+8. Đoạn code ở trên có thời gian thực thi trên trình duyệt Brave (nhân Chrome) là khoảng 3500ms (Có thể sai số bởi vì tốc độ mạng, server,...). Có cách nào giảm thời gian thực thi xuống không? Nếu có thì hãy trình bày giải pháp và giải thích.
+
+Cập nhật hàm getPokemonNames sử dụng Promise.all. Promise all sẽ bắt đầu tất cả các project tại cùng 1 thời điểm => thời gian hoàn thành bằng thời gian dài nhất của các request. Đoạn code cũ, ta đợi từng request hoàn và tiếp tục gửi request => thời gian hoàn thành bằng tổng thời gian hoàn thành của request
+
+```js
+async function getPokemonNames(pokemonID) {
+    const start_time = new Date().valueOf()
+    const pokes = Promise.all(
+        pokemonID.map(id=>{
+            return getPokemon(`${domain}/${endpoint}/${id}`)
+        })
+    )
+    return await pokes
+}
+```
+
+9. Cập nhật hàm ở trên để có thể kết thúc hàm main() nếu thời gian chạy quá chậm  (> 1000ms)
 
 ## JSI
 - DB / NoSQl / Firebase
