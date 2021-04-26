@@ -667,7 +667,7 @@ btns.forEach(btn => {
     })
 })
 ```
-<details>
+</details>
 
 ---
 
@@ -710,8 +710,8 @@ console.log(result)
 
 <details>
 <summary>Đáp án</summary>
-
-<details>
+Thay đổi điều kiện sử dụng dấu &&. vd (0 < bmi && bmi < 18.5)
+</details>
 
 ---
 
@@ -741,9 +741,9 @@ btn.addEventListener("click",()=>{
 ---
 
 ## JSA
-
 ### Kiến thức git & github
 1. Giải thích các lệnh cơ bản của git 
+
 - git init
 - git add
 - git remote 
@@ -752,7 +752,14 @@ btn.addEventListener("click",()=>{
 - git push
 - git pull
 - git fetch
-2. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github
+
+---
+
+2. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github.
+
+<details>
+<summary>Đáp án</summary>
+
 ```sh
 git init
 git add .
@@ -768,76 +775,54 @@ git commit -m "[message]"
 ```sh
 git reset --hard HEAD~~
 ```
-4. Thêm/xoá branch. Merge branchs. Giải quyết conflict
+4. Thêm/xoá/nhảy sang branch. Merge branch. Giải quyết conflict
+```sh
+git checkout -b [branch-name]
+```
+```sh
+git branch -d [branch-name]
+```
+```sh
+git add .
+git commit -m "[message]"
+git checkout [branch-name]
+```
+```sh
+git add .
+git commit -m "up-to-date"
+git checkout master 
+git merge [branch-name]
+```
+Nếu có xuất hiện conflict thì giải quyết conflict bằng cách xoá đi những thay đổi cũ, sau đó tạo một merge commit (như commit bình thường)
+
+</details>
+
+---
 
 ### Kiến thức về Javascript 
 
-1. Cho đoạn code như sau. Kết quả khi tương tác với form là gì? Giải thích tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
-```html
-<p id="help">Helpful notes will appear here</p>
-<p>E-mail: <input type="text" id="email" name="email"></p>
-<p>Name: <input type="text" id="name" name="name"></p>
-<p>Age: <input type="text" id="age" name="age"></p>
-```
-```js
-function showHelp(help) {
-  document.getElementById('help').textContent = help;
-}
+1. localStorage là gì? Các kiểu dữ liệu mà localStorage có thể lưu trữ? Làm sao lữu trữ dữ liệu dạng array/object?
 
-function setupHelp() {
-  var helpText = [
-      {'id': 'email', 'help': 'Your e-mail address'},
-      {'id': 'name', 'help': 'Your full name'},
-      {'id': 'age', 'help': 'Your age (you must be over 16)'}
-    ];
+<details>
+<summary>Đáp án</summary>
 
-  for (var i = 0; i < helpText.length; i++) {
-    var item = helpText[i];
-    document.getElementById(item.id).onfocus = function() {
-      showHelp(item.help);
-    }
-  }
-}
-
-setupHelp();
-```
-
-2. localStorage là gì? Các kiểu dữ liệu mà localStorage có thể lưu trữ? Làm sao lữu trữ dữ liệu dạng array/object?
 `localStorage`  một property read-only của global giúp giúp ta truy cập tới Storage Object của bất kỳ document nhằm mục đích lưu trữ dữ liệu ở client vô thời hạn.`localStorage` lưu trữ dữ liệu `primitives`. Muốn lưu trữ các `Object`/`Array` trong javascript thì phải parse sang dạng `JSON`
 
-3. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
-```js
-// Ít nhất làm đúng logic cơ bản là thế này
-Array.prototype.myMap = function (callback) {
-        let t = []
-        for (let e of this){
-            t.push(callback(e))
-        }
-        return t
-    }
-Array.prototype.myFilter = function (callback) {
-    let t = []
-    for (let e of this){
-        if (callback(e)){
-            t.push(e)
-        }
-    }
-    return t
-}
-Array.prototype.myReduce = function (callback,accumulator) {
-        let acc = accumulator || 0
-        let t = []
-        for (let e of this){
-            acc = callback(acc,e)     
-        }
-        return acc
-    }
-```
-4. Event Loops của Javascript là gì? Tại sao Javascript chạy được nhiều tác vụ bất đồng bộ khác nhau cùng 1 lúc (promise)?
+</details>
+
+2. Event Loops của Javascript là gì? Tại sao Javascript chạy được nhiều tác vụ bất đồng bộ khác nhau cùng 1 lúc (promise)?
+
+<details>
+<summary>Đáp án</summary>
+
 [Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) là một vòng lặp vô tận trong Javascript Runtime dùng để lắng nghe các Event (khi các event được trigger).
 
+</details>
 
-5. Viết một regular expression có thể match được email. Ví dụ 
+---
+
+3. Viết một regular expression có thể match được email. Ví dụ 
+
 ```txt
 Letters to the Editor (Your complete mailing address is required):
 letters@thehindu.co.in
@@ -863,6 +848,10 @@ readerseditor@thehindu.co.in;
 subs@thehindu.co.in;
 web.thehindu@thehindu.co.in;
 ```
+
+<details>
+<summary>Đáp án</summary>
+
 ```js
 const regex = /[a-zA-Z0-0.]+@[a-zA-Z0-0.]+/gm;
 const str = `Letters to the Editor (Your complete mailing address is required):
@@ -893,6 +882,86 @@ while ((m = regex.exec(str)) !== null) {
     });
 }
 ```
+
+</details>
+
+---
+
+2. Cho đoạn code như sau. Kết quả khi tương tác với form là gì? Giải thích tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
+
+<details>
+<summary>Đáp án</summary>
+
+```html
+<p id="help">Helpful notes will appear here</p>
+<p>E-mail: <input type="text" id="email" name="email"></p>
+<p>Name: <input type="text" id="name" name="name"></p>
+<p>Age: <input type="text" id="age" name="age"></p>
+```
+```js
+function showHelp(help) {
+  document.getElementById('help').textContent = help;
+}
+
+function setupHelp() {
+  var helpText = [
+      {'id': 'email', 'help': 'Your e-mail address'},
+      {'id': 'name', 'help': 'Your full name'},
+      {'id': 'age', 'help': 'Your age (you must be over 16)'}
+    ];
+
+  for (var i = 0; i < helpText.length; i++) {
+    var item = helpText[i];
+    document.getElementById(item.id).onfocus = function() {
+      showHelp(item.help);
+    }
+  }
+}
+
+setupHelp();
+```
+
+</details>
+
+---
+
+3. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
+
+<details>
+<summary>Đáp án</summary>
+
+```js
+// Ít nhất làm đúng logic cơ bản là thế này
+Array.prototype.myMap = function (callback) {
+        let t = []
+        for (let e of this){
+            t.push(callback(e))
+        }
+        return t
+    }
+Array.prototype.myFilter = function (callback) {
+    let t = []
+    for (let e of this){
+        if (callback(e)){
+            t.push(e)
+        }
+    }
+    return t
+}
+Array.prototype.myReduce = function (callback,accumulator) {
+        let acc = accumulator || 0
+        let t = []
+        for (let e of this){
+            acc = callback(acc,e)     
+        }
+        return acc
+    }
+```
+
+</details>
+
+---
+
 6. Hãy cho biết kết quả đoạn code sau và giải thích.
 ```js
 function resolveAfter2Seconds() {
@@ -917,54 +986,74 @@ function resolveAfter1Second() {
 
 async function sequentialStart() {
   console.log('==SEQUENTIAL START==')
-
-  // 1. Execution gets here almost instantly
   const slow = await resolveAfter2Seconds()
-  console.log(slow) // 2. this runs 2 seconds after 1.
-
+  console.log(slow) 
   const fast = await resolveAfter1Second()
-  console.log(fast) // 3. this runs 3 seconds after 1.
+  console.log(fast) 
 }
 
 async function concurrentStart() {
   console.log('==CONCURRENT START with await==');
-  const slow = resolveAfter2Seconds() // starts timer immediately
-  const fast = resolveAfter1Second() // starts timer immediately
-
-  // 1. Execution gets here almost instantly
-  console.log(await slow) // 2. this runs 2 seconds after 1.
-  console.log(await fast) // 3. this runs 2 seconds after 1., immediately after 2., since fast is already resolved
+  const slow = resolveAfter2Seconds() 
+  const fast = resolveAfter1Second() 
+  console.log(await slow) 
+  console.log(await fast) 
 }
 
 function concurrentPromise() {
   console.log('==CONCURRENT START with Promise.all==')
   return Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
-    console.log(messages[0]) // slow
-    console.log(messages[1]) // fast
-  })
+    console.log(messages[0]) 
+    console.log(messages[1])
 }
 
 async function parallel() {
   console.log('==PARALLEL with await Promise.all==')
-
-  // Start 2 "jobs" in parallel and wait for both of them to complete
   await Promise.all([
       (async()=>console.log(await resolveAfter2Seconds()))(),
       (async()=>console.log(await resolveAfter1Second()))()
   ])
 }
 
-sequentialStart() // after 2 seconds, logs "slow", then after 1 more second, "fast"
-
-// wait above to finish
-setTimeout(concurrentStart, 4000) // after 2 seconds, logs "slow" and then "fast"
-
-// wait again
-setTimeout(concurrentPromise, 7000) // same as concurrentStart
-
-// wait again
-setTimeout(parallel, 10000) // truly parallel: after 1 second, logs "fast", then after 1 more second, "slow"
+sequentialStart()
+setTimeout(concurrentStart, 4000)
+setTimeout(concurrentPromise, 7000)
+setTimeout(parallel, 10000) 
 ```
+
+<details>
+<summary>Đáp án</summary> 
+
+"==SEQUENTIAL START=="   
+"starting slow promise"  
+"slow promise is done"  
+"slow"  
+"starting fast promise"  
+"fast promise is done"  
+"fast"  
+"==CONCURRENT START with await=="  
+"starting slow promise"  
+"starting fast promise"  
+"fast promise is done"  
+"slow promise is done"  
+"slow"  
+"fast"  
+"==CONCURRENT START with Promise.all=="  
+"starting slow promise"  
+"starting fast promise"  
+"fast promise is done"  
+"slow promise is done"  
+"slow"  
+"fast"  
+"==PARALLEL with await Promise.all=="  
+"starting slow promise"   
+"starting fast promise"   
+"fast promise is done"  
+"fast"   
+"slow promise is done"  
+"slow"  
+
+</details>
 
 ---
 
@@ -1000,7 +1089,11 @@ async function getPokemon(url) {
 main()
 ```
 
-7. Viết hàm `getPokemon` để chương trình chạy đúng, lấy dữ liệu thông endoints bằng `fetch()`, sau đó trả về mảng gồm tên của từng Pokemon. Viết bằng 2 cách (async - await & promise).
+7. Viết hàm `getPokemon` để chương trình chạy đúng, lấy dữ liệu thông endoints bằng `fetch()`, sau đó trả về mảng gồm tên của từng 
+Pokemon. Viết bằng 2 cách (async - await & promise).
+
+<details>
+<summary>Đáp án</summary> 
 
 ```js
 function getPokemon(url) {
@@ -1018,7 +1111,14 @@ async function getPokemon(url) {
 }
 ```
 
+</details>
+
+---
+
 8. Đoạn code ở trên có thời gian thực thi ước tính trên trình duyệt Brave (nhân Chrome) là khoảng 3500ms (Có thể sai số bởi vì tốc độ mạng, server,...). Có cách nào giảm thời gian thực thi xuống không? Nếu có thì hãy trình bày giải pháp và giải thích.
+
+<details>
+<summary>Đáp án</summary> 
 
 Cập nhật hàm getPokemonNames sử dụng Promise.all. Promise all sẽ bắt đầu tất cả các project tại cùng 1 thời điểm => thời gian hoàn thành bằng thời gian dài nhất của các request. Đoạn code cũ, ta đợi từng request hoàn và tiếp tục gửi request => thời gian hoàn thành bằng tổng thời gian hoàn thành của request
 
@@ -1034,8 +1134,16 @@ async function getPokemonNames(pokemonID) {
 }
 ```
 
+</details>
+
+---
+
 9. Cập nhật hàm ở` main` để có thể kết thúc hàm công việc đang chạy (lấy dữ liệu) nếu thời gian chạy quá chậm  (> 2000ms)
 Hàm main có thể dùng được viết lại như sau.
+
+<details>
+<summary>Đáp án</summary> 
+
 ```js
 function main(){
     return new Promise((resolve,reject)=>{
@@ -1056,6 +1164,11 @@ function main(){
     
 }
 ```
+
+</details>
+
+---
+
 ## JSI
 - DB / NoSQl / Firebase
 1. Điểm yếu của noSQL? Firestore? 
