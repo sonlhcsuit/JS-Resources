@@ -810,6 +810,8 @@ Nếu có xuất hiện conflict thì giải quyết conflict bằng cách xoá 
 
 </details>
 
+---
+
 2. Event Loops của Javascript là gì? Tại sao Javascript chạy được nhiều tác vụ bất đồng bộ khác nhau cùng 1 lúc (promise)?
 
 <details>
@@ -887,7 +889,7 @@ while ((m = regex.exec(str)) !== null) {
 
 ---
 
-2. Cho đoạn code như sau. Kết quả khi tương tác với form là gì? Giải thích tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
+4. Cho đoạn code như sau. Kết quả khi tương tác với form là gì? Giải thích tại sao lại như vậy?. Đề xuất ít nhất 2 cách giải quyết trường hợp trên.
 
 <details>
 <summary>Đáp án</summary>
@@ -925,7 +927,7 @@ setupHelp();
 
 ---
 
-3. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
+5. Implement lại hàm map/reduce/filter method của mảng thành hàm myMap/myReduce/myFilter.
 
 <details>
 <summary>Đáp án</summary>
