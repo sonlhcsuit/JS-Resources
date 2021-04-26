@@ -11,23 +11,7 @@
 
 </body>
 <script>
-    Array.prototype.myReduce = function (callback,accumulator) {
-        let acc = accumulator || 0
-        let t = []
-        for (let e of this){
-            acc = callback(acc,e)     
-        }
-        return acc
-    }
-    let a = [1, 2, 3, 4, 5]
-    console.log(a.reduce((acc,e) => {
-        return acc + e
-    },0))
-    console.log(a.myReduce((acc,e) => {
-        return acc + e
 
-
-    },0))
 </script>
 
 </html>
