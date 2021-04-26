@@ -753,8 +753,21 @@ btn.addEventListener("click",()=>{
 - git pull
 - git fetch
 2. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github
-
-3. Tạo một commit. Quay lui HEAD về commit trước đó.
+```sh
+git init
+git add .
+git commit -m "inital commit"
+git remote add origin [link]
+git push --set-upstream origin/master
+```
+3. Tạo một commit. Quay lui HEAD về 2 commit trước đó.
+```sh
+git add .
+git commit -m "[message]"
+```
+```sh
+git reset --hard HEAD~~
+```
 4. Thêm/xoá branch. Merge branchs. Giải quyết conflict
 
 ### Kiến thức về Javascript 
