@@ -724,16 +724,16 @@ Một element có thể có nhiều listener cho 1 event cố định. Thứ t�
 Để xoá một eventListener cần phải lưu trữ lại reference tới function, và sử dụng hàm `removeEventListener`
 
 ```js
- let btn = document.getElementById("btn")
-    let a = async () => {
-        console.log("first")
-    }
-    btn.addEventListener("click", a)
-    
-    btn.addEventListener("click",()=>{
-        btn.removeEventListener("click",a)
-        console.log("second")
-    })
+let btn = document.getElementById("btn")
+let a = async () => {
+    console.log("first")
+}
+btn.addEventListener("click", a)
+
+btn.addEventListener("click",()=>{
+    btn.removeEventListener("click",a)
+    console.log("second")
+})
 ```
 
 </details>
@@ -743,11 +743,19 @@ Một element có thể có nhiều listener cho 1 event cố định. Thứ t�
 ## JSA
 
 ### Kiến thức git & github
-1. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github
+1. Giải thích các lệnh cơ bản của git 
+- git init
+- git add
+- git remote 
+- git log
+- git status
+- git push
+- git pull
+- git fetch
+2. Tạo một repository ở local machine (máy tính cá nhân) và lưu trữ source code lên remote repository ở github
 
-2. Tạo một commit. Quay lui HEAD về commit trước đó.
-3. Thêm/xoá branch. Merge branchs. Giải quyết conflict
-4. Giải thích các lệnh cơ bản của git 
+3. Tạo một commit. Quay lui HEAD về commit trước đó.
+4. Thêm/xoá branch. Merge branchs. Giải quyết conflict
 
 ### Kiến thức về Javascript 
 
@@ -842,7 +850,36 @@ readerseditor@thehindu.co.in;
 subs@thehindu.co.in;
 web.thehindu@thehindu.co.in;
 ```
+```js
+const regex = /[a-zA-Z0-0.]+@[a-zA-Z0-0.]+/gm;
+const str = `Letters to the Editor (Your complete mailing address is required):
+letters@thehindu.co.in
+Readers' Editor:
+readerseditor@thehindu.co.in
+Advertisements Queries (Print):
+inetads@thehindu.co.in
+Advertisements Queries (Online):
+digital@thehindu.co.in
+Advertisements Queries (International):
+international@thehindu.co.in
+Subscription Queries:
+subs@thehindu.co.in
+Comments on the website:
+web.thehindu@thehindu.co.in`;
+let m;
 
+while ((m = regex.exec(str)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+        regex.lastIndex++;
+    }
+    
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match, groupIndex) => {
+        console.log(`Found match, group ${groupIndex}: ${match}`);
+    });
+}
+```
 6. Hãy cho biết kết quả đoạn code sau và giải thích.
 ```js
 function resolveAfter2Seconds() {
