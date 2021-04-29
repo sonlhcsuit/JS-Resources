@@ -50,6 +50,6 @@ của ngày làm việc (hoặc nghỉ có lý do)
 1. Cài đặt merge sort/quick sort/ heapsort và giải thích
 2. Cài đặt cây tìm kiếm nhị phân
 2. Cài đặt thuật toán đếm bit 1 của các số từ 1 -> n. Độ phức tạp yêu cầu là O(n)
-
+3. Cài đặt thuật toán tính dãy con tăng dài nhất (có liên tục và không liên tục)
 ### Phân tích dữ liệu
 ## CSI
