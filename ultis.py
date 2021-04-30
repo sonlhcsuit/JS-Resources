@@ -208,3 +208,20 @@
 # if __name__ == '__main__':
 #     args = parser()
 #     main(args)
+
+
+
+def write(fp,data,idx):
+    fs = open(fp,"r")
+    lines = fs.readlines()
+    lines = lines[:idx]+ [str(data)+"\n"] + lines[idx:]
+    fs.close()
+    fs = open(fp,"w")
+    fs.write("".join(lines))
+    fs.close()
+    
+    
+
+    # print([line])
+if __name__ == "__main__":
+    write("./data.txt",'?',200)

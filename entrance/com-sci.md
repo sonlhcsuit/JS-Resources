@@ -6,31 +6,65 @@
 ```txt
 Có thể gán lại giá trị cho True/False
 print trong python2 là một reserved word (không phải built-in function)
-... (Và một vài sự khác biệt )
+... (Và một vài sự khác biệt khác )
 ```
-2. Tạo menu tương tác cho phép CRUD danh sách các sản phẩm
-```py
-def menu():
-    print("Enter your option:\nC. Add a product\nR. View products\nU. Update a product\nD. Delete products")
-    
-
-
-if __name__ == "__main__":
-    menu()
-
-
-
-```
-3. Indexing/Slicing đối với list trong python. Lấy ra mảng con (từ phần tử thứ 4 - 8) và đảo ngược
+2. Indexing/Slicing đối với list trong python. Lấy ra mảng con (từ phần tử thứ 4 - 8) và đảo ngược
 
 ```py
 a = [1,2,3,4,5,6,7,8,9]
 a[3:8][::-1]
 ```
-4. Viết module và cú pháp import 
-5. List comprehension
-6. loops / numerator
-7. File process
+3. Tạo menu tương tác cho phép CRUD danh sách các sản phẩm
+```py
+def menu():
+    menu_str = "Enter your option:\nC. Add a product\nR. View products\nU. Update a product\nD. Delete products\nOther letter to quit\n"
+    products = []
+    choice = ""
+    while (choice := str(input(menu_str)) ) in ['C','c','R','r','U','u','D','d']:
+        if choice in ['R','r']:
+            print(products)
+        elif choice in ['C','c']:
+            prd_name = input('Enter product name: ')
+        elif choice in ['D','d']:
+            print(products)
+            prd_idx = input('Enter index(start from 1): ')
+            products.pop(int(prd_idx) - 1)
+        elif choice in ['U','u']:
+            print(products)
+            prd_idx = input('Enter index(start from 1): ')
+            prd_name = input('Enter product name: ')
+            products[int(prd_idx) - 1] = prd_name
+if __name__ == "__main__":
+    menu()
+```
+
+4. Có một file csv khoảng 400 dòng. Làm thế nào để insert một dòng mới ở dòng 200? (dữ liệu dòng 200 trở lên sẽ bị dòi xuống dòng 201 )
+```py
+def write(fp,data,idx):
+    fs = open(fp,"r")
+    lines = fs.readlines()
+    lines = lines[:idx]+ [str(data)+"\n"] + lines[idx:]
+    fs.close()
+    fs = open(fp,"w")
+    fs.write("".join(lines))
+    fs.close()
+if __name__ == "__main__":
+    write("./data.txt",'?',200)
+```
+
+5. Thế nào là kiểu dữ liệu primitives & reference? String có phải là kiểu dữ liệu reference không? Nếu có thì hãy giải thích kết quả đoạn code sau:
+```py
+a = "MindX"
+b = "MindX"
+print(id(a)==id(b))
+# True
+a = "MindXSchool&Technology"
+b = "MindXSchool&Technology"
+print(id(a)==id(b))
+# False
+```
+
+String không phải kiểu dữ liệu reference. Kết quả đoạn code ở trên là do kỹ thuật "String interning".
 ### Thuật toán cơ bản
 
 1. Cài đặt thuận toán chuyển vị một ma trận 2 chiều 
