@@ -2,9 +2,31 @@
 
 ## CSB
 ### Kiến thức cơ bản về python
-1. Cho biết sự khác nhau của python3 & python2 
-2. Tạo menu
-3. Indexing đối với arrays
+1. Cho biết sự một vài (ít nhất 2) sự khác nhau của python3 & python2 
+```txt
+Có thể gán lại giá trị cho True/False
+print trong python2 là một reserved word (không phải built-in function)
+... (Và một vài sự khác biệt )
+```
+2. Tạo menu tương tác cho phép CRUD danh sách các sản phẩm
+```py
+def menu():
+    print("Enter your option:\nC. Add a product\nR. View products\nU. Update a product\nD. Delete products")
+    
+
+
+if __name__ == "__main__":
+    menu()
+
+
+
+```
+3. Indexing/Slicing đối với list trong python. Lấy ra mảng con (từ phần tử thứ 4 - 8) và đảo ngược
+
+```py
+a = [1,2,3,4,5,6,7,8,9]
+a[3:8][::-1]
+```
 4. Viết module và cú pháp import 
 5. List comprehension
 6. loops / numerator
@@ -18,7 +40,10 @@
 ## CSA
 ### OOP
 1. Nêu sự khác biệt giữa 2 khái niệm Interface và Inheritance ở trong lập trình hướng đối tượng
-2. Lớp abstract là gì, nêu ví dụ
+2. Lớp abstract là gì, nêu ví dụ.
+
+---
+
 Các câu sau sử dụng chung mô tả sau:  
 
 Công ty ABC có các hai loại nhân viên: nhân viên gián tiếp và nhân viên trực tiếp, với các thông
@@ -49,7 +74,8 @@ của ngày làm việc (hoặc nghỉ có lý do)
 ### Thuật toán trung bình
 1. Cài đặt merge sort/quick sort/ heapsort và giải thích
 2. Cài đặt cây tìm kiếm nhị phân
-2. Cài đặt thuật toán đếm bit 1 của các số từ 1 -> n. Độ phức tạp yêu cầu là O(n)
-3. Cài đặt thuật toán tính dãy con tăng dài nhất (có liên tục và không liên tục)
+3. Cài đặt thuật toán đếm bit 1 của các số từ 1 -> n. Độ phức tạp yêu cầu là O(n)
+4. Cài đặt thuật toán tính dãy con tăng dài nhất (có liên tục và không liên tục)
 ### Phân tích dữ liệu
+
 ## CSI
