@@ -73,7 +73,9 @@ String không phải kiểu dữ liệu reference. Kết quả đoạn code ở 
 
 ## CSA
 ### OOP
-1. Nêu sự khác biệt giữa 2 khái niệm Interface và Inheritance ở trong lập trình hướng đối tượng
+1. Nêu sự khác biệt giữa 2 khái niệm Interface và Inheritance ở trong lập trình hướng đối tượng.
+- Inheritance là kế thừa từ một lớp cha(kế thừa toàn bộ property & method)
+- Interface là một cách trừu tượng hoá, nhằm mục đích cài đặt một khuôn mẫu của các phương thức. Một class có thể implements nhiều Interface. Ngoài ra Interface là một cách khác để cài đặt đa kế thừa
 2. Lớp abstract là gì, nêu ví dụ.
 
 ---
