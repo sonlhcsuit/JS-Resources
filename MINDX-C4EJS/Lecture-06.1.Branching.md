@@ -5,11 +5,15 @@
 - Vậy nên chúng ta có các toán tử so sánh (comparison operator) dùng để xác định dữ liệu có phù hợp với một tiêu chuẩn nào đó hay không. (Ví dụ: 18 tuổi trở lên và có bằng lái xe mới được phép lái xe,... )
 - Kết quả của một phép so sánh có kiểu giá trị là boolean (true ,false )
 - Ngoài ra các điều kiện còn có thể tương tác với nhau thông qua các toán tử logic (logical operator - and, or, not,...)
+- Lúc bình thường thì code của chúng ta sẽ chạy từ trên xuống dưới (từng dòng 1) trông như thế này
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.1.png">
 
 ---
 
 ## if - else if - else
 - Câu lệnh điều kiện if-else sẽ hỗ trợ chúng ta trong việc viết code rẽ nhánh, quyết định xem sẽ sử dụng cách xử lý nào với trường hợp dữ liệu phù hợp
+
 ```js
 if (condition){
     // Nếu kết quả của biểu thức điều kiện condition là true thì sẽ sử dụng đoạn code ở đây
@@ -47,12 +51,21 @@ if (condition1 && condition2){
 }
 ```
 
+Control Flow của if-else trông như thế này
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.2.png">
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.3.png">
+
 ---
 
 ## switch - case
+
 - Khi đối mặt với cần nhiều trường hợp hơn (Ví dụ: 12 con giáp ) thì việc sử dụng cấu trúc if else lồng nhau không được hoan nghênh cho lắm! (Chỉ hơi khó đọc một chút)
 - switch-case giúp ta giải quyết vấn đề này một cách nhanh chóng và nhanh gọn lẹ. Tuy nhiên điểm yếu của switch-case là chỉ có thể so sánh bằng (==) thay vì so sánh đa dạng (thoải mái tự do kết hợp như if-else)
 - Điều khiến switch-case đặc biệt thoải mái là có thể tận dụng nhiều 1 đoạn code cho nhiều trường hợp xử lý giống nhau. Khi một case được xác nhận là phù hợp (kết quả phép so sánh là true), thì những case ở phía dưới đều được mặc định là đúng, các đoạn code sẽ được thực thi toàn bộ mà không cần phải kiểm tra nữa.
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.4.png">
 
 ```js
 let age = 1
@@ -75,6 +88,8 @@ switch(variable){
 }
 // Bởi vì đặc tính của cấu trúc switch-case nên ta sẽ dùng break tại mỗi đoạn cuối của case để không cho phép trường hợp ở trên xảy ra
 ```
+
+
 ---
 
 ## Exercise:

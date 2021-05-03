@@ -6,6 +6,8 @@
 ## while 
 - Thường được sử dụng để lặp đi lặp lại một khối lượng công việc nào đó, cho tới khi một điều kiện không còn đúng nữa.
 
+<img src="../sources/C4EJS/C4EJS-Lecture-6.5.png">
+
 ```js
 // while - là từ bắt buộc phải có
 // chừng nào kết quả của condition expression thì hàm doSomething() sẽ lặp lại liên tục cho tới khi 
@@ -23,10 +25,20 @@ while ( isMarried() ){
 
 ```
 
+## do-while
+- Về cơ bản thì vòng lặp do-while giống hoàn toàn như while, chỉ khác biệt ở một chỗ là: vòng lặp while kiểm tra điều kiện trước => thực hiện các công việc cần lặp, vòng lặp do-while lại thực hiện công việc vòng lặp trước => kiểm tra điều kiện. Điều này dẫn tới vòng lặp do-while sẽ luôn luôn được thực hiện ít nhất 1 lần (dẫu điều kiện có sai).
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.6.png">
+<img src="../sources/C4EJS/C4EJS-Lecture-6.7.png">
+
+
 ---
 
 ## for 
 - Vòng lặp for thường dùng để lặp khi số lần lặp đã được xác định. Còn vòng lặp while thì thường dùng đối với việc không thể xác định được số lần lặp 
+
+<img src="../sources/C4EJS/C4EJS-Lecture-6.5.png">
+
 
 ```js
 // for,() và 2 dấu chấm phẩy bắt buộc phải có đầy đủ đối với vòng lặp for cổ điển 
@@ -58,7 +70,6 @@ while(true)
 while(a=1)
 
 ```
-
 ---
 
 ## Exercise:
