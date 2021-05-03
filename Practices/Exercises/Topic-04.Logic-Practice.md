@@ -189,11 +189,6 @@ hammingDistance("strong", "strung") ➞ 1
 Notes
 Both strings will have the same length.
 
-
-
-
-
-
 ### 9. Even All the Way
 Given an array of numbers, return an array which contains all the even numbers in the orginal array, which also have even indices.
 

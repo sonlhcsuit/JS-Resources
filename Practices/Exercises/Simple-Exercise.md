@@ -438,7 +438,9 @@ imposterFormula(1, 10) ➞ "10%"
 imposterFormula(2, 5) ➞ "40%"
 
 imposterFormula(1, 8) ➞ "13%"
-=### 8. Is the Word Singular or Plural?
+```
+
+### 8. Is the Word Singular or Plural?
 
 Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
 
