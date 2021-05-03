@@ -325,47 +325,48 @@ div{
 
 9. Viết các selector phù hợp để được kết quả như hình 
 
-```html
- <div>
-        <p>Blue</p>
-        <p>Orange</p>
-        <span>
-            <p>Purple</p>
-        </span>
-    </div>
-    <p>Orange</p>
-
-    <span>
-        <p>Black</p>
-    </span>
-    <p>Aqua</p>
-```
+<img src="./../sources/entrance-5.png" height=200>
 
 Viết CSS Selector để cho màu chữ của thẻ p có cùng màu với nội dung bên trong
+
+```html
+<div>
+    <p>Blue</p>
+    <p>Orange</p>
+    <span>
+        <p>Purple</p>
+    </span>
+</div>
+<p>Orange</p>
+<span>
+    <p>Black</p>
+</span>
+<p>Aqua</p>
+```
+
 
 <details>
 <summary>Đáp án</summary>
 
 ```css
 div > p:nth-child(1){
-            color: blue;
-        }
-        div > p:nth-child(2){
-            color: orange;
-        }
-        span > p {
-            color: black;
-        }
-        div > span > p{
-            color: purple;
-        }
-        span ~ p{
-            color: aqua;
-        }
-        div + p{
-            color: orange;
-        }
-
+    color: blue;
+}
+div > p:nth-child(2){
+    color: orange;
+}
+span > p {
+    color: black;
+}
+div > span > p{
+    color: purple;
+}
+span ~ p{
+    color: aqua;
+}
+div + p{
+    color: orange;
+}
 ```
 
 </details>
@@ -562,7 +563,7 @@ for(let key in obj){
 
 <details>
 <summary>Đáp án</summary>
-
+Khi sự kiện blur (mất focus) được kích hoạt, đồng thời xem xét giá trị của ô input có thay đổi hay không? Nếu có thì sự kiện change mới được trigger, nếu không thì sự kiện change không được kích hoạt. Input được kích hoạt khi sự kiện focus đang xảy ra (đang nhập liệu), kích hoạt mỗi khi người dùng nhấn phím bất kỳ.
 </details>
 
 ---
