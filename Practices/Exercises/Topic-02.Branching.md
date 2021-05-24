@@ -13,21 +13,10 @@ special2digits(20) ➞ false
 Notes:
 - Try think how to extract 2 digits from the input number using math only
 - Maybe you need to know about : div & mod operator
----
-
-### 2. Narcissistic numbers
-By definition, a narcissistic number is full of itself. A narcissistic number is the sum of its own digits each raised to the power of the number of digits.
-
-```js
-isNarcissistic(153) ➞ true
-// 153 = 1^3 + 5^3 + 3^3 = 153
-```
-Notes:
-- Only 3-digit numbers are considerated
 
 ---
 
-### 3. Area and perimetter finder
+### 2. Area and perimetter finder
 Write a function that accepts width (decimal), height (decimal) and choice ("area", "perimetter") as input and calculates the area or perimetter of a square.
 
 ```js
@@ -40,7 +29,7 @@ areaPerimetter(2.9, 3.1, "perimetter") ➞ 12
 
 ---
 
-### 4. Triangle and parallelogram area finder
+### 3. Triangle and parallelogram area finder
 Write a function that accepts base (decimal), height (decimal) and shape ("triangle", "parallelogram") as input and calculates the area of that shape.
 
 ```js
@@ -57,7 +46,7 @@ Notes:
 
 ---
 
-### 5. The pH Scale
+### 4. The pH Scale
 
 Given a pH value, return whether that value is "alkaline" (greater than 7), "acidic" (less than 7), or "neutral" (7). Return "invalid" if the value given is less than 0 or greater than 14.
 
@@ -72,7 +61,10 @@ pHName(7) ➞ "neutral"
 Notes:
 - Values such as 6.9999 and 8.00001 should return "acidic" and "alkaline" respectively.
 
-### 6. BMI Calculator
+---
+
+### 5. BMI Calculator
+
 Get heigt in cm and weight in kg of 1 human then calculate they BMI number and print answer
 
 ```js
@@ -84,7 +76,61 @@ BMI(180,55) ➞ "underweight"
 
 ---
 
-### 7. Last Digit Ultimate
+### 6.Zodiac
+Create a function take *age* of person as argument and return which zodiac he/she is. Select current year
+
+```js
+// Current year is 2020
+zodiac(12) ➞ "Mouse"
+zodiac(8) ➞ "Dragon"
+
+```
+Note:
+- Try to figure out how to use % operator
+
+---
+
+### 7. Tax
+Create a function to calculate incometax
+- no tax if your income lower than 1000$
+- 10% income as tax if your income lower than 1500$
+- 20% income as tax if your income lower than 2000%
+- 30% income as tax if your income lower than 2500%
+- 35% income as tax otherwise
+```javascript
+tax(2500) ➞ 750
+tax(1234) ➞ 0
+tax(4321) ➞ 1512.35
+```
+
+---
+
+### 8. Quadratic expression Calculate
+Take *a*, *b*, *c* as arguments then solve Quadratic Expression, print delta's status & solution(s)
+<img src="https://www.gstatic.com/education/formulas/images_long_sheet/en/quadratic_equation.svg">
+
+```js
+quadratic(1,-2,1 ) ➞ '1'
+quadratic(1,-5,6 ) ➞ '2 and 3'
+quadratic(1,5,6 ) ➞ '-2 and -3'
+quadratic(3,2,5) ➞ 'No solution'
+```
+
+--- 
+
+### 9. Narcissistic numbers
+By definition, a narcissistic number is full of itself. A narcissistic number is the sum of its own digits each raised to the power of the number of digits.
+
+```js
+isNarcissistic(153) ➞ true
+// 153 = 1^3 + 5^3 + 3^3 = 153
+```
+Notes:
+- Only 3-digit numbers are considerated
+
+---
+
+### 10. Last Digit Ultimate
 Your job is to create a function, that takes 3 numbers: a, b, c and returns true if (the last digit of a \* the last digit of b) = the last digit of c. Check the examples below for an explanation.
 
 ```js
@@ -112,28 +158,3 @@ If you still don't understand:
 - Numbers can be negative.
 
 ---
-
-### 8.Zodiac
-Create a function take *age* of person as argument and return which zodiac he/she is. Select current year
-
-```js
-// Current year is 2020
-zodiac(12) ➞ "Mouse"
-zodiac(8) ➞ "Dragon"
-
-```
-Note:
-- Try to figure out how to use % operator
-
----
-
-### 9. Quadratic expression Calculate
-Take *a*, *b*, *c* as arguments then solve Quadratic Expression, print delta's status & solution(s)
-<img src="https://www.gstatic.com/education/formulas/images_long_sheet/en/quadratic_equation.svg">
-
-```js
-quadratic(1,-2,1 ) ➞ '1'
-quadratic(1,-5,6 ) ➞ '2 and 3'
-quadratic(1,5,6 ) ➞ '-2 and -3'
-quadratic(3,2,5) ➞ 'No solution'
-```
