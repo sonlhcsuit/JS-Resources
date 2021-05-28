@@ -1,0 +1,17 @@
+.box{
+    /* min-width: 200;
+    max-width: 200; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border: 1px solid red; */
+}
+svg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
