@@ -529,3 +529,7 @@ Items in the array will always be numbers.
 ### Mersane number 
 
 For more information: https://www.youtube.com/watch?v=PLL0mo5rHhk
+
+### Munchausen numbers
+
+For more information: https://www.youtube.com/watch?v=mhJY74Bw8mw
