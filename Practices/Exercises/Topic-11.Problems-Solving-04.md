@@ -524,3 +524,8 @@ tune([329.63, 246.94, 196, 146.83, 110, 82.41]) ➞ ["OK", "OK", "OK", "OK", "OK
 
 Notes  
 Items in the array will always be numbers.
+
+
+### Mersane number 
+
+For more information: https://www.youtube.com/watch?v=PLL0mo5rHhk
