@@ -1,4 +1,4 @@
-# **_Logic Practice_**
+# Logic Practice
 
 ---
 

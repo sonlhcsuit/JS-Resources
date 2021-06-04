@@ -455,6 +455,10 @@ Kaprekar(1) ➞ 5
 // "------------------------------------------------"
 ```
 
+For more information: https://www.youtube.com/watch?v=d8TRcZklX_Q 
+
+---
+
 > ### 9. Persistence
 The additive persistence of an integer, n, is the number of times you have to replace n with the sum of its digits until n becomes a single digit integer.
 

@@ -1,7 +1,7 @@
 
 # **_Functions_**
 ______________________________
-> ### 1. Remove all dollar sign of a string
+### 1. Remove all dollar sign of a string
 
 ``` javascript
 function removeDollarSign(text) {
@@ -15,7 +15,7 @@ removeDollarSign('$80% percent of $life is to show $up')
 Hint:   
 You can iterate through an string (character by character) by doing the same as array([])
 
-> ### 2. Binary Agents
+### 2. Binary Agents
 
 Return an English translated sentence of the passed binary string.
 
@@ -30,7 +30,7 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 0110
 ```
 
 
-> ### 3. Beans counting
+### 3. Beans counting
 Write a function `countBs` that takes a string as its only argument and returns a number that indicates how many uppercase “**B**” characters there are in the string.
 Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “**B**” characters). Rewrite `countBs` to make use of this new function.
 ```js

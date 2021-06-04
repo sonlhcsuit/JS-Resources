@@ -1,4 +1,4 @@
-# **_Loops_**
+# Loops
 
 ---
 
@@ -62,6 +62,8 @@ A perfect number is a positive integer that is equal to the sum of it divisors. 
 ```js
 isPerfectNum(496) ➞ true
 ```
+
+For more information: https://www.youtube.com/watch?v=ZfKTD5lvToE
 
 ---
 
