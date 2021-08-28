@@ -120,7 +120,7 @@ Calculate and return the area of a rectangle having sides `height` and `width`.
 ```js
 getArea(2,5) ➞ 10
 getArea(1,2) ➞ 2
-getArea(100,200) ➞ 2000
+getArea(100,200) ➞ 20000
 ```
 
 ---
