@@ -16,15 +16,15 @@ Notes:
 
 ---
 
-### 2. Area and perimetter finder
-Write a function that accepts width (decimal), height (decimal) and choice ("area", "perimetter") as input and calculates the area or perimetter of a square.
+### 2. Area and perimeter finder
+Write a function that accepts width (decimal), height (decimal) and choice ("area", "perimeter") as input and calculates the area or perimeter of a square.
 
 ```js
-areaPerimetter(2, 3, "area") ➞ 6
+areaPerimeter(2, 3, "area") ➞ 6
 
-areaPerimetter(8, 6, "perimetter") ➞ 28
+areaPerimeter(8, 6, "perimeter") ➞ 28
 
-areaPerimetter(2.9, 3.1, "perimetter") ➞ 12
+areaPerimeter(2.9, 3.1, "perimeter") ➞ 12
 ```
 
 ---
